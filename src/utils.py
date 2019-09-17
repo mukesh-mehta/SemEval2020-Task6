@@ -1,9 +1,5 @@
-import pandas as pd
+import spacy
+spacy_en = spacy.load('en_core_web_sm')
 
-def create_data(folder_path):
-    df = pd.DataFrame()
-    for i, file in enumerate(os.listdir(folder_path)):
-        temp_df = pd.read_csv(os.path.join(folder_path, file), names=['text', 'has_def'], sep="\t")
-        temp_df['filename'] = str(file).split(".")[0].split("_")[1]
-        df = pd.concat([df, temp_df])
-    return df.to_json(orient='records')
+def tokenizer(text): # create a tokenizer function
+    return [tok.text for tok in spacy_en.tokenizer(text)]
