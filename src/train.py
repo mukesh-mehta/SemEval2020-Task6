@@ -2,15 +2,15 @@ from torchtext.data import Field
 from torchtext.data import TabularDataset
 from torchtext.data import Iterator, BucketIterator
 import torch
+import numpy as np
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from torch.autograd import Variable
-from torchtext.data import Field
 from utils import tokenizer
-from torchtext.data import TabularDataset
 import config
 from tqdm import tqdm
+from sklearn.metrics import classification_report
 
 
 
@@ -33,10 +33,10 @@ class BatchWrapper:
 
 class SimpleBiLSTMBaseline(nn.Module):
     def __init__(self, hidden_dim, embedding_vector, emb_dim=100,
-                 spatial_dropout=0.05, recurrent_dropout=0.1, num_linear=1):
+                 spatial_dropout=0.05, recurrent_dropout=0.1, num_linear=2):
         super().__init__()
         self.embedding = nn.Embedding.from_pretrained(torch.FloatTensor(embedding_vector))
-        self.encoder = nn.LSTM(emb_dim, hidden_dim, num_layers=1, dropout=recurrent_dropout)
+        self.encoder = nn.LSTM(emb_dim, hidden_dim, num_layers=2, dropout=recurrent_dropout)
         self.linear_layers = []
         for _ in range(num_linear - 1):
             self.linear_layers.append(nn.Linear(hidden_dim, hidden_dim))
@@ -69,7 +69,7 @@ def train(train, val, epochs = 20, vectors="glove.6B.300d"):
     # get train and val iterator
     train_iter, val_iter = BucketIterator.splits(
                      (trn, vld), # we pass in the datasets we want the iterator to draw data from
-                     batch_sizes=(64, 64),
+                     batch_sizes=(512,  512),
                      device=torch.device('cuda'), # if you want to use the GPU, specify the GPU number here
                      sort_key=lambda x: len(x.text), # the BucketIterator needs to be told what function it should use to group the data.
                      sort_within_batch=False,
@@ -80,20 +80,24 @@ def train(train, val, epochs = 20, vectors="glove.6B.300d"):
     valid_dl = BatchWrapper(val_iter, 'text', ['has_def'])
     
     model = SimpleBiLSTMBaseline(100, TEXT.vocab.vectors, emb_dim=300).to('cuda')
+
     opt = optim.Adam(model.parameters(), lr=1e-2)
     loss_func = nn.BCEWithLogitsLoss()
     for epoch in range(1, epochs + 1):
         running_loss = 0.0
         running_corrects = 0
         model.train() # turn on training mode
-        for x, y in tqdm(train_dl): # thanks to our wrapper, we can intuitively iterate over our data!
+        train_preds = []
+        train_truth = []
+        for x, y in tqdm(train_dl):
             opt.zero_grad()
 
             preds = model(x)
             loss = loss_func(preds, y)
             loss.backward()
             opt.step()
-            
+            train_preds.extend(nn.Sigmoid()(preds).detach().cpu().numpy())
+            train_truth.extend(y.cpu().numpy())
             running_loss += loss.item() * x.size(0)
             
         epoch_loss = running_loss / len(trn)
@@ -108,6 +112,10 @@ def train(train, val, epochs = 20, vectors="glove.6B.300d"):
 
         val_loss /= len(vld)
         print('Epoch: {}, Training Loss: {:.4f}, Validation Loss: {:.4f}'.format(epoch, epoch_loss, val_loss))
+        print("classification report train")
+        train_preds = np.where(np.array(train_preds)<0.5, 0, 1).flatten()
+        print(classification_report(train_truth, train_preds))
+        # print(train_truth)
     return
 
 if __name__ == '__main__':
