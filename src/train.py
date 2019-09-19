@@ -61,7 +61,7 @@ def train(train, val, epochs = 20, vectors="glove.6B.300d"):
     trn, vld = TabularDataset.splits(
                path=config.TASK1["Folds"],
                train=train,validation=val,
-               format='csv',
+               format='tsv',
                skip_header=True, 
                fields=tv_datafields)
 

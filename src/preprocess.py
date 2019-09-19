@@ -14,8 +14,8 @@ def create_data(folder_path, out_path, num_fold = 5):
     for i, (train_idx, test_idx) in enumerate(skf.split(master_df['text'], master_df["has_def"])):
         train_df = master_df.iloc[train_idx]
         val_df = master_df.iloc[test_idx]
-        train_df.to_csv("{}/train_{}.csv".format(out_path, i), index=False)
-        val_df.to_csv("{}/val_{}.csv".format(out_path, i), index=False)
+        train_df.to_csv("{}/train_{}.csv".format(out_path, i), index=False, sep="\t")
+        val_df.to_csv("{}/val_{}.csv".format(out_path, i), index=False, sep="\t")
     return
 
 if __name__ == '__main__':
