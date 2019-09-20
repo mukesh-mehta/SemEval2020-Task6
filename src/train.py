@@ -94,30 +94,6 @@ def train(train, val, test, model_out_path, device, epochs = 10, vectors="glove.
     class_weights = torch.FloatTensor([compute_class_weight('balanced', [0,1], train_df['has_def'].values)[1]]).to(device)
     del train_df #delete df
 
-    # TEXT = Field(sequential=True, tokenize=tokenizer, lower=True)
-    # LABEL = Field(sequential=False, use_vocab=False)
-
-    # tv_datafields = [("text", TEXT), ("has_def", LABEL),
-    #              ("filename", None)]
-
-    # trn, vld = TabularDataset.splits(
-    #            path=config.TASK1["Folds"],
-    #            train=train,validation=val,
-    #            format='tsv',
-    #            skip_header=True, 
-    #            fields=tv_datafields)
-
-    # TEXT.build_vocab(trn, vld, vectors=vectors, max_size=20000, min_freq=10)
-    # get train and val iterator
-    # train_iter, val_iter = BucketIterator.splits(
-    #                  (trn, vld), # we pass in the datasets we want the iterator to draw data from
-    #                  batch_sizes=(512,  512),
-    #                  device=torch.device(device), # if you want to use the GPU, specify the GPU number here
-    #                  sort_key=lambda x: len(x.text), # the BucketIterator needs to be told what function it should use to group the data.
-    #                  sort_within_batch=False,
-    #                  repeat=False # we pass repeat=False because we want to wrap this Iterator layer.
-    #                 )
-
     # Get iterators and Vocab_instance
     train_iter, val_iter, test_iter, TEXT = get_iterators(train, val, test, device, vectors=vectors)
 
