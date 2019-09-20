@@ -11,7 +11,15 @@ There are three subtasks
 
 ### Task1
 
-There are .... samples for training and ..... samples for test. Which is spread across .... num of topics and have the distributions as follows.
+There are *16745* samples for training and ..... samples for test. Which is spread across .... num of topics and have the distributions as follows.
+
+Overall Distribution
+
+|   | has def  |no def   | Total |
+|---|---|---|---|
+| Train|  5627 | 11118  |16745 |
+|  Val |   |   | |
+| Test |   |   | |
 
 ##### Approach:
 1. Training data is present in different text files which are processed to convert in '.csv' format.
