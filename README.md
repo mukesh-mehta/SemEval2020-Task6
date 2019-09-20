@@ -29,13 +29,33 @@ Overall Distribution
 
 #### Model
 ##### Baseline
-1. The Baseline model is a LSTM model with .... hidden units and .... layers with ........ embeddings.
-2. Model was trained using ..... optimizer for ...... epochs with ...... batch size.
+1. The Baseline model is a *LSTM* model with *100* hidden units and *2* linear layers with *glove.6B.100d* embeddings.
+2. Model was trained using *Adam* optimizer for 10 epochs with 128 batch size and class weight.
 
 ##### Results
-Following is the classification report and confusion matrix.
+Following is the classification report.
 
-images
+Training Loss: 0.4737, Validation Loss: 0.2037
+
+classification report Train
+
+|              |precision    |recall  |f1-score   |support|
+|--------------|-------------|--------|-----------|-------|
+|         0.0  |     0.82    |  0.86  |    0.84   |   8894|
+|         1.0  |     0.69    |  0.61  |    0.65   |   4501|
+|    accuracy  |             |        |    0.78   |  13395|
+|   macro avg  |     0.75    |  0.74  |    0.75   |  13395|
+|weighted avg  |     0.77    |  0.78  |    0.78   |  13395|
+
+classification report Validation (20% of total training data)
+
+|              |precision    |recall  |f1-score   |support|
+|--------------|-------------|--------|-----------|-------|
+|         0.0  |     0.87    |  0.63  |    0.73   |   2224|
+|         1.0  |     0.53    |  0.82  |    0.64   |   1126|
+|    accuracy  |             |        |    0.69   |   3350|
+|   macro avg  |     0.70    |  0.73  |    0.69   |   3350|
+|weighted avg  |     0.76    |  0.69  |    0.70   |   3350|
 
 FOllowing is the behavior of loss function with different optimizer and learning rate.
 
