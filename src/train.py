@@ -1,16 +1,22 @@
-from torchtext.data import Field
-from torchtext.data import TabularDataset
-from torchtext.data import Iterator, BucketIterator
-import torch
 import numpy as np
+from tqdm import tqdm
+
+import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from torch.autograd import Variable
-from utils import tokenizer
-import config
-from tqdm import tqdm
+
+from torchtext.data import Field
+from torchtext.data import TabularDataset
+from torchtext.data import Iterator, BucketIterator
+
 from sklearn.metrics import classification_report
+from sklearn.utils.class_weight import compute_class_weight
+
+import config
+from utils import tokenizer
+
 
 
 
@@ -51,7 +57,12 @@ class SimpleBiLSTMBaseline(nn.Module):
         preds = self.predictor(feature)
         return preds
 
-def train(train, val, epochs = 20, vectors="glove.6B.300d"):
+def train(train, val, epochs = 10, vectors="glove.6B.100d"):
+    # Compute class weight
+    train_df = pd.read_csv(train, sep="\t")
+    class_weights = torch.FloatTensor([compute_class_weight('balanced', [0,1], train_df['has_def'].values)[1]]).cuda()
+    del train_df #delete df
+
     TEXT = Field(sequential=True, tokenize=tokenizer, lower=True)
     LABEL = Field(sequential=False, use_vocab=False)
 
@@ -79,7 +90,7 @@ def train(train, val, epochs = 20, vectors="glove.6B.300d"):
     train_dl = BatchWrapper(train_iter, 'text', ['has_def'])
     valid_dl = BatchWrapper(val_iter, 'text', ['has_def'])
     
-    model = SimpleBiLSTMBaseline(100, TEXT.vocab.vectors, emb_dim=300).to('cuda')
+    model = SimpleBiLSTMBaseline(100, TEXT.vocab.vectors, emb_dim=100).to('cuda')
 
     opt = optim.Adam(model.parameters(), lr=1e-2)
     loss_func = nn.BCEWithLogitsLoss()
@@ -104,19 +115,25 @@ def train(train, val, epochs = 20, vectors="glove.6B.300d"):
         
         # calculate the validation loss for this epoch
         val_loss = 0.0
+        val_preds = []
+        val_truth = []
         model.eval() # turn on evaluation mode
         for x, y in valid_dl:
             preds = model(x)
             loss = loss_func(preds, y)
             val_loss += loss.item() * x.size(0)
+            val_preds.extend(nn.Sigmoid()(preds).detach().cpu().numpy())
+            val_truth.extend(y.cpu().numpy())
 
         val_loss /= len(vld)
         print('Epoch: {}, Training Loss: {:.4f}, Validation Loss: {:.4f}'.format(epoch, epoch_loss, val_loss))
-        print("classification report train")
+        print("classification report Train")
         train_preds = np.where(np.array(train_preds)<0.5, 0, 1).flatten()
         print(classification_report(train_truth, train_preds))
-        # print(train_truth)
+        print("classification report Validation")
+        val_preds = np.where(np.array(val_preds)<0.5, 0, 1).flatten()
+        print(classification_report(val_truth, val_preds))
     return
 
 if __name__ == '__main__':
-    train("train_1.csv", "val_1.csv")
+    train("train_0.csv", "val_0.csv")
