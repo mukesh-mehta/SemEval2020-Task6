@@ -60,7 +60,33 @@ class SimpleBiLSTMBaseline(nn.Module):
         preds = self.predictor(feature)
         return preds
 
-def train(train, val, model_out_path, device, epochs = 10, vectors="glove.6B.100d"):
+def get_iterators(train, val, test, device, vectors="glove.6B.100d"):
+    TEXT = Field(sequential=True, tokenize=tokenizer, lower=True)
+    LABEL = Field(sequential=False, use_vocab=False)
+
+    tv_datafields = [("text", TEXT), ("has_def", LABEL),
+                 ("filename", None)]
+
+    trn, vld, tst = TabularDataset.splits(
+               path=config.TASK1["Folds"],
+               train=train, validation=val, test=test,
+               format='tsv',
+               skip_header=True, 
+               fields=tv_datafields)
+
+    TEXT.build_vocab(trn, vld, vectors=vectors, max_size=20000, min_freq=10)
+
+    train_iter, val_iter, test_iter = BucketIterator.splits(
+                     (trn, vld, tst), # we pass in the datasets we want the iterator to draw data from
+                     batch_sizes=(512,  512, 512),
+                     device=torch.device(device), # if you want to use the GPU, specify the GPU number here
+                     sort_key=lambda x: len(x.text), # the BucketIterator needs to be told what function it should use to group the data.
+                     sort_within_batch=False,
+                     repeat=False # we pass repeat=False because we want to wrap this Iterator layer.
+                    )
+    return train_iter, val_iter, test_iter, TEXT
+
+def train(train, val, test, model_out_path, device, epochs = 10, vectors="glove.6B.100d"):
 
     print("Training on : {}, Validating on :{}".format(train, val))
     # Compute class weight
@@ -68,37 +94,44 @@ def train(train, val, model_out_path, device, epochs = 10, vectors="glove.6B.100
     class_weights = torch.FloatTensor([compute_class_weight('balanced', [0,1], train_df['has_def'].values)[1]]).to(device)
     del train_df #delete df
 
-    TEXT = Field(sequential=True, tokenize=tokenizer, lower=True)
-    LABEL = Field(sequential=False, use_vocab=False)
+    # TEXT = Field(sequential=True, tokenize=tokenizer, lower=True)
+    # LABEL = Field(sequential=False, use_vocab=False)
 
-    tv_datafields = [("text", TEXT), ("has_def", LABEL),
-                 ("filename", None)]
+    # tv_datafields = [("text", TEXT), ("has_def", LABEL),
+    #              ("filename", None)]
 
-    trn, vld = TabularDataset.splits(
-               path=config.TASK1["Folds"],
-               train=train,validation=val,
-               format='tsv',
-               skip_header=True, 
-               fields=tv_datafields)
+    # trn, vld = TabularDataset.splits(
+    #            path=config.TASK1["Folds"],
+    #            train=train,validation=val,
+    #            format='tsv',
+    #            skip_header=True, 
+    #            fields=tv_datafields)
 
-    TEXT.build_vocab(trn, vld, vectors=vectors, max_size=20000, min_freq=10)
+    # TEXT.build_vocab(trn, vld, vectors=vectors, max_size=20000, min_freq=10)
     # get train and val iterator
-    train_iter, val_iter = BucketIterator.splits(
-                     (trn, vld), # we pass in the datasets we want the iterator to draw data from
-                     batch_sizes=(512,  512),
-                     device=torch.device(device), # if you want to use the GPU, specify the GPU number here
-                     sort_key=lambda x: len(x.text), # the BucketIterator needs to be told what function it should use to group the data.
-                     sort_within_batch=False,
-                     repeat=False # we pass repeat=False because we want to wrap this Iterator layer.
-                    )
+    # train_iter, val_iter = BucketIterator.splits(
+    #                  (trn, vld), # we pass in the datasets we want the iterator to draw data from
+    #                  batch_sizes=(512,  512),
+    #                  device=torch.device(device), # if you want to use the GPU, specify the GPU number here
+    #                  sort_key=lambda x: len(x.text), # the BucketIterator needs to be told what function it should use to group the data.
+    #                  sort_within_batch=False,
+    #                  repeat=False # we pass repeat=False because we want to wrap this Iterator layer.
+    #                 )
+
+    # Get iterators and Vocab_instance
+    train_iter, val_iter, test_iter, TEXT = get_iterators(train, val, test, device, vectors=vectors)
 
     train_dl = BatchWrapper(train_iter, 'text', ['has_def'])
     valid_dl = BatchWrapper(val_iter, 'text', ['has_def'])
+    test_dl = BatchWrapper(test_iter, 'text', ['has_def'])
     
     model = SimpleBiLSTMBaseline(100, TEXT.vocab.vectors, emb_dim=100).to(device)
 
     opt = optim.Adam(model.parameters(), lr=1e-2)
     loss_func = nn.BCEWithLogitsLoss()
+
+    # Best loss
+    best_loss = 10.0
     for epoch in range(1, epochs + 1):
         running_loss = 0.0
         running_corrects = 0
@@ -114,31 +147,50 @@ def train(train, val, model_out_path, device, epochs = 10, vectors="glove.6B.100
             opt.step()
             train_preds.extend(nn.Sigmoid()(preds).detach().cpu().numpy())
             train_truth.extend(y.cpu().numpy())
-            running_loss += loss.item() * x.size(0)
+            running_loss += loss.item()
             
-        epoch_loss = running_loss / len(trn)
+        epoch_loss = running_loss / len(train_dl)
         
-        # calculate the validation loss for this epoch
-        val_loss = 0.0
-        val_preds = []
-        val_truth = []
-        model.eval() # turn on evaluation mode
-        for x, y in valid_dl:
-            preds = model(x)
-            loss = loss_func(preds, y)
-            val_loss += loss.item() * x.size(0)
-            val_preds.extend(nn.Sigmoid()(preds).detach().cpu().numpy())
-            val_truth.extend(y.cpu().numpy())
+        # evaluate on validation set
+        val_loss, val_preds, val_truth = evaluate(valid_dl, model, loss_func, device)
 
-        val_loss /= len(vld)
         print('Epoch: {}, Training Loss: {:.4f}, Validation Loss: {:.4f}'.format(epoch, epoch_loss, val_loss))
         print("classification report Train")
         train_preds = np.where(np.array(train_preds)<0.5, 0, 1).flatten()
         print(classification_report(train_truth, train_preds))
         print("classification report Validation")
-        val_preds = np.where(np.array(val_preds)<0.5, 0, 1).flatten()
         print(classification_report(val_truth, val_preds))
+        if val_loss < best_loss:
+            best_loss = val_loss
+            torch.save(model.state_dict(), model_out_path)
+            print("Saving model with best_loss {}".format(best_loss))
+
+    test_loss, test_preds, test_truth = evaluate(test_dl, model, loss_func, device, checkpoint = model_out_path)
+    print("Test Loss: {:.4f}".format(test_loss))
+    print("classification report Test")
+    print(classification_report(test_truth, test_preds))
     return
+
+
+def evaluate(loader, model, loss_func, device, checkpoint=None):
+    if checkpoint:
+        model.load_state_dict(torch.load(checkpoint))
+        model.to(device)
+    val_loss = 0.0
+    val_preds = []
+    val_truth = []
+    model.eval() # turn on evaluation mode
+    for x, y in loader:
+        preds = model(x)
+        loss = loss_func(preds, y)
+        val_loss += loss.item()
+        val_preds.extend(nn.Sigmoid()(preds).detach().cpu().numpy())
+        val_truth.extend(y.cpu().numpy())
+
+    val_loss /= len(loader)
+    val_preds = np.where(np.array(val_preds)<0.5, 0, 1).flatten()
+    return val_loss, val_preds, val_truth
+
 
 def train_kfold(model_out_path, num_folds = 5, epochs = 1, vectors = "glove.6B.100d", device = "cpu"):
     #create log file
@@ -151,6 +203,7 @@ def train_kfold(model_out_path, num_folds = 5, epochs = 1, vectors = "glove.6B.1
         print("-"*10, "Fold number: {}".format(fold),  "-"*30)
         train("train_{}.csv".format(fold),
             "val_0.csv".format(fold),
+            "task1_dev.csv", 
             model_out_path+"model_{}.pth".format(fold),
             device,
             epochs = epochs)

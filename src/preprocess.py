@@ -24,4 +24,5 @@ def create_data(folder_path, out_path, num_fold = 5, test=False):
 if __name__ == '__main__':
     if not os.path.exists(config.TASK1["Folds"]):
         os.mkdir(config.TASK1["Folds"])
-    create_data(config.TASK1["Train"], config.TASK1["Folds"])
+    # create_data(config.TASK1["Train"], config.TASK1["Folds"])
+    create_data(config.TASK1["Dev"], config.DATA_FOLDER+"/task1_dev.csv", test=True)
