@@ -1,4 +1,7 @@
+import sys
+import time
 import numpy as np
+import pandas as pd
 from tqdm import tqdm
 
 import torch
@@ -57,10 +60,12 @@ class SimpleBiLSTMBaseline(nn.Module):
         preds = self.predictor(feature)
         return preds
 
-def train(train, val, epochs = 10, vectors="glove.6B.100d"):
+def train(train, val, model_out_path, device, epochs = 10, vectors="glove.6B.100d"):
+
+    print("Training on : {}, Validating on :{}".format(train, val))
     # Compute class weight
-    train_df = pd.read_csv(train, sep="\t")
-    class_weights = torch.FloatTensor([compute_class_weight('balanced', [0,1], train_df['has_def'].values)[1]]).cuda()
+    train_df = pd.read_csv(config.TASK1["Folds"]+"/"+train, sep="\t")
+    class_weights = torch.FloatTensor([compute_class_weight('balanced', [0,1], train_df['has_def'].values)[1]]).to(device)
     del train_df #delete df
 
     TEXT = Field(sequential=True, tokenize=tokenizer, lower=True)
@@ -81,7 +86,7 @@ def train(train, val, epochs = 10, vectors="glove.6B.100d"):
     train_iter, val_iter = BucketIterator.splits(
                      (trn, vld), # we pass in the datasets we want the iterator to draw data from
                      batch_sizes=(512,  512),
-                     device=torch.device('cuda'), # if you want to use the GPU, specify the GPU number here
+                     device=torch.device(device), # if you want to use the GPU, specify the GPU number here
                      sort_key=lambda x: len(x.text), # the BucketIterator needs to be told what function it should use to group the data.
                      sort_within_batch=False,
                      repeat=False # we pass repeat=False because we want to wrap this Iterator layer.
@@ -90,7 +95,7 @@ def train(train, val, epochs = 10, vectors="glove.6B.100d"):
     train_dl = BatchWrapper(train_iter, 'text', ['has_def'])
     valid_dl = BatchWrapper(val_iter, 'text', ['has_def'])
     
-    model = SimpleBiLSTMBaseline(100, TEXT.vocab.vectors, emb_dim=100).to('cuda')
+    model = SimpleBiLSTMBaseline(100, TEXT.vocab.vectors, emb_dim=100).to(device)
 
     opt = optim.Adam(model.parameters(), lr=1e-2)
     loss_func = nn.BCEWithLogitsLoss()
@@ -135,5 +140,23 @@ def train(train, val, epochs = 10, vectors="glove.6B.100d"):
         print(classification_report(val_truth, val_preds))
     return
 
+def train_kfold(model_out_path, num_folds = 5, epochs = 1, vectors = "glove.6B.100d", device = "cpu"):
+    #create log file
+    timestr = time.strftime("%Y%m%d-%H%M%S")
+    log_file = open("log_{}.log".format(timestr),"w")
+    old_stdout = sys.stdout
+    sys.stdout = log_file
+
+    for fold in range(num_folds):
+        print("-"*10, "Fold number: {}".format(fold),  "-"*30)
+        train("train_{}.csv".format(fold),
+            "val_0.csv".format(fold),
+            model_out_path+"model_{}.pth".format(fold),
+            device,
+            epochs = epochs)
+    sys.stdout = old_stdout
+    log_file.close()
+    return
+
 if __name__ == '__main__':
-    train("train_0.csv", "val_0.csv")
+    train_kfold("", num_folds = 5, epochs = 1, vectors = "glove.6B.100d", device = "cpu")
