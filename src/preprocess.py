@@ -9,9 +9,11 @@ def create_data(folder_path, out_path, num_fold = 5, test=False):
         temp_df = pd.read_csv(os.path.join(folder_path, file), names=['text', 'has_def'], sep="\t")
         temp_df['filename'] = str(file).split(".")[0].split("_")[1]
         master_df = pd.concat([master_df, temp_df])
+        del temp_df
     if not test:
         # Initialize stratified k-fold
-        skf = StratifiedKFold(n_splits=num_fold)
+        print(master_df.shape)
+        skf = StratifiedKFold(n_splits=num_fold, random_state=22)
         for i, (train_idx, test_idx) in enumerate(skf.split(master_df['text'], master_df["has_def"])):
             train_df = master_df.iloc[train_idx]
             val_df = master_df.iloc[test_idx]
@@ -25,4 +27,4 @@ if __name__ == '__main__':
     if not os.path.exists(config.TASK1["Folds"]):
         os.mkdir(config.TASK1["Folds"])
     create_data(config.TASK1["Train"], config.TASK1["Folds"])
-    create_data(config.TASK1["Dev"], config.DATA_FOLDER+"/task1_dev.csv", test=True)
+    create_data(config.TASK1["Dev"], config.TASK1["Folds"], test=True)

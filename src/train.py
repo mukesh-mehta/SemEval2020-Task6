@@ -1,8 +1,10 @@
 import sys
+import os
 import time
 import numpy as np
 import pandas as pd
 from tqdm import tqdm
+from fire import Fire
 
 import torch
 import torch.nn as nn
@@ -19,9 +21,8 @@ from sklearn.utils.class_weight import compute_class_weight
 
 import config
 from utils import tokenizer
-
-
-
+from preprocess import create_data
+from model import SimpleLSTMBaseline
 
 class BatchWrapper:
     def __init__(self, dl, x_var, y_vars):
@@ -39,26 +40,6 @@ class BatchWrapper:
 
     def __len__(self):
         return len(self.dl)
-
-class SimpleBiLSTMBaseline(nn.Module):
-    def __init__(self, hidden_dim, embedding_vector, emb_dim=100,
-                 spatial_dropout=0.05, recurrent_dropout=0.1, num_linear=2):
-        super().__init__()
-        self.embedding = nn.Embedding.from_pretrained(torch.FloatTensor(embedding_vector))
-        self.encoder = nn.LSTM(emb_dim, hidden_dim, num_layers=2, dropout=recurrent_dropout)
-        self.linear_layers = []
-        for _ in range(num_linear - 1):
-            self.linear_layers.append(nn.Linear(hidden_dim, hidden_dim))
-        self.linear_layers = nn.ModuleList(self.linear_layers)
-        self.predictor = nn.Linear(hidden_dim, 1)
-    
-    def forward(self, seq):
-        hdn, _ = self.encoder(self.embedding(seq))
-        feature = hdn[-1, :, :]
-        for layer in self.linear_layers:
-            feature = layer(feature)
-        preds = self.predictor(feature)
-        return preds
 
 def get_iterators(train, val, test, device, vectors="glove.6B.100d"):
     TEXT = Field(sequential=True, tokenize=tokenizer, lower=True)
@@ -101,7 +82,7 @@ def train(train, val, test, model_out_path, device, epochs = 10, vectors="glove.
     valid_dl = BatchWrapper(val_iter, 'text', ['has_def'])
     test_dl = BatchWrapper(test_iter, 'text', ['has_def'])
     
-    model = SimpleBiLSTMBaseline(100, TEXT.vocab.vectors, emb_dim=100).to(device)
+    model = SimpleLSTMBaseline(100, TEXT.vocab.vectors, emb_dim=100).to(device)
 
     opt = optim.Adam(model.parameters(), lr=1e-2)
     loss_func = nn.BCEWithLogitsLoss()
@@ -139,7 +120,7 @@ def train(train, val, test, model_out_path, device, epochs = 10, vectors="glove.
         print(classification_report(train_truth, train_preds))
         print("classification report Validation")
         print(classification_report(val_truth, val_preds))
-        if val_fscore < best_score:
+        if val_fscore > best_score:
             best_score = val_fscore
             torch.save(model.state_dict(), model_out_path)
             print("Saving model with best_score {}".format(best_score))
@@ -171,12 +152,17 @@ def evaluate(loader, model, loss_func, device, checkpoint=None):
     return val_loss, val_preds, val_truth
 
 
-def train_kfold(model_out_path, num_folds = 5, epochs = 1, vectors = "glove.6B.100d", device = "cpu"):
+def train_kfold(num_folds, epochs, vectors = "glove.6B.100d", model_out_path=config.TASK1["Model_outpath"], device = "cpu"):
     #create log file
     timestr = time.strftime("%Y%m%d-%H%M%S")
     log_file = open("log_{}.log".format(timestr),"w")
     old_stdout = sys.stdout
     sys.stdout = log_file
+
+    print("Num folds {}, Epochs {}, Embeddings {}".format(num_folds, epochs, vectors))
+    # create train and val data for torchtext format
+    create_data(config.TASK1["Train"], config.TASK1["Folds"])
+    create_data(config.TASK1["Dev"], config.TASK1["Folds"]+"task1_dev.csv", test=True)
 
     for fold in range(num_folds):
         print("-"*10, "Fold number: {}".format(fold),  "-"*30)
@@ -191,4 +177,5 @@ def train_kfold(model_out_path, num_folds = 5, epochs = 1, vectors = "glove.6B.1
     return
 
 if __name__ == '__main__':
-    train_kfold(config.TASK1["Model_outpath"], num_folds = 5, epochs = 10, vectors = "glove.6B.100d", device = "cuda")
+    Fire(train_kfold)
+    # python train.py --num_folds=10 --epochs=20 --vectors="glove.6B.100d" --device="cuda"
