@@ -16,7 +16,7 @@ class SimpleLSTMBaseline(nn.Module):
         self.linear_layers = nn.ModuleList(self.linear_layers)
         self.predictor = nn.Linear(hidden_dim, 1)
     
-    def forward(self, seq):
+    def forward(self, seq, seq_len):
         hdn, _ = self.encoder(self.embedding(seq))
         feature = hdn[-1, :, :]
         for layer in self.linear_layers:
