@@ -27,4 +27,4 @@ if __name__ == '__main__':
     if not os.path.exists(config.TASK1["Folds"]):
         os.mkdir(config.TASK1["Folds"])
     create_data(config.TASK1["Train"], config.TASK1["Folds"])
-    create_data(config.TASK1["Dev"], config.TASK1["Folds"], test=True)
+    # create_data(config.TASK1["Dev"], config.TASK1["Folds"], test=True)

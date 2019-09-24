@@ -22,7 +22,7 @@ from sklearn.utils.class_weight import compute_class_weight
 import config
 from utils import tokenizer
 from preprocess import create_data
-from model import SimpleLSTMBaseline
+from model import SimpleLSTMBaseline, DeepMoji
 
 class BatchWrapper:
     def __init__(self, dl, x_var, y_vars):
@@ -42,7 +42,7 @@ class BatchWrapper:
         return len(self.dl)
 
 def get_iterators(train, val, test, device, vectors="glove.6B.100d"):
-    TEXT = Field(sequential=True, tokenize=tokenizer, lower=True)
+    TEXT = Field(sequential=True, tokenize=tokenizer, lower=True, pad_token="<PAD>", include_lengths=True)
     LABEL = Field(sequential=False, use_vocab=False)
 
     tv_datafields = [("text", TEXT), ("has_def", LABEL),
@@ -62,7 +62,7 @@ def get_iterators(train, val, test, device, vectors="glove.6B.100d"):
                      batch_sizes=(512,  512, 512),
                      device=torch.device(device), # if you want to use the GPU, specify the GPU number here
                      sort_key=lambda x: len(x.text), # the BucketIterator needs to be told what function it should use to group the data.
-                     sort_within_batch=False,
+                     sort_within_batch=True,
                      repeat=False # we pass repeat=False because we want to wrap this Iterator layer.
                     )
     return train_iter, val_iter, test_iter, TEXT
@@ -81,7 +81,14 @@ def train(train, val, test, model_out_path, device, epochs = 10, vectors="glove.
     valid_dl = BatchWrapper(val_iter, 'text', ['has_def'])
     test_dl = BatchWrapper(test_iter, 'text', ['has_def'])
     
-    model = SimpleLSTMBaseline(100, TEXT.vocab.vectors, emb_dim=100).to(device)
+    # model = SimpleLSTMBaseline(100, TEXT.vocab.vectors, emb_dim=100).to(device)
+    model = DeepMoji(vocab_size=len(TEXT.vocab), embedding_dim=100, hidden_state_size=512,
+                    num_layers=2,
+                    output_dim=1,
+                    dropout=0.5,
+                    bidirectional=True,
+                    pad_idx=TEXT.vocab.stoi["<PAD>"]
+                ).to(device)
 
     opt = optim.Adam(model.parameters(), lr=1e-2)
     loss_func = nn.BCEWithLogitsLoss()
@@ -97,7 +104,7 @@ def train(train, val, test, model_out_path, device, epochs = 10, vectors="glove.
         for x, y in tqdm(train_dl):
             opt.zero_grad()
 
-            preds = model(x)
+            preds = model(x[0], x[1]) # x[0] is text sequence, x[1] is len of sequence
             loss = loss_func(preds, y)
             loss.backward()
             opt.step()
@@ -140,7 +147,7 @@ def evaluate(loader, model, loss_func, device, checkpoint=None):
     val_truth = []
     model.eval() # turn on evaluation mode
     for x, y in loader:
-        preds = model(x)
+        preds = model(x[0], x[1])
         loss = loss_func(preds, y)
         val_loss += loss.item()
         val_preds.extend(nn.Sigmoid()(preds).detach().cpu().numpy())
