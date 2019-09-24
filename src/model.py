@@ -46,7 +46,7 @@ class DeepMoji(nn.Module):
             bidirectional=self.bidirectional
         )
         
-        # do somethingg about layer two input
+        # do something about layer two input
         
         self.bilstm_two = nn.LSTM(
             input_size=2 * self.hidden_state_size, hidden_size=self.hidden_state_size,

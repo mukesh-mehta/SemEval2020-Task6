@@ -68,7 +68,6 @@ def get_iterators(train, val, test, device, vectors="glove.6B.100d"):
     return train_iter, val_iter, test_iter, TEXT
 
 def train(train, val, test, model_out_path, device, epochs = 10, vectors="glove.6B.100d"):
-
     print("Training on : {}, Validating on :{}".format(train, val))
     # Compute class weight
     train_df = pd.read_csv(config.TASK1["Folds"]+"/"+train, sep="\t")
