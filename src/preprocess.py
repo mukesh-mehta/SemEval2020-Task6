@@ -7,9 +7,11 @@ def create_data(folder_path, out_path, num_fold = 5, test=False):
     master_df = pd.DataFrame()
     for i, file in enumerate(os.listdir(folder_path)):
         temp_df = pd.read_csv(os.path.join(folder_path, file), names=['text', 'has_def'], sep="\t")
-        temp_df['filename'] = str(file).split(".")[0].split("_")[1]
+        temp_df['filename'] = str(file)#.split(".")[0].split("_")[1]
         master_df = pd.concat([master_df, temp_df])
         del temp_df
+    master_df['length'] = master_df['text'].map(len)
+    master_df = master_df[master_df['length']>40]
     if not test:
         # Initialize stratified k-fold
         print(master_df.shape)
@@ -27,4 +29,4 @@ if __name__ == '__main__':
     if not os.path.exists(config.TASK1["Folds"]):
         os.mkdir(config.TASK1["Folds"])
     create_data(config.TASK1["Train"], config.TASK1["Folds"])
-    # create_data(config.TASK1["Dev"], config.TASK1["Folds"], test=True)
+    create_data(config.TASK1["Dev"], config.TASK1["Folds"]+"/task1_dev.csv", test=True)
