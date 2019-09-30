@@ -23,6 +23,7 @@ import config
 from preprocess import create_data
 from model import SimpleLSTMBaseline, DeepMoji
 from loader import BatchWrapper, get_iterators
+from loss import f1_loss
 
 def train(train, val, test, model_out_path, device, epochs = 10, vectors="glove.6B.100d"):
     print("Training on : {}, Validating on :{}".format(train, val))
@@ -48,7 +49,7 @@ def train(train, val, test, model_out_path, device, epochs = 10, vectors="glove.
                 ).to(device)
 
     opt = optim.Adam(model.parameters(), lr=1e-2)
-    loss_func = nn.BCEWithLogitsLoss()
+    # loss_func = nn.BCEWithLogitsLoss()
 
     # Best score
     best_score = 0.0
@@ -62,7 +63,8 @@ def train(train, val, test, model_out_path, device, epochs = 10, vectors="glove.
             opt.zero_grad()
 
             preds = model(x[0], x[1]) # x[0] is text sequence, x[1] is len of sequence
-            loss = loss_func(preds, y)
+            # loss = loss_func(preds, y)
+            loss = f1_loss(preds, y)
             loss.backward()
             opt.step()
             train_preds.extend(nn.Sigmoid()(preds).detach().cpu().numpy())
@@ -72,7 +74,7 @@ def train(train, val, test, model_out_path, device, epochs = 10, vectors="glove.
         epoch_loss = running_loss / len(train_dl)
         
         # evaluate on validation set
-        val_loss, val_preds, val_truth = evaluate(valid_dl, model, loss_func, device)
+        val_loss, val_preds, val_truth = evaluate(valid_dl, model, f1_loss, device) #change loss here
 
         train_preds = np.where(np.array(train_preds)<0.5, 0, 1).flatten()
         train_fscore = f1_score(train_truth, train_preds)
@@ -88,8 +90,9 @@ def train(train, val, test, model_out_path, device, epochs = 10, vectors="glove.
             torch.save(model.state_dict(), model_out_path)
             print("Saving model with best_score {}".format(best_score))
 
-    test_loss, test_preds, test_truth = evaluate(test_dl, model, loss_func, device, checkpoint = model_out_path)
-    print("Test Loss: {:.4f}".format(test_loss))
+    test_loss, test_preds, test_truth = evaluate(test_dl, model, f1_loss, device, checkpoint = model_out_path)#change loss here
+    test_fscore = f1_score(test_truth, test_preds)
+    print("Test Loss: {:.4f}, Test F1-score {:.4f}".format(test_loss, test_fscore))
     print("classification report Test")
     print(classification_report(test_truth, test_preds))
     return
@@ -124,7 +127,7 @@ def train_kfold(num_folds, epochs, vectors = "glove.6B.100d", model_out_path=con
 
     print("Num folds {}, Epochs {}, Embeddings {}".format(num_folds, epochs, vectors))
     # create train and val data for torchtext format
-    create_data(config.TASK1["Train"], config.TASK1["Folds"])
+    create_data(config.TASK1["Train"], config.TASK1["Folds"], num_fold = num_folds)
     create_data(config.TASK1["Dev"], config.TASK1["Folds"]+"task1_dev.csv", test=True)
 
     for fold in range(num_folds):
