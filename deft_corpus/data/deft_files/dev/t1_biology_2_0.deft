@@ -166,6 +166,48 @@ blood	data/source_txt/dev/t1_biology_2_0.txt	 9908	 9913	 O	 -1	 -1	 0
 .	data/source_txt/dev/t1_biology_2_0.txt	 9913	 9914	 O	 -1	 -1	 0
 
 
+78	data/source_txt/dev/t1_biology_2_0.txt	 9918	 9920	 O	 -1	 -1	 0
+.	data/source_txt/dev/t1_biology_2_0.txt	 9920	 9921	 O	 -1	 -1	 0
+
+This	data/source_txt/dev/t1_biology_2_0.txt	 9931	 9935	 B-Definition	 T206	 T207	 Direct-Defines
+movement	data/source_txt/dev/t1_biology_2_0.txt	 9936	 9944	 I-Definition	 T206	 T207	 Direct-Defines
+of	data/source_txt/dev/t1_biology_2_0.txt	 9945	 9947	 I-Definition	 T206	 T207	 Direct-Defines
+electrons	data/source_txt/dev/t1_biology_2_0.txt	 9948	 9957	 I-Definition	 T206	 T207	 Direct-Defines
+from	data/source_txt/dev/t1_biology_2_0.txt	 9958	 9962	 I-Definition	 T206	 T207	 Direct-Defines
+one	data/source_txt/dev/t1_biology_2_0.txt	 9963	 9966	 I-Definition	 T206	 T207	 Direct-Defines
+element	data/source_txt/dev/t1_biology_2_0.txt	 9967	 9974	 I-Definition	 T206	 T207	 Direct-Defines
+to	data/source_txt/dev/t1_biology_2_0.txt	 9975	 9977	 I-Definition	 T206	 T207	 Direct-Defines
+another	data/source_txt/dev/t1_biology_2_0.txt	 9978	 9985	 I-Definition	 T206	 T207	 Direct-Defines
+is	data/source_txt/dev/t1_biology_2_0.txt	 9986	 9988	 O	 -1	 -1	 0
+referred	data/source_txt/dev/t1_biology_2_0.txt	 9989	 9997	 O	 -1	 -1	 0
+to	data/source_txt/dev/t1_biology_2_0.txt	 9998	 10000	 O	 -1	 -1	 0
+as	data/source_txt/dev/t1_biology_2_0.txt	 10001	 10003	 O	 -1	 -1	 0
+electron	data/source_txt/dev/t1_biology_2_0.txt	 10004	 10012	 B-Term	 T207	 0	 Direct-Defines
+transfer	data/source_txt/dev/t1_biology_2_0.txt	 10013	 10021	 I-Term	 T207	 0	 Direct-Defines
+.	data/source_txt/dev/t1_biology_2_0.txt	 10021	 10022	 O	 -1	 -1	 0
+
+As	data/source_txt/dev/t1_biology_2_0.txt	 10029	 10031	 O	 -1	 -1	 0
+[	data/source_txt/dev/t1_biology_2_0.txt	 10032	 10033	 O	 -1	 -1	 0
+link	data/source_txt/dev/t1_biology_2_0.txt	 10033	 10037	 O	 -1	 -1	 0
+]	data/source_txt/dev/t1_biology_2_0.txt	 10037	 10038	 O	 -1	 -1	 0
+illustrates	data/source_txt/dev/t1_biology_2_0.txt	 10039	 10050	 O	 -1	 -1	 0
+,	data/source_txt/dev/t1_biology_2_0.txt	 10050	 10051	 O	 -1	 -1	 0
+sodium	data/source_txt/dev/t1_biology_2_0.txt	 10052	 10058	 O	 -1	 -1	 0
+(	data/source_txt/dev/t1_biology_2_0.txt	 10059	 10060	 O	 -1	 -1	 0
+Na	data/source_txt/dev/t1_biology_2_0.txt	 10060	 10062	 O	 -1	 -1	 0
+)	data/source_txt/dev/t1_biology_2_0.txt	 10062	 10063	 O	 -1	 -1	 0
+only	data/source_txt/dev/t1_biology_2_0.txt	 10065	 10069	 O	 -1	 -1	 0
+has	data/source_txt/dev/t1_biology_2_0.txt	 10070	 10073	 O	 -1	 -1	 0
+one	data/source_txt/dev/t1_biology_2_0.txt	 10074	 10077	 O	 -1	 -1	 0
+electron	data/source_txt/dev/t1_biology_2_0.txt	 10078	 10086	 O	 -1	 -1	 0
+in	data/source_txt/dev/t1_biology_2_0.txt	 10087	 10089	 O	 -1	 -1	 0
+its	data/source_txt/dev/t1_biology_2_0.txt	 10090	 10093	 O	 -1	 -1	 0
+outer	data/source_txt/dev/t1_biology_2_0.txt	 10094	 10099	 O	 -1	 -1	 0
+electron	data/source_txt/dev/t1_biology_2_0.txt	 10100	 10108	 O	 -1	 -1	 0
+shell	data/source_txt/dev/t1_biology_2_0.txt	 10109	 10114	 O	 -1	 -1	 0
+.	data/source_txt/dev/t1_biology_2_0.txt	 10114	 10115	 O	 -1	 -1	 0
+
+
 117	data/source_txt/dev/t1_biology_2_0.txt	 14125	 14128	 O	 -1	 -1	 0
 .	data/source_txt/dev/t1_biology_2_0.txt	 14128	 14129	 O	 -1	 -1	 0
 

@@ -4247,10 +4247,6 @@ joining	data/source_txt/train/t7_government_1_202.txt	 23122	 23129	 O	 -1	 -1	 
 .	data/source_txt/train/t7_government_1_202.txt	 23129	 23130	 O	 -1	 -1	 0
 
 
-1951	data/source_txt/train/t7_government_1_202.txt	 23478	 23482	 O	 -1	 -1	 0
-.	data/source_txt/train/t7_government_1_202.txt	 23482	 23483	 O	 -1	 -1	 0
-
-
 6554	data/source_txt/train/t7_government_1_202.txt	 23487	 23491	 O	 -1	 -1	 0
 .	data/source_txt/train/t7_government_1_202.txt	 23491	 23492	 O	 -1	 -1	 0
 
@@ -8892,3 +8888,56 @@ tenure	data/source_txt/train/t7_government_1_202.txt	 49158	 49164	 O	 -1	 -1	 0
 .	data/source_txt/train/t7_government_1_202.txt	 49164	 49165	 O	 -1	 -1	 0
 
 
+6713	data/source_txt/train/t7_government_1_202.txt	 49169	 49173	 O	 -1	 -1	 0
+.	data/source_txt/train/t7_government_1_202.txt	 49173	 49174	 O	 -1	 -1	 0
+
+With	data/source_txt/train/t7_government_1_202.txt	 49175	 49179	 O	 -1	 -1	 0
+the	data/source_txt/train/t7_government_1_202.txt	 49180	 49183	 O	 -1	 -1	 0
+popularization	data/source_txt/train/t7_government_1_202.txt	 49184	 49198	 O	 -1	 -1	 0
+of	data/source_txt/train/t7_government_1_202.txt	 49199	 49201	 O	 -1	 -1	 0
+radio	data/source_txt/train/t7_government_1_202.txt	 49202	 49207	 O	 -1	 -1	 0
+in	data/source_txt/train/t7_government_1_202.txt	 49208	 49210	 O	 -1	 -1	 0
+the	data/source_txt/train/t7_government_1_202.txt	 49211	 49214	 O	 -1	 -1	 0
+early	data/source_txt/train/t7_government_1_202.txt	 49215	 49220	 O	 -1	 -1	 0
+twentieth	data/source_txt/train/t7_government_1_202.txt	 49221	 49230	 O	 -1	 -1	 0
+century	data/source_txt/train/t7_government_1_202.txt	 49231	 49238	 O	 -1	 -1	 0
+,	data/source_txt/train/t7_government_1_202.txt	 49238	 49239	 O	 -1	 -1	 0
+it	data/source_txt/train/t7_government_1_202.txt	 49240	 49242	 O	 -1	 -1	 0
+became	data/source_txt/train/t7_government_1_202.txt	 49243	 49249	 O	 -1	 -1	 0
+possible	data/source_txt/train/t7_government_1_202.txt	 49250	 49258	 O	 -1	 -1	 0
+to	data/source_txt/train/t7_government_1_202.txt	 49259	 49261	 O	 -1	 -1	 0
+broadcast	data/source_txt/train/t7_government_1_202.txt	 49262	 49271	 O	 -1	 -1	 0
+the	data/source_txt/train/t7_government_1_202.txt	 49272	 49275	 O	 -1	 -1	 0
+president	data/source_txt/train/t7_government_1_202.txt	 49276	 49285	 O	 -1	 -1	 0
+’s	data/source_txt/train/t7_government_1_202.txt	 49285	 49287	 O	 -1	 -1	 0
+voice	data/source_txt/train/t7_government_1_202.txt	 49288	 49293	 O	 -1	 -1	 0
+into	data/source_txt/train/t7_government_1_202.txt	 49294	 49298	 O	 -1	 -1	 0
+many	data/source_txt/train/t7_government_1_202.txt	 49299	 49303	 O	 -1	 -1	 0
+of	data/source_txt/train/t7_government_1_202.txt	 49304	 49306	 O	 -1	 -1	 0
+the	data/source_txt/train/t7_government_1_202.txt	 49307	 49310	 O	 -1	 -1	 0
+nation	data/source_txt/train/t7_government_1_202.txt	 49311	 49317	 O	 -1	 -1	 0
+’s	data/source_txt/train/t7_government_1_202.txt	 49317	 49319	 O	 -1	 -1	 0
+homes	data/source_txt/train/t7_government_1_202.txt	 49320	 49325	 O	 -1	 -1	 0
+.	data/source_txt/train/t7_government_1_202.txt	 49325	 49326	 O	 -1	 -1	 0
+
+Most	data/source_txt/train/t7_government_1_202.txt	 49335	 49339	 O	 -1	 -1	 0
+famously	data/source_txt/train/t7_government_1_202.txt	 49340	 49348	 O	 -1	 -1	 0
+,	data/source_txt/train/t7_government_1_202.txt	 49348	 49349	 O	 -1	 -1	 0
+FDR	data/source_txt/train/t7_government_1_202.txt	 49350	 49353	 O	 -1	 -1	 0
+used	data/source_txt/train/t7_government_1_202.txt	 49354	 49358	 O	 -1	 -1	 0
+the	data/source_txt/train/t7_government_1_202.txt	 49359	 49362	 O	 -1	 -1	 0
+radio	data/source_txt/train/t7_government_1_202.txt	 49363	 49368	 O	 -1	 -1	 0
+to	data/source_txt/train/t7_government_1_202.txt	 49369	 49371	 O	 -1	 -1	 0
+broadcast	data/source_txt/train/t7_government_1_202.txt	 49372	 49381	 O	 -1	 -1	 0
+his	data/source_txt/train/t7_government_1_202.txt	 49382	 49385	 O	 -1	 -1	 0
+thirty	data/source_txt/train/t7_government_1_202.txt	 49386	 49392	 O	 -1	 -1	 0
+“	data/source_txt/train/t7_government_1_202.txt	 49393	 49394	 O	 -1	 -1	 0
+fireside	data/source_txt/train/t7_government_1_202.txt	 49394	 49402	 O	 -1	 -1	 0
+chats	data/source_txt/train/t7_government_1_202.txt	 49403	 49408	 O	 -1	 -1	 0
+”	data/source_txt/train/t7_government_1_202.txt	 49408	 49409	 O	 -1	 -1	 0
+to	data/source_txt/train/t7_government_1_202.txt	 49410	 49412	 O	 -1	 -1	 0
+the	data/source_txt/train/t7_government_1_202.txt	 49413	 49416	 O	 -1	 -1	 0
+nation	data/source_txt/train/t7_government_1_202.txt	 49417	 49423	 O	 -1	 -1	 0
+between	data/source_txt/train/t7_government_1_202.txt	 49424	 49431	 O	 -1	 -1	 0
+1933	data/source_txt/train/t7_government_1_202.txt	 49432	 49436	 O	 -1	 -1	 0
+and	data/source_txt/train/t7_government_1_202.txt	 49437	 49440	 O	 -1	 -1	 0

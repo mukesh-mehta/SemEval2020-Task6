@@ -778,6 +778,10 @@ U.S.	data/source_txt/dev/t7_government_0_101.txt	 13608	 13612	 O	 -1	 -1	 0
 .	data/source_txt/dev/t7_government_0_101.txt	 13623	 13624	 O	 -1	 -1	 0
 
 
+2002	data/source_txt/dev/t7_government_0_101.txt	 15037	 15041	 O	 -1	 -1	 0
+.	data/source_txt/dev/t7_government_0_101.txt	 15041	 15042	 O	 -1	 -1	 0
+
+
 6216	data/source_txt/dev/t7_government_0_101.txt	 19866	 19870	 O	 -1	 -1	 0
 .	data/source_txt/dev/t7_government_0_101.txt	 19870	 19871	 O	 -1	 -1	 0
 
@@ -949,5 +953,9 @@ in	data/source_txt/dev/t7_government_0_101.txt	 28977	 28979	 O	 -1	 -1	 0
 conducting	data/source_txt/dev/t7_government_0_101.txt	 28980	 28990	 O	 -1	 -1	 0
 polls	data/source_txt/dev/t7_government_0_101.txt	 28991	 28996	 O	 -1	 -1	 0
 .	data/source_txt/dev/t7_government_0_101.txt	 28996	 28997	 O	 -1	 -1	 0
+
+
+2014	data/source_txt/dev/t7_government_0_101.txt	 33625	 33629	 O	 -1	 -1	 0
+.	data/source_txt/dev/t7_government_0_101.txt	 33629	 33630	 O	 -1	 -1	 0
 
 

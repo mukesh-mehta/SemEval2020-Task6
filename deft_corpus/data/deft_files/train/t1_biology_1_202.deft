@@ -6246,3 +6246,42 @@ wind	data/source_txt/train/t1_biology_1_202.txt	 37666	 37670	 O	 -1	 -1	 0
 .	data/source_txt/train/t1_biology_1_202.txt	 37670	 37671	 O	 -1	 -1	 0
 
 
+907	data/source_txt/train/t1_biology_1_202.txt	 37675	 37678	 O	 -1	 -1	 0
+.	data/source_txt/train/t1_biology_1_202.txt	 37678	 37679	 O	 -1	 -1	 0
+
+Conifers	data/source_txt/train/t1_biology_1_202.txt	 37688	 37696	 B-Term	 T266	 0	 Direct-Defines
+are	data/source_txt/train/t1_biology_1_202.txt	 37697	 37700	 O	 -1	 -1	 0
+the	data/source_txt/train/t1_biology_1_202.txt	 37701	 37704	 B-Definition	 T267	 T266	 Direct-Defines
+dominant	data/source_txt/train/t1_biology_1_202.txt	 37705	 37713	 I-Definition	 T267	 T266	 Direct-Defines
+phylum	data/source_txt/train/t1_biology_1_202.txt	 37714	 37720	 I-Definition	 T267	 T266	 Direct-Defines
+of	data/source_txt/train/t1_biology_1_202.txt	 37721	 37723	 I-Definition	 T267	 T266	 Direct-Defines
+gymnosperms	data/source_txt/train/t1_biology_1_202.txt	 37724	 37735	 I-Definition	 T267	 T266	 Direct-Defines
+,	data/source_txt/train/t1_biology_1_202.txt	 37735	 37736	 I-Definition	 T267	 T266	 Direct-Defines
+with	data/source_txt/train/t1_biology_1_202.txt	 37737	 37741	 I-Definition	 T267	 T266	 Direct-Defines
+the	data/source_txt/train/t1_biology_1_202.txt	 37742	 37745	 I-Definition	 T267	 T266	 Direct-Defines
+most	data/source_txt/train/t1_biology_1_202.txt	 37746	 37750	 I-Definition	 T267	 T266	 Direct-Defines
+variety	data/source_txt/train/t1_biology_1_202.txt	 37751	 37758	 I-Definition	 T267	 T266	 Direct-Defines
+of	data/source_txt/train/t1_biology_1_202.txt	 37759	 37761	 I-Definition	 T267	 T266	 Direct-Defines
+species	data/source_txt/train/t1_biology_1_202.txt	 37762	 37769	 I-Definition	 T267	 T266	 Direct-Defines
+(	data/source_txt/train/t1_biology_1_202.txt	 37770	 37771	 O	 -1	 -1	 0
+[	data/source_txt/train/t1_biology_1_202.txt	 37771	 37772	 O	 -1	 -1	 0
+link	data/source_txt/train/t1_biology_1_202.txt	 37772	 37776	 O	 -1	 -1	 0
+]	data/source_txt/train/t1_biology_1_202.txt	 37776	 37777	 O	 -1	 -1	 0
+)	data/source_txt/train/t1_biology_1_202.txt	 37777	 37778	 O	 -1	 -1	 0
+.	data/source_txt/train/t1_biology_1_202.txt	 37778	 37779	 O	 -1	 -1	 0
+
+Most	data/source_txt/train/t1_biology_1_202.txt	 37786	 37790	 B-Secondary-Definition	 T268	 T267	 Supplements
+are	data/source_txt/train/t1_biology_1_202.txt	 37791	 37794	 I-Secondary-Definition	 T268	 T267	 Supplements
+typically	data/source_txt/train/t1_biology_1_202.txt	 37795	 37804	 I-Secondary-Definition	 T268	 T267	 Supplements
+tall	data/source_txt/train/t1_biology_1_202.txt	 37805	 37809	 I-Secondary-Definition	 T268	 T267	 Supplements
+trees	data/source_txt/train/t1_biology_1_202.txt	 37810	 37815	 I-Secondary-Definition	 T268	 T267	 Supplements
+that	data/source_txt/train/t1_biology_1_202.txt	 37816	 37820	 I-Secondary-Definition	 T268	 T267	 Supplements
+usually	data/source_txt/train/t1_biology_1_202.txt	 37821	 37828	 I-Secondary-Definition	 T268	 T267	 Supplements
+bear	data/source_txt/train/t1_biology_1_202.txt	 37829	 37833	 I-Secondary-Definition	 T268	 T267	 Supplements
+scale	data/source_txt/train/t1_biology_1_202.txt	 37834	 37839	 I-Secondary-Definition	 T268	 T267	 Supplements
+-	data/source_txt/train/t1_biology_1_202.txt	 37839	 37840	 I-Secondary-Definition	 T268	 T267	 Supplements
+like	data/source_txt/train/t1_biology_1_202.txt	 37840	 37844	 I-Secondary-Definition	 T268	 T267	 Supplements
+or	data/source_txt/train/t1_biology_1_202.txt	 37845	 37847	 I-Secondary-Definition	 T268	 T267	 Supplements
+needle	data/source_txt/train/t1_biology_1_202.txt	 37848	 37854	 I-Secondary-Definition	 T268	 T267	 Supplements
+-	data/source_txt/train/t1_biology_1_202.txt	 37854	 37855	 I-Secondary-Definition	 T268	 T267	 Supplements
+like	data/source_txt/train/t1_biology_1_202.txt	 37855	 37859	 I-Secondary-Definition	 T268	 T267	 Supplements

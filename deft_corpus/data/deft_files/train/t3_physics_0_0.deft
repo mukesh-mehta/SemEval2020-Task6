@@ -6009,3 +6009,67 @@ conductor	data/source_txt/train/t3_physics_0_0.txt	 32366	 32375	 O	 -1	 -1	 0
 .	data/source_txt/train/t3_physics_0_0.txt	 32375	 32376	 O	 -1	 -1	 0
 
 
+2941	data/source_txt/train/t3_physics_0_0.txt	 32380	 32384	 O	 -1	 -1	 0
+.	data/source_txt/train/t3_physics_0_0.txt	 32384	 32385	 O	 -1	 -1	 0
+
+It	data/source_txt/train/t3_physics_0_0.txt	 32386	 32388	 O	 -1	 -1	 0
+is	data/source_txt/train/t3_physics_0_0.txt	 32389	 32391	 O	 -1	 -1	 0
+not	data/source_txt/train/t3_physics_0_0.txt	 32392	 32395	 O	 -1	 -1	 0
+necessary	data/source_txt/train/t3_physics_0_0.txt	 32396	 32405	 O	 -1	 -1	 0
+to	data/source_txt/train/t3_physics_0_0.txt	 32406	 32408	 O	 -1	 -1	 0
+transfer	data/source_txt/train/t3_physics_0_0.txt	 32409	 32417	 O	 -1	 -1	 0
+excess	data/source_txt/train/t3_physics_0_0.txt	 32418	 32424	 O	 -1	 -1	 0
+charge	data/source_txt/train/t3_physics_0_0.txt	 32425	 32431	 O	 -1	 -1	 0
+directly	data/source_txt/train/t3_physics_0_0.txt	 32432	 32440	 O	 -1	 -1	 0
+to	data/source_txt/train/t3_physics_0_0.txt	 32441	 32443	 O	 -1	 -1	 0
+an	data/source_txt/train/t3_physics_0_0.txt	 32444	 32446	 O	 -1	 -1	 0
+object	data/source_txt/train/t3_physics_0_0.txt	 32447	 32453	 O	 -1	 -1	 0
+in	data/source_txt/train/t3_physics_0_0.txt	 32454	 32456	 O	 -1	 -1	 0
+order	data/source_txt/train/t3_physics_0_0.txt	 32457	 32462	 O	 -1	 -1	 0
+to	data/source_txt/train/t3_physics_0_0.txt	 32463	 32465	 O	 -1	 -1	 0
+charge	data/source_txt/train/t3_physics_0_0.txt	 32466	 32472	 O	 -1	 -1	 0
+it	data/source_txt/train/t3_physics_0_0.txt	 32473	 32475	 O	 -1	 -1	 0
+.	data/source_txt/train/t3_physics_0_0.txt	 32475	 32476	 O	 -1	 -1	 0
+
+[	data/source_txt/train/t3_physics_0_0.txt	 32485	 32486	 O	 -1	 -1	 0
+link	data/source_txt/train/t3_physics_0_0.txt	 32486	 32490	 O	 -1	 -1	 0
+]	data/source_txt/train/t3_physics_0_0.txt	 32490	 32491	 O	 -1	 -1	 0
+shows	data/source_txt/train/t3_physics_0_0.txt	 32492	 32497	 O	 -1	 -1	 0
+a	data/source_txt/train/t3_physics_0_0.txt	 32498	 32499	 O	 -1	 -1	 0
+method	data/source_txt/train/t3_physics_0_0.txt	 32500	 32506	 O	 -1	 -1	 0
+of	data/source_txt/train/t3_physics_0_0.txt	 32507	 32509	 O	 -1	 -1	 0
+induction	data/source_txt/train/t3_physics_0_0.txt	 32510	 32519	 B-Term	 T227	 0	 Direct-Defines
+wherein	data/source_txt/train/t3_physics_0_0.txt	 32520	 32527	 O	 -1	 -1	 0
+a	data/source_txt/train/t3_physics_0_0.txt	 32528	 32529	 B-Definition	 T228	 T227	 Direct-Defines
+charge	data/source_txt/train/t3_physics_0_0.txt	 32530	 32536	 I-Definition	 T228	 T227	 Direct-Defines
+is	data/source_txt/train/t3_physics_0_0.txt	 32537	 32539	 I-Definition	 T228	 T227	 Direct-Defines
+created	data/source_txt/train/t3_physics_0_0.txt	 32540	 32547	 I-Definition	 T228	 T227	 Direct-Defines
+in	data/source_txt/train/t3_physics_0_0.txt	 32548	 32550	 I-Definition	 T228	 T227	 Direct-Defines
+a	data/source_txt/train/t3_physics_0_0.txt	 32551	 32552	 I-Definition	 T228	 T227	 Direct-Defines
+nearby	data/source_txt/train/t3_physics_0_0.txt	 32553	 32559	 I-Definition	 T228	 T227	 Direct-Defines
+object	data/source_txt/train/t3_physics_0_0.txt	 32560	 32566	 I-Definition	 T228	 T227	 Direct-Defines
+,	data/source_txt/train/t3_physics_0_0.txt	 32566	 32567	 I-Definition	 T228	 T227	 Direct-Defines
+without	data/source_txt/train/t3_physics_0_0.txt	 32568	 32575	 I-Definition	 T228	 T227	 Direct-Defines
+direct	data/source_txt/train/t3_physics_0_0.txt	 32576	 32582	 I-Definition	 T228	 T227	 Direct-Defines
+contact	data/source_txt/train/t3_physics_0_0.txt	 32583	 32590	 I-Definition	 T228	 T227	 Direct-Defines
+.	data/source_txt/train/t3_physics_0_0.txt	 32590	 32591	 O	 -1	 -1	 0
+
+Here	data/source_txt/train/t3_physics_0_0.txt	 32598	 32602	 O	 -1	 -1	 0
+we	data/source_txt/train/t3_physics_0_0.txt	 32603	 32605	 O	 -1	 -1	 0
+see	data/source_txt/train/t3_physics_0_0.txt	 32606	 32609	 O	 -1	 -1	 0
+two	data/source_txt/train/t3_physics_0_0.txt	 32610	 32613	 O	 -1	 -1	 0
+neutral	data/source_txt/train/t3_physics_0_0.txt	 32614	 32621	 O	 -1	 -1	 0
+metal	data/source_txt/train/t3_physics_0_0.txt	 32622	 32627	 O	 -1	 -1	 0
+spheres	data/source_txt/train/t3_physics_0_0.txt	 32628	 32635	 O	 -1	 -1	 0
+in	data/source_txt/train/t3_physics_0_0.txt	 32636	 32638	 O	 -1	 -1	 0
+contact	data/source_txt/train/t3_physics_0_0.txt	 32639	 32646	 O	 -1	 -1	 0
+with	data/source_txt/train/t3_physics_0_0.txt	 32647	 32651	 O	 -1	 -1	 0
+one	data/source_txt/train/t3_physics_0_0.txt	 32652	 32655	 O	 -1	 -1	 0
+another	data/source_txt/train/t3_physics_0_0.txt	 32656	 32663	 O	 -1	 -1	 0
+but	data/source_txt/train/t3_physics_0_0.txt	 32664	 32667	 O	 -1	 -1	 0
+insulated	data/source_txt/train/t3_physics_0_0.txt	 32668	 32677	 O	 -1	 -1	 0
+from	data/source_txt/train/t3_physics_0_0.txt	 32678	 32682	 O	 -1	 -1	 0
+the	data/source_txt/train/t3_physics_0_0.txt	 32683	 32686	 O	 -1	 -1	 0
+rest	data/source_txt/train/t3_physics_0_0.txt	 32687	 32691	 O	 -1	 -1	 0
+of	data/source_txt/train/t3_physics_0_0.txt	 32692	 32694	 O	 -1	 -1	 0
+the	data/source_txt/train/t3_physics_0_0.txt	 32695	 32698	 O	 -1	 -1	 0

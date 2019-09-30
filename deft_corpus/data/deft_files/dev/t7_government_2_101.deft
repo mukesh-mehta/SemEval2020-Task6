@@ -398,6 +398,10 @@ Paul	data/source_txt/dev/t7_government_2_101.txt	 22066	 22070	 O	 -1	 -1	 0
 Prucha	data/source_txt/dev/t7_government_2_101.txt	 22071	 22077	 O	 -1	 -1	 0
 .	data/source_txt/dev/t7_government_2_101.txt	 22077	 22078	 O	 -1	 -1	 0
 
+1984	data/source_txt/dev/t7_government_2_101.txt	 22085	 22089	 O	 -1	 -1	 0
+.	data/source_txt/dev/t7_government_2_101.txt	 22089	 22090	 O	 -1	 -1	 0
+
+
 6250	data/source_txt/dev/t7_government_2_101.txt	 23819	 23823	 O	 -1	 -1	 0
 .	data/source_txt/dev/t7_government_2_101.txt	 23823	 23824	 O	 -1	 -1	 0
 
@@ -666,5 +670,9 @@ elections	data/source_txt/dev/t7_government_2_101.txt	 27454	 27463	 O	 -1	 -1	 
 will	data/source_txt/dev/t7_government_2_101.txt	 27464	 27468	 O	 -1	 -1	 0
 end	data/source_txt/dev/t7_government_2_101.txt	 27469	 27472	 O	 -1	 -1	 0
 .	data/source_txt/dev/t7_government_2_101.txt	 27472	 27473	 O	 -1	 -1	 0
+
+
+2014	data/source_txt/dev/t7_government_2_101.txt	 33482	 33486	 O	 -1	 -1	 0
+.	data/source_txt/dev/t7_government_2_101.txt	 33486	 33487	 O	 -1	 -1	 0
 
 

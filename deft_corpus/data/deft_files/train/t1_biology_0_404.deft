@@ -6400,3 +6400,43 @@ system	data/source_txt/train/t1_biology_0_404.txt	 34167	 34173	 O	 -1	 -1	 0
 .	data/source_txt/train/t1_biology_0_404.txt	 34173	 34174	 O	 -1	 -1	 0
 
 
+1514	data/source_txt/train/t1_biology_0_404.txt	 34178	 34182	 O	 -1	 -1	 0
+.	data/source_txt/train/t1_biology_0_404.txt	 34182	 34183	 O	 -1	 -1	 0
+
+Most	data/source_txt/train/t1_biology_0_404.txt	 34192	 34196	 O	 -1	 -1	 0
+people	data/source_txt/train/t1_biology_0_404.txt	 34197	 34203	 O	 -1	 -1	 0
+have	data/source_txt/train/t1_biology_0_404.txt	 34204	 34208	 O	 -1	 -1	 0
+four	data/source_txt/train/t1_biology_0_404.txt	 34209	 34213	 O	 -1	 -1	 0
+parathyroid	data/source_txt/train/t1_biology_0_404.txt	 34214	 34225	 B-Term	 T344	 0	 Direct-Defines
+glands	data/source_txt/train/t1_biology_0_404.txt	 34226	 34232	 I-Term	 T344	 0	 Direct-Defines
+;	data/source_txt/train/t1_biology_0_404.txt	 34232	 34233	 O	 -1	 -1	 0
+however	data/source_txt/train/t1_biology_0_404.txt	 34234	 34241	 O	 -1	 -1	 0
+,	data/source_txt/train/t1_biology_0_404.txt	 34241	 34242	 O	 -1	 -1	 0
+the	data/source_txt/train/t1_biology_0_404.txt	 34243	 34246	 O	 -1	 -1	 0
+number	data/source_txt/train/t1_biology_0_404.txt	 34247	 34253	 O	 -1	 -1	 0
+can	data/source_txt/train/t1_biology_0_404.txt	 34254	 34257	 O	 -1	 -1	 0
+vary	data/source_txt/train/t1_biology_0_404.txt	 34258	 34262	 O	 -1	 -1	 0
+from	data/source_txt/train/t1_biology_0_404.txt	 34263	 34267	 O	 -1	 -1	 0
+two	data/source_txt/train/t1_biology_0_404.txt	 34268	 34271	 O	 -1	 -1	 0
+to	data/source_txt/train/t1_biology_0_404.txt	 34272	 34274	 O	 -1	 -1	 0
+six	data/source_txt/train/t1_biology_0_404.txt	 34275	 34278	 O	 -1	 -1	 0
+.	data/source_txt/train/t1_biology_0_404.txt	 34278	 34279	 O	 -1	 -1	 0
+
+These	data/source_txt/train/t1_biology_0_404.txt	 34286	 34291	 B-Referential-Term	 T345	 T344	 Refers-To
+glands	data/source_txt/train/t1_biology_0_404.txt	 34292	 34298	 I-Referential-Term	 T345	 T344	 Refers-To
+are	data/source_txt/train/t1_biology_0_404.txt	 34299	 34302	 B-Definition	 T255	 T344	 Direct-Defines
+located	data/source_txt/train/t1_biology_0_404.txt	 34303	 34310	 I-Definition	 T255	 T344	 Direct-Defines
+on	data/source_txt/train/t1_biology_0_404.txt	 34311	 34313	 I-Definition	 T255	 T344	 Direct-Defines
+the	data/source_txt/train/t1_biology_0_404.txt	 34314	 34317	 I-Definition	 T255	 T344	 Direct-Defines
+posterior	data/source_txt/train/t1_biology_0_404.txt	 34318	 34327	 I-Definition	 T255	 T344	 Direct-Defines
+surface	data/source_txt/train/t1_biology_0_404.txt	 34328	 34335	 I-Definition	 T255	 T344	 Direct-Defines
+of	data/source_txt/train/t1_biology_0_404.txt	 34336	 34338	 I-Definition	 T255	 T344	 Direct-Defines
+the	data/source_txt/train/t1_biology_0_404.txt	 34339	 34342	 I-Definition	 T255	 T344	 Direct-Defines
+thyroid	data/source_txt/train/t1_biology_0_404.txt	 34343	 34350	 I-Definition	 T255	 T344	 Direct-Defines
+gland	data/source_txt/train/t1_biology_0_404.txt	 34351	 34356	 I-Definition	 T255	 T344	 Direct-Defines
+,	data/source_txt/train/t1_biology_0_404.txt	 34356	 34357	 O	 -1	 -1	 0
+as	data/source_txt/train/t1_biology_0_404.txt	 34358	 34360	 O	 -1	 -1	 0
+shown	data/source_txt/train/t1_biology_0_404.txt	 34361	 34366	 O	 -1	 -1	 0
+in	data/source_txt/train/t1_biology_0_404.txt	 34367	 34369	 O	 -1	 -1	 0
+[	data/source_txt/train/t1_biology_0_404.txt	 34370	 34371	 O	 -1	 -1	 0
+link	data/source_txt/train/t1_biology_0_404.txt	 34371	 34375	 O	 -1	 -1	 0

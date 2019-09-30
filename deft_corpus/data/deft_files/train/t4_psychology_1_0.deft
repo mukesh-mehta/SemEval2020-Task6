@@ -7022,3 +7022,57 @@ brain	data/source_txt/train/t4_psychology_1_0.txt	 38458	 38463	 O	 -1	 -1	 0
 .	data/source_txt/train/t4_psychology_1_0.txt	 38463	 38464	 O	 -1	 -1	 0
 
 
+3612	data/source_txt/train/t4_psychology_1_0.txt	 38468	 38472	 O	 -1	 -1	 0
+.	data/source_txt/train/t4_psychology_1_0.txt	 38472	 38473	 O	 -1	 -1	 0
+
+The	data/source_txt/train/t4_psychology_1_0.txt	 38483	 38486	 O	 -1	 -1	 0
+trichromatic	data/source_txt/train/t4_psychology_1_0.txt	 38487	 38499	 O	 -1	 -1	 0
+theory	data/source_txt/train/t4_psychology_1_0.txt	 38500	 38506	 O	 -1	 -1	 0
+of	data/source_txt/train/t4_psychology_1_0.txt	 38507	 38509	 O	 -1	 -1	 0
+color	data/source_txt/train/t4_psychology_1_0.txt	 38510	 38515	 O	 -1	 -1	 0
+vision	data/source_txt/train/t4_psychology_1_0.txt	 38516	 38522	 O	 -1	 -1	 0
+is	data/source_txt/train/t4_psychology_1_0.txt	 38523	 38525	 O	 -1	 -1	 0
+not	data/source_txt/train/t4_psychology_1_0.txt	 38526	 38529	 O	 -1	 -1	 0
+the	data/source_txt/train/t4_psychology_1_0.txt	 38530	 38533	 O	 -1	 -1	 0
+only	data/source_txt/train/t4_psychology_1_0.txt	 38534	 38538	 O	 -1	 -1	 0
+theory	data/source_txt/train/t4_psychology_1_0.txt	 38539	 38545	 O	 -1	 -1	 0
+—	data/source_txt/train/t4_psychology_1_0.txt	 38545	 38546	 O	 -1	 -1	 0
+another	data/source_txt/train/t4_psychology_1_0.txt	 38546	 38553	 O	 -1	 -1	 0
+major	data/source_txt/train/t4_psychology_1_0.txt	 38554	 38559	 O	 -1	 -1	 0
+theory	data/source_txt/train/t4_psychology_1_0.txt	 38560	 38566	 O	 -1	 -1	 0
+of	data/source_txt/train/t4_psychology_1_0.txt	 38567	 38569	 O	 -1	 -1	 0
+color	data/source_txt/train/t4_psychology_1_0.txt	 38570	 38575	 O	 -1	 -1	 0
+vision	data/source_txt/train/t4_psychology_1_0.txt	 38576	 38582	 O	 -1	 -1	 0
+is	data/source_txt/train/t4_psychology_1_0.txt	 38583	 38585	 O	 -1	 -1	 0
+known	data/source_txt/train/t4_psychology_1_0.txt	 38586	 38591	 O	 -1	 -1	 0
+as	data/source_txt/train/t4_psychology_1_0.txt	 38592	 38594	 O	 -1	 -1	 0
+the	data/source_txt/train/t4_psychology_1_0.txt	 38595	 38598	 B-Term	 T244	 0	 Refers-To
+opponent	data/source_txt/train/t4_psychology_1_0.txt	 38599	 38607	 I-Term	 T244	 0	 Refers-To
+-	data/source_txt/train/t4_psychology_1_0.txt	 38607	 38608	 I-Term	 T244	 0	 Refers-To
+process	data/source_txt/train/t4_psychology_1_0.txt	 38608	 38615	 I-Term	 T244	 0	 Refers-To
+theory	data/source_txt/train/t4_psychology_1_0.txt	 38616	 38622	 I-Term	 T244	 0	 Refers-To
+.	data/source_txt/train/t4_psychology_1_0.txt	 38622	 38623	 O	 -1	 -1	 0
+
+According	data/source_txt/train/t4_psychology_1_0.txt	 38630	 38639	 O	 -1	 -1	 0
+to	data/source_txt/train/t4_psychology_1_0.txt	 38640	 38642	 O	 -1	 -1	 0
+this	data/source_txt/train/t4_psychology_1_0.txt	 38643	 38647	 B-Referential-Term	 T245	 0	 Indirect-Defines
+theory	data/source_txt/train/t4_psychology_1_0.txt	 38648	 38654	 I-Referential-Term	 T245	 0	 Indirect-Defines
+,	data/source_txt/train/t4_psychology_1_0.txt	 38654	 38655	 O	 -1	 -1	 0
+color	data/source_txt/train/t4_psychology_1_0.txt	 38656	 38661	 B-Definition	 T246	 T245	 Indirect-Defines
+is	data/source_txt/train/t4_psychology_1_0.txt	 38662	 38664	 I-Definition	 T246	 T245	 Indirect-Defines
+coded	data/source_txt/train/t4_psychology_1_0.txt	 38665	 38670	 I-Definition	 T246	 T245	 Indirect-Defines
+in	data/source_txt/train/t4_psychology_1_0.txt	 38671	 38673	 I-Definition	 T246	 T245	 Indirect-Defines
+opponent	data/source_txt/train/t4_psychology_1_0.txt	 38674	 38682	 I-Definition	 T246	 T245	 Indirect-Defines
+pairs	data/source_txt/train/t4_psychology_1_0.txt	 38683	 38688	 I-Definition	 T246	 T245	 Indirect-Defines
+:	data/source_txt/train/t4_psychology_1_0.txt	 38688	 38689	 I-Definition	 T246	 T245	 Indirect-Defines
+black	data/source_txt/train/t4_psychology_1_0.txt	 38690	 38695	 I-Definition	 T246	 T245	 Indirect-Defines
+-	data/source_txt/train/t4_psychology_1_0.txt	 38695	 38696	 I-Definition	 T246	 T245	 Indirect-Defines
+white	data/source_txt/train/t4_psychology_1_0.txt	 38696	 38701	 I-Definition	 T246	 T245	 Indirect-Defines
+,	data/source_txt/train/t4_psychology_1_0.txt	 38701	 38702	 I-Definition	 T246	 T245	 Indirect-Defines
+yellow	data/source_txt/train/t4_psychology_1_0.txt	 38703	 38709	 I-Definition	 T246	 T245	 Indirect-Defines
+-	data/source_txt/train/t4_psychology_1_0.txt	 38709	 38710	 I-Definition	 T246	 T245	 Indirect-Defines
+blue	data/source_txt/train/t4_psychology_1_0.txt	 38710	 38714	 I-Definition	 T246	 T245	 Indirect-Defines
+,	data/source_txt/train/t4_psychology_1_0.txt	 38714	 38715	 I-Definition	 T246	 T245	 Indirect-Defines
+and	data/source_txt/train/t4_psychology_1_0.txt	 38716	 38719	 I-Definition	 T246	 T245	 Indirect-Defines
+green	data/source_txt/train/t4_psychology_1_0.txt	 38720	 38725	 I-Definition	 T246	 T245	 Indirect-Defines
+-	data/source_txt/train/t4_psychology_1_0.txt	 38725	 38726	 I-Definition	 T246	 T245	 Indirect-Defines

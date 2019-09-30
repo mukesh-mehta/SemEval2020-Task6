@@ -3577,10 +3577,6 @@ See	data/source_txt/train/t7_government_2_101.txt	 21743	 21746	 O	 -1	 -1	 0
 Wilson	data/source_txt/train/t7_government_2_101.txt	 21747	 21753	 O	 -1	 -1	 0
 .	data/source_txt/train/t7_government_2_101.txt	 21753	 21754	 O	 -1	 -1	 0
 
-1984	data/source_txt/train/t7_government_2_101.txt	 22085	 22089	 O	 -1	 -1	 0
-.	data/source_txt/train/t7_government_2_101.txt	 22089	 22090	 O	 -1	 -1	 0
-
-
 6238	data/source_txt/train/t7_government_2_101.txt	 22094	 22098	 O	 -1	 -1	 0
 .	data/source_txt/train/t7_government_2_101.txt	 22098	 22099	 O	 -1	 -1	 0
 
@@ -5286,10 +5282,6 @@ _	data/source_txt/train/t7_government_2_101.txt	 33452	 33453	 O	 -1	 -1	 0
 Andrew	data/source_txt/train/t7_government_2_101.txt	 33462	 33468	 O	 -1	 -1	 0
 Dugan	data/source_txt/train/t7_government_2_101.txt	 33469	 33474	 O	 -1	 -1	 0
 .	data/source_txt/train/t7_government_2_101.txt	 33474	 33475	 O	 -1	 -1	 0
-
-2014	data/source_txt/train/t7_government_2_101.txt	 33482	 33486	 O	 -1	 -1	 0
-.	data/source_txt/train/t7_government_2_101.txt	 33486	 33487	 O	 -1	 -1	 0
-
 
 6310	data/source_txt/train/t7_government_2_101.txt	 33491	 33495	 O	 -1	 -1	 0
 .	data/source_txt/train/t7_government_2_101.txt	 33495	 33496	 O	 -1	 -1	 0
@@ -8154,3 +8146,52 @@ genocide	data/source_txt/train/t7_government_2_101.txt	 49174	 49182	 O	 -1	 -1	
 .	data/source_txt/train/t7_government_2_101.txt	 49182	 49183	 O	 -1	 -1	 0
 
 
+6409	data/source_txt/train/t7_government_2_101.txt	 49187	 49191	 O	 -1	 -1	 0
+.	data/source_txt/train/t7_government_2_101.txt	 49191	 49192	 O	 -1	 -1	 0
+
+Yet	data/source_txt/train/t7_government_2_101.txt	 49193	 49196	 O	 -1	 -1	 0
+readers	data/source_txt/train/t7_government_2_101.txt	 49197	 49204	 O	 -1	 -1	 0
+still	data/source_txt/train/t7_government_2_101.txt	 49205	 49210	 O	 -1	 -1	 0
+wanted	data/source_txt/train/t7_government_2_101.txt	 49211	 49217	 O	 -1	 -1	 0
+to	data/source_txt/train/t7_government_2_101.txt	 49218	 49220	 O	 -1	 -1	 0
+be	data/source_txt/train/t7_government_2_101.txt	 49221	 49223	 O	 -1	 -1	 0
+entertained	data/source_txt/train/t7_government_2_101.txt	 49224	 49235	 O	 -1	 -1	 0
+.	data/source_txt/train/t7_government_2_101.txt	 49235	 49236	 O	 -1	 -1	 0
+
+Joseph	data/source_txt/train/t7_government_2_101.txt	 49245	 49251	 O	 -1	 -1	 0
+Pulitzer	data/source_txt/train/t7_government_2_101.txt	 49252	 49260	 O	 -1	 -1	 0
+and	data/source_txt/train/t7_government_2_101.txt	 49261	 49264	 O	 -1	 -1	 0
+the	data/source_txt/train/t7_government_2_101.txt	 49265	 49268	 O	 -1	 -1	 0
+New	data/source_txt/train/t7_government_2_101.txt	 49269	 49272	 O	 -1	 -1	 0
+York	data/source_txt/train/t7_government_2_101.txt	 49273	 49277	 O	 -1	 -1	 0
+World	data/source_txt/train/t7_government_2_101.txt	 49278	 49283	 O	 -1	 -1	 0
+gave	data/source_txt/train/t7_government_2_101.txt	 49284	 49288	 O	 -1	 -1	 0
+them	data/source_txt/train/t7_government_2_101.txt	 49289	 49293	 O	 -1	 -1	 0
+what	data/source_txt/train/t7_government_2_101.txt	 49294	 49298	 O	 -1	 -1	 0
+they	data/source_txt/train/t7_government_2_101.txt	 49299	 49303	 O	 -1	 -1	 0
+wanted	data/source_txt/train/t7_government_2_101.txt	 49304	 49310	 O	 -1	 -1	 0
+.	data/source_txt/train/t7_government_2_101.txt	 49310	 49311	 O	 -1	 -1	 0
+
+The	data/source_txt/train/t7_government_2_101.txt	 49318	 49321	 O	 -1	 -1	 0
+tabloid	data/source_txt/train/t7_government_2_101.txt	 49322	 49329	 O	 -1	 -1	 0
+-	data/source_txt/train/t7_government_2_101.txt	 49329	 49330	 O	 -1	 -1	 0
+style	data/source_txt/train/t7_government_2_101.txt	 49330	 49335	 O	 -1	 -1	 0
+paper	data/source_txt/train/t7_government_2_101.txt	 49336	 49341	 O	 -1	 -1	 0
+included	data/source_txt/train/t7_government_2_101.txt	 49342	 49350	 O	 -1	 -1	 0
+editorial	data/source_txt/train/t7_government_2_101.txt	 49351	 49360	 O	 -1	 -1	 0
+pages	data/source_txt/train/t7_government_2_101.txt	 49361	 49366	 O	 -1	 -1	 0
+,	data/source_txt/train/t7_government_2_101.txt	 49366	 49367	 O	 -1	 -1	 0
+cartoons	data/source_txt/train/t7_government_2_101.txt	 49368	 49376	 O	 -1	 -1	 0
+,	data/source_txt/train/t7_government_2_101.txt	 49376	 49377	 O	 -1	 -1	 0
+and	data/source_txt/train/t7_government_2_101.txt	 49378	 49381	 O	 -1	 -1	 0
+pictures	data/source_txt/train/t7_government_2_101.txt	 49382	 49390	 O	 -1	 -1	 0
+,	data/source_txt/train/t7_government_2_101.txt	 49390	 49391	 O	 -1	 -1	 0
+while	data/source_txt/train/t7_government_2_101.txt	 49392	 49397	 O	 -1	 -1	 0
+the	data/source_txt/train/t7_government_2_101.txt	 49398	 49401	 O	 -1	 -1	 0
+front	data/source_txt/train/t7_government_2_101.txt	 49402	 49407	 O	 -1	 -1	 0
+-	data/source_txt/train/t7_government_2_101.txt	 49407	 49408	 O	 -1	 -1	 0
+page	data/source_txt/train/t7_government_2_101.txt	 49408	 49412	 O	 -1	 -1	 0
+news	data/source_txt/train/t7_government_2_101.txt	 49413	 49417	 O	 -1	 -1	 0
+was	data/source_txt/train/t7_government_2_101.txt	 49418	 49421	 O	 -1	 -1	 0
+sensational	data/source_txt/train/t7_government_2_101.txt	 49422	 49433	 O	 -1	 -1	 0
+and	data/source_txt/train/t7_government_2_101.txt	 49434	 49437	 O	 -1	 -1	 0

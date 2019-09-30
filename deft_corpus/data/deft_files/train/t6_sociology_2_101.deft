@@ -1403,7 +1403,10 @@ keeping	data/source_txt/train/t6_sociology_2_101.txt	 8516	 8523	 O	 -1	 -1	 0
 up	data/source_txt/train/t6_sociology_2_101.txt	 8524	 8526	 O	 -1	 -1	 0
 with	data/source_txt/train/t6_sociology_2_101.txt	 8527	 8531	 O	 -1	 -1	 0
 the	data/source_txt/train/t6_sociology_2_101.txt	 8532	 8535	 O	 -1	 -1	 0
-Joneses”—the	data/source_txt/train/t6_sociology_2_101.txt	 8536	 8548	 O	 -1	 -1	 0
+Joneses	data/source_txt/train/t6_sociology_2_101.txt	 8536	 8543	 O	 -1	 -1	 0
+”	data/source_txt/train/t6_sociology_2_101.txt	 8543	 8544	 O	 -1	 -1	 0
+—	data/source_txt/train/t6_sociology_2_101.txt	 8544	 8545	 O	 -1	 -1	 0
+the	data/source_txt/train/t6_sociology_2_101.txt	 8545	 8548	 O	 -1	 -1	 0
 idea	data/source_txt/train/t6_sociology_2_101.txt	 8549	 8553	 O	 -1	 -1	 0
 that	data/source_txt/train/t6_sociology_2_101.txt	 8554	 8558	 O	 -1	 -1	 0
 you	data/source_txt/train/t6_sociology_2_101.txt	 8559	 8562	 O	 -1	 -1	 0
@@ -4711,3 +4714,64 @@ demonstrations	data/source_txt/train/t6_sociology_2_101.txt	 29127	 29141	 O	 -1
 .	data/source_txt/train/t6_sociology_2_101.txt	 29141	 29142	 O	 -1	 -1	 0
 
 
+5803	data/source_txt/train/t6_sociology_2_101.txt	 29146	 29150	 O	 -1	 -1	 0
+.	data/source_txt/train/t6_sociology_2_101.txt	 29150	 29151	 O	 -1	 -1	 0
+
+Political	data/source_txt/train/t6_sociology_2_101.txt	 29152	 29161	 O	 -1	 -1	 0
+science	data/source_txt/train/t6_sociology_2_101.txt	 29162	 29169	 O	 -1	 -1	 0
+looks	data/source_txt/train/t6_sociology_2_101.txt	 29170	 29175	 O	 -1	 -1	 0
+at	data/source_txt/train/t6_sociology_2_101.txt	 29176	 29178	 O	 -1	 -1	 0
+politics	data/source_txt/train/t6_sociology_2_101.txt	 29179	 29187	 O	 -1	 -1	 0
+as	data/source_txt/train/t6_sociology_2_101.txt	 29188	 29190	 O	 -1	 -1	 0
+the	data/source_txt/train/t6_sociology_2_101.txt	 29191	 29194	 O	 -1	 -1	 0
+interaction	data/source_txt/train/t6_sociology_2_101.txt	 29195	 29206	 O	 -1	 -1	 0
+between	data/source_txt/train/t6_sociology_2_101.txt	 29207	 29214	 O	 -1	 -1	 0
+citizens	data/source_txt/train/t6_sociology_2_101.txt	 29215	 29223	 O	 -1	 -1	 0
+and	data/source_txt/train/t6_sociology_2_101.txt	 29224	 29227	 O	 -1	 -1	 0
+their	data/source_txt/train/t6_sociology_2_101.txt	 29228	 29233	 O	 -1	 -1	 0
+government	data/source_txt/train/t6_sociology_2_101.txt	 29234	 29244	 O	 -1	 -1	 0
+.	data/source_txt/train/t6_sociology_2_101.txt	 29244	 29245	 O	 -1	 -1	 0
+
+Sociology	data/source_txt/train/t6_sociology_2_101.txt	 29254	 29263	 B-Term	 T150	 0	 Direct-Defines
+studies	data/source_txt/train/t6_sociology_2_101.txt	 29264	 29271	 B-Definition	 T151	 T150	 Direct-Defines
+politics	data/source_txt/train/t6_sociology_2_101.txt	 29272	 29280	 I-Definition	 T151	 T150	 Direct-Defines
+as	data/source_txt/train/t6_sociology_2_101.txt	 29281	 29283	 I-Definition	 T151	 T150	 Direct-Defines
+a	data/source_txt/train/t6_sociology_2_101.txt	 29284	 29285	 I-Definition	 T151	 T150	 Direct-Defines
+means	data/source_txt/train/t6_sociology_2_101.txt	 29286	 29291	 I-Definition	 T151	 T150	 Direct-Defines
+to	data/source_txt/train/t6_sociology_2_101.txt	 29292	 29294	 I-Definition	 T151	 T150	 Direct-Defines
+understand	data/source_txt/train/t6_sociology_2_101.txt	 29295	 29305	 I-Definition	 T151	 T150	 Direct-Defines
+the	data/source_txt/train/t6_sociology_2_101.txt	 29306	 29309	 I-Definition	 T151	 T150	 Direct-Defines
+underlying	data/source_txt/train/t6_sociology_2_101.txt	 29310	 29320	 I-Definition	 T151	 T150	 Direct-Defines
+social	data/source_txt/train/t6_sociology_2_101.txt	 29321	 29327	 I-Definition	 T151	 T150	 Direct-Defines
+norms	data/source_txt/train/t6_sociology_2_101.txt	 29328	 29333	 I-Definition	 T151	 T150	 Direct-Defines
+and	data/source_txt/train/t6_sociology_2_101.txt	 29334	 29337	 I-Definition	 T151	 T150	 Direct-Defines
+values	data/source_txt/train/t6_sociology_2_101.txt	 29338	 29344	 I-Definition	 T151	 T150	 Direct-Defines
+of	data/source_txt/train/t6_sociology_2_101.txt	 29345	 29347	 I-Definition	 T151	 T150	 Direct-Defines
+a	data/source_txt/train/t6_sociology_2_101.txt	 29348	 29349	 I-Definition	 T151	 T150	 Direct-Defines
+group	data/source_txt/train/t6_sociology_2_101.txt	 29350	 29355	 I-Definition	 T151	 T150	 Direct-Defines
+.	data/source_txt/train/t6_sociology_2_101.txt	 29355	 29356	 O	 -1	 -1	 0
+
+A	data/source_txt/train/t6_sociology_2_101.txt	 29363	 29364	 O	 -1	 -1	 0
+society	data/source_txt/train/t6_sociology_2_101.txt	 29365	 29372	 O	 -1	 -1	 0
+’s	data/source_txt/train/t6_sociology_2_101.txt	 29372	 29374	 O	 -1	 -1	 0
+political	data/source_txt/train/t6_sociology_2_101.txt	 29375	 29384	 O	 -1	 -1	 0
+structure	data/source_txt/train/t6_sociology_2_101.txt	 29385	 29394	 O	 -1	 -1	 0
+and	data/source_txt/train/t6_sociology_2_101.txt	 29395	 29398	 O	 -1	 -1	 0
+practices	data/source_txt/train/t6_sociology_2_101.txt	 29399	 29408	 O	 -1	 -1	 0
+provide	data/source_txt/train/t6_sociology_2_101.txt	 29409	 29416	 O	 -1	 -1	 0
+insight	data/source_txt/train/t6_sociology_2_101.txt	 29417	 29424	 O	 -1	 -1	 0
+into	data/source_txt/train/t6_sociology_2_101.txt	 29425	 29429	 O	 -1	 -1	 0
+the	data/source_txt/train/t6_sociology_2_101.txt	 29430	 29433	 O	 -1	 -1	 0
+distribution	data/source_txt/train/t6_sociology_2_101.txt	 29434	 29446	 O	 -1	 -1	 0
+of	data/source_txt/train/t6_sociology_2_101.txt	 29447	 29449	 O	 -1	 -1	 0
+power	data/source_txt/train/t6_sociology_2_101.txt	 29450	 29455	 O	 -1	 -1	 0
+and	data/source_txt/train/t6_sociology_2_101.txt	 29456	 29459	 O	 -1	 -1	 0
+wealth	data/source_txt/train/t6_sociology_2_101.txt	 29460	 29466	 O	 -1	 -1	 0
+,	data/source_txt/train/t6_sociology_2_101.txt	 29466	 29467	 O	 -1	 -1	 0
+as	data/source_txt/train/t6_sociology_2_101.txt	 29468	 29470	 O	 -1	 -1	 0
+well	data/source_txt/train/t6_sociology_2_101.txt	 29471	 29475	 O	 -1	 -1	 0
+as	data/source_txt/train/t6_sociology_2_101.txt	 29476	 29478	 O	 -1	 -1	 0
+larger	data/source_txt/train/t6_sociology_2_101.txt	 29479	 29485	 O	 -1	 -1	 0
+philosophical	data/source_txt/train/t6_sociology_2_101.txt	 29486	 29499	 O	 -1	 -1	 0
+and	data/source_txt/train/t6_sociology_2_101.txt	 29500	 29503	 O	 -1	 -1	 0
+cultural	data/source_txt/train/t6_sociology_2_101.txt	 29504	 29512	 O	 -1	 -1	 0

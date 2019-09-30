@@ -8199,3 +8199,52 @@ barriers	data/source_txt/train/t5_economic_0_202.txt	 42801	 42809	 I-Definition
 .	data/source_txt/train/t5_economic_0_202.txt	 42809	 42810	 O	 -1	 -1	 0
 
 
+5220	data/source_txt/train/t5_economic_0_202.txt	 42814	 42818	 O	 -1	 -1	 0
+.	data/source_txt/train/t5_economic_0_202.txt	 42818	 42819	 O	 -1	 -1	 0
+
+There	data/source_txt/train/t5_economic_0_202.txt	 42820	 42825	 O	 -1	 -1	 0
+are	data/source_txt/train/t5_economic_0_202.txt	 42826	 42829	 O	 -1	 -1	 0
+a	data/source_txt/train/t5_economic_0_202.txt	 42830	 42831	 O	 -1	 -1	 0
+number	data/source_txt/train/t5_economic_0_202.txt	 42832	 42838	 O	 -1	 -1	 0
+of	data/source_txt/train/t5_economic_0_202.txt	 42839	 42841	 O	 -1	 -1	 0
+reasons	data/source_txt/train/t5_economic_0_202.txt	 42842	 42849	 O	 -1	 -1	 0
+,	data/source_txt/train/t5_economic_0_202.txt	 42849	 42850	 O	 -1	 -1	 0
+but	data/source_txt/train/t5_economic_0_202.txt	 42851	 42854	 O	 -1	 -1	 0
+one	data/source_txt/train/t5_economic_0_202.txt	 42855	 42858	 O	 -1	 -1	 0
+of	data/source_txt/train/t5_economic_0_202.txt	 42859	 42861	 O	 -1	 -1	 0
+them	data/source_txt/train/t5_economic_0_202.txt	 42862	 42866	 O	 -1	 -1	 0
+will	data/source_txt/train/t5_economic_0_202.txt	 42867	 42871	 O	 -1	 -1	 0
+surprise	data/source_txt/train/t5_economic_0_202.txt	 42872	 42880	 O	 -1	 -1	 0
+you	data/source_txt/train/t5_economic_0_202.txt	 42881	 42884	 O	 -1	 -1	 0
+:	data/source_txt/train/t5_economic_0_202.txt	 42884	 42885	 O	 -1	 -1	 0
+the	data/source_txt/train/t5_economic_0_202.txt	 42886	 42889	 O	 -1	 -1	 0
+trade	data/source_txt/train/t5_economic_0_202.txt	 42890	 42895	 O	 -1	 -1	 0
+policies	data/source_txt/train/t5_economic_0_202.txt	 42896	 42904	 O	 -1	 -1	 0
+of	data/source_txt/train/t5_economic_0_202.txt	 42905	 42907	 O	 -1	 -1	 0
+the	data/source_txt/train/t5_economic_0_202.txt	 42908	 42911	 O	 -1	 -1	 0
+high	data/source_txt/train/t5_economic_0_202.txt	 42912	 42916	 O	 -1	 -1	 0
+-	data/source_txt/train/t5_economic_0_202.txt	 42916	 42917	 O	 -1	 -1	 0
+income	data/source_txt/train/t5_economic_0_202.txt	 42917	 42923	 O	 -1	 -1	 0
+countries	data/source_txt/train/t5_economic_0_202.txt	 42924	 42933	 O	 -1	 -1	 0
+.	data/source_txt/train/t5_economic_0_202.txt	 42933	 42934	 O	 -1	 -1	 0
+
+Following	data/source_txt/train/t5_economic_0_202.txt	 42943	 42952	 O	 -1	 -1	 0
+is	data/source_txt/train/t5_economic_0_202.txt	 42953	 42955	 O	 -1	 -1	 0
+a	data/source_txt/train/t5_economic_0_202.txt	 42956	 42957	 O	 -1	 -1	 0
+stark	data/source_txt/train/t5_economic_0_202.txt	 42958	 42963	 O	 -1	 -1	 0
+review	data/source_txt/train/t5_economic_0_202.txt	 42964	 42970	 O	 -1	 -1	 0
+of	data/source_txt/train/t5_economic_0_202.txt	 42971	 42973	 O	 -1	 -1	 0
+social	data/source_txt/train/t5_economic_0_202.txt	 42974	 42980	 O	 -1	 -1	 0
+priorities	data/source_txt/train/t5_economic_0_202.txt	 42981	 42991	 O	 -1	 -1	 0
+which	data/source_txt/train/t5_economic_0_202.txt	 42992	 42997	 O	 -1	 -1	 0
+has	data/source_txt/train/t5_economic_0_202.txt	 42998	 43001	 O	 -1	 -1	 0
+been	data/source_txt/train/t5_economic_0_202.txt	 43002	 43006	 O	 -1	 -1	 0
+widely	data/source_txt/train/t5_economic_0_202.txt	 43007	 43013	 O	 -1	 -1	 0
+publicized	data/source_txt/train/t5_economic_0_202.txt	 43014	 43024	 O	 -1	 -1	 0
+by	data/source_txt/train/t5_economic_0_202.txt	 43025	 43027	 O	 -1	 -1	 0
+the	data/source_txt/train/t5_economic_0_202.txt	 43028	 43031	 O	 -1	 -1	 0
+international	data/source_txt/train/t5_economic_0_202.txt	 43032	 43045	 O	 -1	 -1	 0
+aid	data/source_txt/train/t5_economic_0_202.txt	 43046	 43049	 O	 -1	 -1	 0
+organization	data/source_txt/train/t5_economic_0_202.txt	 43050	 43062	 O	 -1	 -1	 0
+,	data/source_txt/train/t5_economic_0_202.txt	 43062	 43063	 O	 -1	 -1	 0
+Oxfam	data/source_txt/train/t5_economic_0_202.txt	 43064	 43069	 O	 -1	 -1	 0

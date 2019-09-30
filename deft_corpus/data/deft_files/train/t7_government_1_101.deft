@@ -9340,3 +9340,63 @@ opposition	data/source_txt/train/t7_government_1_101.txt	 51722	 51732	 O	 -1	 -
 .	data/source_txt/train/t7_government_1_101.txt	 51732	 51733	 O	 -1	 -1	 0
 
 
+6410	data/source_txt/train/t7_government_1_101.txt	 51737	 51741	 O	 -1	 -1	 0
+.	data/source_txt/train/t7_government_1_101.txt	 51741	 51742	 O	 -1	 -1	 0
+
+The	data/source_txt/train/t7_government_1_101.txt	 51743	 51746	 B-Definition	 T116	 0	 Refers-To
+tabloid	data/source_txt/train/t7_government_1_101.txt	 51747	 51754	 I-Definition	 T116	 0	 Refers-To
+-	data/source_txt/train/t7_government_1_101.txt	 51754	 51755	 I-Definition	 T116	 0	 Refers-To
+style	data/source_txt/train/t7_government_1_101.txt	 51755	 51760	 I-Definition	 T116	 0	 Refers-To
+paper	data/source_txt/train/t7_government_1_101.txt	 51761	 51766	 I-Definition	 T116	 0	 Refers-To
+included	data/source_txt/train/t7_government_1_101.txt	 51767	 51775	 I-Definition	 T116	 0	 Refers-To
+editorial	data/source_txt/train/t7_government_1_101.txt	 51776	 51785	 I-Definition	 T116	 0	 Refers-To
+pages	data/source_txt/train/t7_government_1_101.txt	 51786	 51791	 I-Definition	 T116	 0	 Refers-To
+,	data/source_txt/train/t7_government_1_101.txt	 51791	 51792	 I-Definition	 T116	 0	 Refers-To
+cartoons	data/source_txt/train/t7_government_1_101.txt	 51793	 51801	 I-Definition	 T116	 0	 Refers-To
+,	data/source_txt/train/t7_government_1_101.txt	 51801	 51802	 I-Definition	 T116	 0	 Refers-To
+and	data/source_txt/train/t7_government_1_101.txt	 51803	 51806	 I-Definition	 T116	 0	 Refers-To
+pictures	data/source_txt/train/t7_government_1_101.txt	 51807	 51815	 I-Definition	 T116	 0	 Refers-To
+,	data/source_txt/train/t7_government_1_101.txt	 51815	 51816	 I-Definition	 T116	 0	 Refers-To
+while	data/source_txt/train/t7_government_1_101.txt	 51817	 51822	 I-Definition	 T116	 0	 Refers-To
+the	data/source_txt/train/t7_government_1_101.txt	 51823	 51826	 I-Definition	 T116	 0	 Refers-To
+front	data/source_txt/train/t7_government_1_101.txt	 51827	 51832	 I-Definition	 T116	 0	 Refers-To
+-	data/source_txt/train/t7_government_1_101.txt	 51832	 51833	 I-Definition	 T116	 0	 Refers-To
+page	data/source_txt/train/t7_government_1_101.txt	 51833	 51837	 I-Definition	 T116	 0	 Refers-To
+news	data/source_txt/train/t7_government_1_101.txt	 51838	 51842	 I-Definition	 T116	 0	 Refers-To
+was	data/source_txt/train/t7_government_1_101.txt	 51843	 51846	 I-Definition	 T116	 0	 Refers-To
+sensational	data/source_txt/train/t7_government_1_101.txt	 51847	 51858	 I-Definition	 T116	 0	 Refers-To
+and	data/source_txt/train/t7_government_1_101.txt	 51859	 51862	 I-Definition	 T116	 0	 Refers-To
+scandalous	data/source_txt/train/t7_government_1_101.txt	 51863	 51873	 I-Definition	 T116	 0	 Refers-To
+.	data/source_txt/train/t7_government_1_101.txt	 51873	 51874	 O	 -1	 -1	 0
+
+This	data/source_txt/train/t7_government_1_101.txt	 51883	 51887	 B-Referential-Definition	 T117	 T118	 Indirect-Defines
+style	data/source_txt/train/t7_government_1_101.txt	 51888	 51893	 I-Referential-Definition	 T117	 T118	 Indirect-Defines
+of	data/source_txt/train/t7_government_1_101.txt	 51894	 51896	 I-Referential-Definition	 T117	 T118	 Indirect-Defines
+coverage	data/source_txt/train/t7_government_1_101.txt	 51897	 51905	 I-Referential-Definition	 T117	 T118	 Indirect-Defines
+became	data/source_txt/train/t7_government_1_101.txt	 51906	 51912	 O	 -1	 -1	 0
+known	data/source_txt/train/t7_government_1_101.txt	 51913	 51918	 O	 -1	 -1	 0
+as	data/source_txt/train/t7_government_1_101.txt	 51919	 51921	 O	 -1	 -1	 0
+yellow	data/source_txt/train/t7_government_1_101.txt	 51922	 51928	 B-Term	 T118	 0	 Indirect-Defines
+journalism	data/source_txt/train/t7_government_1_101.txt	 51929	 51939	 I-Term	 T118	 0	 Indirect-Defines
+.	data/source_txt/train/t7_government_1_101.txt	 51939	 51940	 O	 -1	 -1	 0
+
+Ads	data/source_txt/train/t7_government_1_101.txt	 51947	 51950	 O	 -1	 -1	 0
+sold	data/source_txt/train/t7_government_1_101.txt	 51951	 51955	 O	 -1	 -1	 0
+quickly	data/source_txt/train/t7_government_1_101.txt	 51956	 51963	 O	 -1	 -1	 0
+thanks	data/source_txt/train/t7_government_1_101.txt	 51964	 51970	 O	 -1	 -1	 0
+to	data/source_txt/train/t7_government_1_101.txt	 51971	 51973	 O	 -1	 -1	 0
+the	data/source_txt/train/t7_government_1_101.txt	 51974	 51977	 O	 -1	 -1	 0
+paper	data/source_txt/train/t7_government_1_101.txt	 51978	 51983	 O	 -1	 -1	 0
+’s	data/source_txt/train/t7_government_1_101.txt	 51983	 51985	 O	 -1	 -1	 0
+popularity	data/source_txt/train/t7_government_1_101.txt	 51986	 51996	 O	 -1	 -1	 0
+,	data/source_txt/train/t7_government_1_101.txt	 51996	 51997	 O	 -1	 -1	 0
+and	data/source_txt/train/t7_government_1_101.txt	 51998	 52001	 O	 -1	 -1	 0
+the	data/source_txt/train/t7_government_1_101.txt	 52002	 52005	 O	 -1	 -1	 0
+Sunday	data/source_txt/train/t7_government_1_101.txt	 52006	 52012	 O	 -1	 -1	 0
+edition	data/source_txt/train/t7_government_1_101.txt	 52013	 52020	 O	 -1	 -1	 0
+became	data/source_txt/train/t7_government_1_101.txt	 52021	 52027	 O	 -1	 -1	 0
+a	data/source_txt/train/t7_government_1_101.txt	 52028	 52029	 O	 -1	 -1	 0
+regular	data/source_txt/train/t7_government_1_101.txt	 52030	 52037	 O	 -1	 -1	 0
+feature	data/source_txt/train/t7_government_1_101.txt	 52038	 52045	 O	 -1	 -1	 0
+of	data/source_txt/train/t7_government_1_101.txt	 52046	 52048	 O	 -1	 -1	 0
+the	data/source_txt/train/t7_government_1_101.txt	 52049	 52052	 O	 -1	 -1	 0

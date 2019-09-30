@@ -1921,3 +1921,52 @@ quantity	data/source_txt/train/t5_economic_1_303.txt	 9636	 9644	 O	 -1	 -1	 0
 .	data/source_txt/train/t5_economic_1_303.txt	 9644	 9645	 O	 -1	 -1	 0
 
 
+5297	data/source_txt/train/t5_economic_1_303.txt	 9649	 9653	 O	 -1	 -1	 0
+.	data/source_txt/train/t5_economic_1_303.txt	 9653	 9654	 O	 -1	 -1	 0
+
+The	data/source_txt/train/t5_economic_1_303.txt	 9655	 9658	 O	 -1	 -1	 0
+new	data/source_txt/train/t5_economic_1_303.txt	 9659	 9662	 O	 -1	 -1	 0
+consumer	data/source_txt/train/t5_economic_1_303.txt	 9663	 9671	 O	 -1	 -1	 0
+surplus	data/source_txt/train/t5_economic_1_303.txt	 9672	 9679	 O	 -1	 -1	 0
+is	data/source_txt/train/t5_economic_1_303.txt	 9680	 9682	 O	 -1	 -1	 0
+G	data/source_txt/train/t5_economic_1_303.txt	 9683	 9684	 O	 -1	 -1	 0
+,	data/source_txt/train/t5_economic_1_303.txt	 9684	 9685	 O	 -1	 -1	 0
+and	data/source_txt/train/t5_economic_1_303.txt	 9686	 9689	 O	 -1	 -1	 0
+the	data/source_txt/train/t5_economic_1_303.txt	 9690	 9693	 O	 -1	 -1	 0
+new	data/source_txt/train/t5_economic_1_303.txt	 9694	 9697	 O	 -1	 -1	 0
+producer	data/source_txt/train/t5_economic_1_303.txt	 9698	 9706	 O	 -1	 -1	 0
+surplus	data/source_txt/train/t5_economic_1_303.txt	 9707	 9714	 O	 -1	 -1	 0
+is	data/source_txt/train/t5_economic_1_303.txt	 9715	 9717	 O	 -1	 -1	 0
+H	data/source_txt/train/t5_economic_1_303.txt	 9718	 9719	 O	 -1	 -1	 0
++	data/source_txt/train/t5_economic_1_303.txt	 9720	 9721	 O	 -1	 -1	 0
+I	data/source_txt/train/t5_economic_1_303.txt	 9722	 9723	 O	 -1	 -1	 0
+.	data/source_txt/train/t5_economic_1_303.txt	 9723	 9724	 O	 -1	 -1	 0
+
+In	data/source_txt/train/t5_economic_1_303.txt	 9733	 9735	 O	 -1	 -1	 0
+effect	data/source_txt/train/t5_economic_1_303.txt	 9736	 9742	 O	 -1	 -1	 0
+,	data/source_txt/train/t5_economic_1_303.txt	 9742	 9743	 O	 -1	 -1	 0
+the	data/source_txt/train/t5_economic_1_303.txt	 9744	 9747	 O	 -1	 -1	 0
+price	data/source_txt/train/t5_economic_1_303.txt	 9748	 9753	 O	 -1	 -1	 0
+floor	data/source_txt/train/t5_economic_1_303.txt	 9754	 9759	 O	 -1	 -1	 0
+causes	data/source_txt/train/t5_economic_1_303.txt	 9760	 9766	 O	 -1	 -1	 0
+the	data/source_txt/train/t5_economic_1_303.txt	 9767	 9770	 O	 -1	 -1	 0
+area	data/source_txt/train/t5_economic_1_303.txt	 9771	 9775	 O	 -1	 -1	 0
+H	data/source_txt/train/t5_economic_1_303.txt	 9776	 9777	 O	 -1	 -1	 0
+to	data/source_txt/train/t5_economic_1_303.txt	 9778	 9780	 O	 -1	 -1	 0
+be	data/source_txt/train/t5_economic_1_303.txt	 9781	 9783	 O	 -1	 -1	 0
+transferred	data/source_txt/train/t5_economic_1_303.txt	 9784	 9795	 O	 -1	 -1	 0
+from	data/source_txt/train/t5_economic_1_303.txt	 9796	 9800	 O	 -1	 -1	 0
+consumer	data/source_txt/train/t5_economic_1_303.txt	 9801	 9809	 O	 -1	 -1	 0
+to	data/source_txt/train/t5_economic_1_303.txt	 9810	 9812	 O	 -1	 -1	 0
+producer	data/source_txt/train/t5_economic_1_303.txt	 9813	 9821	 O	 -1	 -1	 0
+surplus	data/source_txt/train/t5_economic_1_303.txt	 9822	 9829	 O	 -1	 -1	 0
+,	data/source_txt/train/t5_economic_1_303.txt	 9829	 9830	 O	 -1	 -1	 0
+but	data/source_txt/train/t5_economic_1_303.txt	 9831	 9834	 O	 -1	 -1	 0
+also	data/source_txt/train/t5_economic_1_303.txt	 9835	 9839	 O	 -1	 -1	 0
+causes	data/source_txt/train/t5_economic_1_303.txt	 9840	 9846	 O	 -1	 -1	 0
+a	data/source_txt/train/t5_economic_1_303.txt	 9847	 9848	 O	 -1	 -1	 0
+deadweight	data/source_txt/train/t5_economic_1_303.txt	 9849	 9859	 O	 -1	 -1	 0
+loss	data/source_txt/train/t5_economic_1_303.txt	 9860	 9864	 O	 -1	 -1	 0
+of	data/source_txt/train/t5_economic_1_303.txt	 9865	 9867	 O	 -1	 -1	 0
+J	data/source_txt/train/t5_economic_1_303.txt	 9868	 9869	 O	 -1	 -1	 0
++	data/source_txt/train/t5_economic_1_303.txt	 9870	 9871	 O	 -1	 -1	 0

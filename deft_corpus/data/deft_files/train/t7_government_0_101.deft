@@ -4777,10 +4777,6 @@ Andrew	data/source_txt/train/t7_government_0_101.txt	 33605	 33611	 O	 -1	 -1	 0
 Dugan	data/source_txt/train/t7_government_0_101.txt	 33612	 33617	 O	 -1	 -1	 0
 .	data/source_txt/train/t7_government_0_101.txt	 33617	 33618	 O	 -1	 -1	 0
 
-2014	data/source_txt/train/t7_government_0_101.txt	 33625	 33629	 O	 -1	 -1	 0
-.	data/source_txt/train/t7_government_0_101.txt	 33629	 33630	 O	 -1	 -1	 0
-
-
 6309	data/source_txt/train/t7_government_0_101.txt	 33634	 33638	 O	 -1	 -1	 0
 .	data/source_txt/train/t7_government_0_101.txt	 33638	 33639	 O	 -1	 -1	 0
 
@@ -7936,3 +7932,68 @@ cost	data/source_txt/train/t7_government_0_101.txt	 50484	 50488	 O	 -1	 -1	 0
 .	data/source_txt/train/t7_government_0_101.txt	 50488	 50489	 O	 -1	 -1	 0
 
 
+6411	data/source_txt/train/t7_government_0_101.txt	 50493	 50497	 O	 -1	 -1	 0
+.	data/source_txt/train/t7_government_0_101.txt	 50497	 50498	 O	 -1	 -1	 0
+
+In	data/source_txt/train/t7_government_0_101.txt	 50507	 50509	 O	 -1	 -1	 0
+1896	data/source_txt/train/t7_government_0_101.txt	 50510	 50514	 O	 -1	 -1	 0
+,	data/source_txt/train/t7_government_0_101.txt	 50514	 50515	 O	 -1	 -1	 0
+Adolph	data/source_txt/train/t7_government_0_101.txt	 50516	 50522	 O	 -1	 -1	 0
+Ochs	data/source_txt/train/t7_government_0_101.txt	 50523	 50527	 O	 -1	 -1	 0
+purchased	data/source_txt/train/t7_government_0_101.txt	 50528	 50537	 O	 -1	 -1	 0
+the	data/source_txt/train/t7_government_0_101.txt	 50538	 50541	 B-Term	 T168	 0	 Direct-Defines
+New	data/source_txt/train/t7_government_0_101.txt	 50542	 50545	 I-Term	 T168	 0	 Direct-Defines
+York	data/source_txt/train/t7_government_0_101.txt	 50546	 50550	 I-Term	 T168	 0	 Direct-Defines
+Times	data/source_txt/train/t7_government_0_101.txt	 50551	 50556	 I-Term	 T168	 0	 Direct-Defines
+with	data/source_txt/train/t7_government_0_101.txt	 50557	 50561	 O	 -1	 -1	 0
+the	data/source_txt/train/t7_government_0_101.txt	 50562	 50565	 O	 -1	 -1	 0
+goal	data/source_txt/train/t7_government_0_101.txt	 50566	 50570	 O	 -1	 -1	 0
+of	data/source_txt/train/t7_government_0_101.txt	 50571	 50573	 O	 -1	 -1	 0
+creating	data/source_txt/train/t7_government_0_101.txt	 50574	 50582	 O	 -1	 -1	 0
+a	data/source_txt/train/t7_government_0_101.txt	 50583	 50584	 B-Definition	 T174	 T168	 Direct-Defines
+dignified	data/source_txt/train/t7_government_0_101.txt	 50585	 50594	 I-Definition	 T174	 T168	 Direct-Defines
+newspaper	data/source_txt/train/t7_government_0_101.txt	 50595	 50604	 I-Definition	 T174	 T168	 Direct-Defines
+that	data/source_txt/train/t7_government_0_101.txt	 50605	 50609	 I-Definition	 T174	 T168	 Direct-Defines
+would	data/source_txt/train/t7_government_0_101.txt	 50610	 50615	 I-Definition	 T174	 T168	 Direct-Defines
+provide	data/source_txt/train/t7_government_0_101.txt	 50616	 50623	 I-Definition	 T174	 T168	 Direct-Defines
+readers	data/source_txt/train/t7_government_0_101.txt	 50624	 50631	 I-Definition	 T174	 T168	 Direct-Defines
+with	data/source_txt/train/t7_government_0_101.txt	 50632	 50636	 I-Definition	 T174	 T168	 Direct-Defines
+important	data/source_txt/train/t7_government_0_101.txt	 50637	 50646	 I-Definition	 T174	 T168	 Direct-Defines
+news	data/source_txt/train/t7_government_0_101.txt	 50647	 50651	 I-Definition	 T174	 T168	 Direct-Defines
+about	data/source_txt/train/t7_government_0_101.txt	 50652	 50657	 I-Definition	 T174	 T168	 Direct-Defines
+the	data/source_txt/train/t7_government_0_101.txt	 50658	 50661	 I-Definition	 T174	 T168	 Direct-Defines
+economy	data/source_txt/train/t7_government_0_101.txt	 50662	 50669	 I-Definition	 T174	 T168	 Direct-Defines
+,	data/source_txt/train/t7_government_0_101.txt	 50669	 50670	 I-Definition	 T174	 T168	 Direct-Defines
+politics	data/source_txt/train/t7_government_0_101.txt	 50671	 50679	 I-Definition	 T174	 T168	 Direct-Defines
+,	data/source_txt/train/t7_government_0_101.txt	 50679	 50680	 I-Definition	 T174	 T168	 Direct-Defines
+and	data/source_txt/train/t7_government_0_101.txt	 50681	 50684	 I-Definition	 T174	 T168	 Direct-Defines
+the	data/source_txt/train/t7_government_0_101.txt	 50685	 50688	 I-Definition	 T174	 T168	 Direct-Defines
+world	data/source_txt/train/t7_government_0_101.txt	 50689	 50694	 I-Definition	 T174	 T168	 Direct-Defines
+rather	data/source_txt/train/t7_government_0_101.txt	 50695	 50701	 I-Definition	 T174	 T168	 Direct-Defines
+than	data/source_txt/train/t7_government_0_101.txt	 50702	 50706	 I-Definition	 T174	 T168	 Direct-Defines
+gossip	data/source_txt/train/t7_government_0_101.txt	 50707	 50713	 I-Definition	 T174	 T168	 Direct-Defines
+and	data/source_txt/train/t7_government_0_101.txt	 50714	 50717	 I-Definition	 T174	 T168	 Direct-Defines
+comics	data/source_txt/train/t7_government_0_101.txt	 50718	 50724	 I-Definition	 T174	 T168	 Direct-Defines
+.	data/source_txt/train/t7_government_0_101.txt	 50724	 50725	 O	 -1	 -1	 0
+
+The	data/source_txt/train/t7_government_0_101.txt	 50732	 50735	 O	 -1	 -1	 0
+New	data/source_txt/train/t7_government_0_101.txt	 50736	 50739	 O	 -1	 -1	 0
+York	data/source_txt/train/t7_government_0_101.txt	 50740	 50744	 O	 -1	 -1	 0
+Times	data/source_txt/train/t7_government_0_101.txt	 50745	 50750	 O	 -1	 -1	 0
+brought	data/source_txt/train/t7_government_0_101.txt	 50751	 50758	 O	 -1	 -1	 0
+back	data/source_txt/train/t7_government_0_101.txt	 50759	 50763	 O	 -1	 -1	 0
+the	data/source_txt/train/t7_government_0_101.txt	 50764	 50767	 O	 -1	 -1	 0
+informational	data/source_txt/train/t7_government_0_101.txt	 50768	 50781	 O	 -1	 -1	 0
+model	data/source_txt/train/t7_government_0_101.txt	 50782	 50787	 O	 -1	 -1	 0
+,	data/source_txt/train/t7_government_0_101.txt	 50787	 50788	 O	 -1	 -1	 0
+which	data/source_txt/train/t7_government_0_101.txt	 50789	 50794	 O	 -1	 -1	 0
+exhibits	data/source_txt/train/t7_government_0_101.txt	 50795	 50803	 O	 -1	 -1	 0
+impartiality	data/source_txt/train/t7_government_0_101.txt	 50804	 50816	 O	 -1	 -1	 0
+and	data/source_txt/train/t7_government_0_101.txt	 50817	 50820	 O	 -1	 -1	 0
+accuracy	data/source_txt/train/t7_government_0_101.txt	 50821	 50829	 O	 -1	 -1	 0
+and	data/source_txt/train/t7_government_0_101.txt	 50830	 50833	 O	 -1	 -1	 0
+promotes	data/source_txt/train/t7_government_0_101.txt	 50834	 50842	 O	 -1	 -1	 0
+transparency	data/source_txt/train/t7_government_0_101.txt	 50843	 50855	 O	 -1	 -1	 0
+in	data/source_txt/train/t7_government_0_101.txt	 50856	 50858	 O	 -1	 -1	 0
+government	data/source_txt/train/t7_government_0_101.txt	 50859	 50869	 O	 -1	 -1	 0
+and	data/source_txt/train/t7_government_0_101.txt	 50870	 50873	 O	 -1	 -1	 0

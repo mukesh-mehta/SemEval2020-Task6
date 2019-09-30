@@ -5887,3 +5887,53 @@ ovule	data/source_txt/train/t1_biology_0_202.txt	 36808	 36813	 O	 -1	 -1	 0
 .	data/source_txt/train/t1_biology_0_202.txt	 36813	 36814	 O	 -1	 -1	 0
 
 
+908	data/source_txt/train/t1_biology_0_202.txt	 36818	 36821	 O	 -1	 -1	 0
+.	data/source_txt/train/t1_biology_0_202.txt	 36821	 36822	 O	 -1	 -1	 0
+
+Cycads	data/source_txt/train/t1_biology_0_202.txt	 36831	 36837	 O	 -1	 -1	 0
+thrive	data/source_txt/train/t1_biology_0_202.txt	 36838	 36844	 O	 -1	 -1	 0
+in	data/source_txt/train/t1_biology_0_202.txt	 36845	 36847	 O	 -1	 -1	 0
+mild	data/source_txt/train/t1_biology_0_202.txt	 36848	 36852	 O	 -1	 -1	 0
+climates	data/source_txt/train/t1_biology_0_202.txt	 36853	 36861	 O	 -1	 -1	 0
+,	data/source_txt/train/t1_biology_0_202.txt	 36861	 36862	 O	 -1	 -1	 0
+and	data/source_txt/train/t1_biology_0_202.txt	 36863	 36866	 O	 -1	 -1	 0
+are	data/source_txt/train/t1_biology_0_202.txt	 36867	 36870	 O	 -1	 -1	 0
+often	data/source_txt/train/t1_biology_0_202.txt	 36871	 36876	 O	 -1	 -1	 0
+mistaken	data/source_txt/train/t1_biology_0_202.txt	 36877	 36885	 O	 -1	 -1	 0
+for	data/source_txt/train/t1_biology_0_202.txt	 36886	 36889	 O	 -1	 -1	 0
+palms	data/source_txt/train/t1_biology_0_202.txt	 36890	 36895	 O	 -1	 -1	 0
+because	data/source_txt/train/t1_biology_0_202.txt	 36896	 36903	 O	 -1	 -1	 0
+of	data/source_txt/train/t1_biology_0_202.txt	 36904	 36906	 O	 -1	 -1	 0
+the	data/source_txt/train/t1_biology_0_202.txt	 36907	 36910	 O	 -1	 -1	 0
+shape	data/source_txt/train/t1_biology_0_202.txt	 36911	 36916	 O	 -1	 -1	 0
+of	data/source_txt/train/t1_biology_0_202.txt	 36917	 36919	 O	 -1	 -1	 0
+their	data/source_txt/train/t1_biology_0_202.txt	 36920	 36925	 O	 -1	 -1	 0
+large	data/source_txt/train/t1_biology_0_202.txt	 36926	 36931	 O	 -1	 -1	 0
+,	data/source_txt/train/t1_biology_0_202.txt	 36931	 36932	 O	 -1	 -1	 0
+compound	data/source_txt/train/t1_biology_0_202.txt	 36933	 36941	 O	 -1	 -1	 0
+leaves	data/source_txt/train/t1_biology_0_202.txt	 36942	 36948	 O	 -1	 -1	 0
+.	data/source_txt/train/t1_biology_0_202.txt	 36948	 36949	 O	 -1	 -1	 0
+
+Cycads	data/source_txt/train/t1_biology_0_202.txt	 36956	 36962	 O	 -1	 -1	 0
+bear	data/source_txt/train/t1_biology_0_202.txt	 36963	 36967	 O	 -1	 -1	 0
+large	data/source_txt/train/t1_biology_0_202.txt	 36968	 36973	 O	 -1	 -1	 0
+cones	data/source_txt/train/t1_biology_0_202.txt	 36974	 36979	 O	 -1	 -1	 0
+(	data/source_txt/train/t1_biology_0_202.txt	 36980	 36981	 O	 -1	 -1	 0
+[	data/source_txt/train/t1_biology_0_202.txt	 36981	 36982	 O	 -1	 -1	 0
+link	data/source_txt/train/t1_biology_0_202.txt	 36982	 36986	 O	 -1	 -1	 0
+]	data/source_txt/train/t1_biology_0_202.txt	 36986	 36987	 O	 -1	 -1	 0
+)	data/source_txt/train/t1_biology_0_202.txt	 36987	 36988	 O	 -1	 -1	 0
+,	data/source_txt/train/t1_biology_0_202.txt	 36988	 36989	 O	 -1	 -1	 0
+and	data/source_txt/train/t1_biology_0_202.txt	 36990	 36993	 O	 -1	 -1	 0
+may	data/source_txt/train/t1_biology_0_202.txt	 36994	 36997	 O	 -1	 -1	 0
+be	data/source_txt/train/t1_biology_0_202.txt	 36998	 37000	 O	 -1	 -1	 0
+pollinated	data/source_txt/train/t1_biology_0_202.txt	 37001	 37011	 O	 -1	 -1	 0
+by	data/source_txt/train/t1_biology_0_202.txt	 37012	 37014	 O	 -1	 -1	 0
+beetles	data/source_txt/train/t1_biology_0_202.txt	 37015	 37022	 O	 -1	 -1	 0
+rather	data/source_txt/train/t1_biology_0_202.txt	 37023	 37029	 O	 -1	 -1	 0
+than	data/source_txt/train/t1_biology_0_202.txt	 37030	 37034	 O	 -1	 -1	 0
+wind	data/source_txt/train/t1_biology_0_202.txt	 37035	 37039	 O	 -1	 -1	 0
+:	data/source_txt/train/t1_biology_0_202.txt	 37039	 37040	 O	 -1	 -1	 0
+unusual	data/source_txt/train/t1_biology_0_202.txt	 37041	 37048	 O	 -1	 -1	 0
+for	data/source_txt/train/t1_biology_0_202.txt	 37049	 37052	 O	 -1	 -1	 0
+a	data/source_txt/train/t1_biology_0_202.txt	 37053	 37054	 O	 -1	 -1	 0

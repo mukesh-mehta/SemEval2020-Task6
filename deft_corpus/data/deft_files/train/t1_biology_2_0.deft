@@ -1465,48 +1465,6 @@ direction	data/source_txt/train/t1_biology_2_0.txt	 9438	 9447	 O	 -1	 -1	 0
 .	data/source_txt/train/t1_biology_2_0.txt	 9447	 9448	 O	 -1	 -1	 0
 
 
-78	data/source_txt/train/t1_biology_2_0.txt	 9918	 9920	 O	 -1	 -1	 0
-.	data/source_txt/train/t1_biology_2_0.txt	 9920	 9921	 O	 -1	 -1	 0
-
-This	data/source_txt/train/t1_biology_2_0.txt	 9931	 9935	 B-Definition	 T206	 T207	 Direct-Defines
-movement	data/source_txt/train/t1_biology_2_0.txt	 9936	 9944	 I-Definition	 T206	 T207	 Direct-Defines
-of	data/source_txt/train/t1_biology_2_0.txt	 9945	 9947	 I-Definition	 T206	 T207	 Direct-Defines
-electrons	data/source_txt/train/t1_biology_2_0.txt	 9948	 9957	 I-Definition	 T206	 T207	 Direct-Defines
-from	data/source_txt/train/t1_biology_2_0.txt	 9958	 9962	 I-Definition	 T206	 T207	 Direct-Defines
-one	data/source_txt/train/t1_biology_2_0.txt	 9963	 9966	 I-Definition	 T206	 T207	 Direct-Defines
-element	data/source_txt/train/t1_biology_2_0.txt	 9967	 9974	 I-Definition	 T206	 T207	 Direct-Defines
-to	data/source_txt/train/t1_biology_2_0.txt	 9975	 9977	 I-Definition	 T206	 T207	 Direct-Defines
-another	data/source_txt/train/t1_biology_2_0.txt	 9978	 9985	 I-Definition	 T206	 T207	 Direct-Defines
-is	data/source_txt/train/t1_biology_2_0.txt	 9986	 9988	 O	 -1	 -1	 0
-referred	data/source_txt/train/t1_biology_2_0.txt	 9989	 9997	 O	 -1	 -1	 0
-to	data/source_txt/train/t1_biology_2_0.txt	 9998	 10000	 O	 -1	 -1	 0
-as	data/source_txt/train/t1_biology_2_0.txt	 10001	 10003	 O	 -1	 -1	 0
-electron	data/source_txt/train/t1_biology_2_0.txt	 10004	 10012	 B-Term	 T207	 0	 Direct-Defines
-transfer	data/source_txt/train/t1_biology_2_0.txt	 10013	 10021	 I-Term	 T207	 0	 Direct-Defines
-.	data/source_txt/train/t1_biology_2_0.txt	 10021	 10022	 O	 -1	 -1	 0
-
-As	data/source_txt/train/t1_biology_2_0.txt	 10029	 10031	 O	 -1	 -1	 0
-[	data/source_txt/train/t1_biology_2_0.txt	 10032	 10033	 O	 -1	 -1	 0
-link	data/source_txt/train/t1_biology_2_0.txt	 10033	 10037	 O	 -1	 -1	 0
-]	data/source_txt/train/t1_biology_2_0.txt	 10037	 10038	 O	 -1	 -1	 0
-illustrates	data/source_txt/train/t1_biology_2_0.txt	 10039	 10050	 O	 -1	 -1	 0
-,	data/source_txt/train/t1_biology_2_0.txt	 10050	 10051	 O	 -1	 -1	 0
-sodium	data/source_txt/train/t1_biology_2_0.txt	 10052	 10058	 O	 -1	 -1	 0
-(	data/source_txt/train/t1_biology_2_0.txt	 10059	 10060	 O	 -1	 -1	 0
-Na	data/source_txt/train/t1_biology_2_0.txt	 10060	 10062	 O	 -1	 -1	 0
-)	data/source_txt/train/t1_biology_2_0.txt	 10062	 10063	 O	 -1	 -1	 0
-only	data/source_txt/train/t1_biology_2_0.txt	 10065	 10069	 O	 -1	 -1	 0
-has	data/source_txt/train/t1_biology_2_0.txt	 10070	 10073	 O	 -1	 -1	 0
-one	data/source_txt/train/t1_biology_2_0.txt	 10074	 10077	 O	 -1	 -1	 0
-electron	data/source_txt/train/t1_biology_2_0.txt	 10078	 10086	 O	 -1	 -1	 0
-in	data/source_txt/train/t1_biology_2_0.txt	 10087	 10089	 O	 -1	 -1	 0
-its	data/source_txt/train/t1_biology_2_0.txt	 10090	 10093	 O	 -1	 -1	 0
-outer	data/source_txt/train/t1_biology_2_0.txt	 10094	 10099	 O	 -1	 -1	 0
-electron	data/source_txt/train/t1_biology_2_0.txt	 10100	 10108	 O	 -1	 -1	 0
-shell	data/source_txt/train/t1_biology_2_0.txt	 10109	 10114	 O	 -1	 -1	 0
-.	data/source_txt/train/t1_biology_2_0.txt	 10114	 10115	 O	 -1	 -1	 0
-
-
 84	data/source_txt/train/t1_biology_2_0.txt	 10401	 10403	 O	 -1	 -1	 0
 .	data/source_txt/train/t1_biology_2_0.txt	 10403	 10404	 O	 -1	 -1	 0
 
@@ -5877,3 +5835,86 @@ epidermis).Art	data/source_txt/train/t1_biology_2_0.txt	 33997	 34011	 O	 -1	 -1
 Connection	data/source_txt/train/t1_biology_2_0.txt	 34012	 34022	 O	 -1	 -1	 0
 
 
+300	data/source_txt/train/t1_biology_2_0.txt	 34026	 34029	 O	 -1	 -1	 0
+.	data/source_txt/train/t1_biology_2_0.txt	 34029	 34030	 O	 -1	 -1	 0
+
+In	data/source_txt/train/t1_biology_2_0.txt	 34031	 34033	 O	 -1	 -1	 0
+the	data/source_txt/train/t1_biology_2_0.txt	 34034	 34037	 O	 -1	 -1	 0
+light	data/source_txt/train/t1_biology_2_0.txt	 34038	 34043	 O	 -1	 -1	 0
+-	data/source_txt/train/t1_biology_2_0.txt	 34043	 34044	 O	 -1	 -1	 0
+dependent	data/source_txt/train/t1_biology_2_0.txt	 34044	 34053	 O	 -1	 -1	 0
+reactions	data/source_txt/train/t1_biology_2_0.txt	 34054	 34063	 O	 -1	 -1	 0
+,	data/source_txt/train/t1_biology_2_0.txt	 34063	 34064	 O	 -1	 -1	 0
+energy	data/source_txt/train/t1_biology_2_0.txt	 34065	 34071	 O	 -1	 -1	 0
+from	data/source_txt/train/t1_biology_2_0.txt	 34072	 34076	 O	 -1	 -1	 0
+sunlight	data/source_txt/train/t1_biology_2_0.txt	 34077	 34085	 O	 -1	 -1	 0
+is	data/source_txt/train/t1_biology_2_0.txt	 34086	 34088	 O	 -1	 -1	 0
+absorbed	data/source_txt/train/t1_biology_2_0.txt	 34089	 34097	 O	 -1	 -1	 0
+by	data/source_txt/train/t1_biology_2_0.txt	 34098	 34100	 O	 -1	 -1	 0
+chlorophyll	data/source_txt/train/t1_biology_2_0.txt	 34101	 34112	 O	 -1	 -1	 0
+and	data/source_txt/train/t1_biology_2_0.txt	 34113	 34116	 O	 -1	 -1	 0
+that	data/source_txt/train/t1_biology_2_0.txt	 34117	 34121	 O	 -1	 -1	 0
+energy	data/source_txt/train/t1_biology_2_0.txt	 34122	 34128	 O	 -1	 -1	 0
+is	data/source_txt/train/t1_biology_2_0.txt	 34129	 34131	 O	 -1	 -1	 0
+converted	data/source_txt/train/t1_biology_2_0.txt	 34132	 34141	 O	 -1	 -1	 0
+into	data/source_txt/train/t1_biology_2_0.txt	 34142	 34146	 O	 -1	 -1	 0
+stored	data/source_txt/train/t1_biology_2_0.txt	 34147	 34153	 O	 -1	 -1	 0
+chemical	data/source_txt/train/t1_biology_2_0.txt	 34154	 34162	 O	 -1	 -1	 0
+energy	data/source_txt/train/t1_biology_2_0.txt	 34163	 34169	 O	 -1	 -1	 0
+.	data/source_txt/train/t1_biology_2_0.txt	 34169	 34170	 O	 -1	 -1	 0
+
+In	data/source_txt/train/t1_biology_2_0.txt	 34179	 34181	 O	 -1	 -1	 0
+the	data/source_txt/train/t1_biology_2_0.txt	 34182	 34185	 O	 -1	 -1	 0
+light	data/source_txt/train/t1_biology_2_0.txt	 34186	 34191	 O	 -1	 -1	 0
+-	data/source_txt/train/t1_biology_2_0.txt	 34191	 34192	 O	 -1	 -1	 0
+independent	data/source_txt/train/t1_biology_2_0.txt	 34192	 34203	 O	 -1	 -1	 0
+reactions	data/source_txt/train/t1_biology_2_0.txt	 34204	 34213	 O	 -1	 -1	 0
+,	data/source_txt/train/t1_biology_2_0.txt	 34213	 34214	 O	 -1	 -1	 0
+the	data/source_txt/train/t1_biology_2_0.txt	 34215	 34218	 O	 -1	 -1	 0
+chemical	data/source_txt/train/t1_biology_2_0.txt	 34219	 34227	 O	 -1	 -1	 0
+energy	data/source_txt/train/t1_biology_2_0.txt	 34228	 34234	 O	 -1	 -1	 0
+harvested	data/source_txt/train/t1_biology_2_0.txt	 34235	 34244	 O	 -1	 -1	 0
+during	data/source_txt/train/t1_biology_2_0.txt	 34245	 34251	 O	 -1	 -1	 0
+the	data/source_txt/train/t1_biology_2_0.txt	 34252	 34255	 O	 -1	 -1	 0
+light	data/source_txt/train/t1_biology_2_0.txt	 34256	 34261	 O	 -1	 -1	 0
+-	data/source_txt/train/t1_biology_2_0.txt	 34261	 34262	 O	 -1	 -1	 0
+dependent	data/source_txt/train/t1_biology_2_0.txt	 34262	 34271	 O	 -1	 -1	 0
+reactions	data/source_txt/train/t1_biology_2_0.txt	 34272	 34281	 O	 -1	 -1	 0
+drive	data/source_txt/train/t1_biology_2_0.txt	 34282	 34287	 O	 -1	 -1	 0
+the	data/source_txt/train/t1_biology_2_0.txt	 34288	 34291	 O	 -1	 -1	 0
+assembly	data/source_txt/train/t1_biology_2_0.txt	 34292	 34300	 O	 -1	 -1	 0
+of	data/source_txt/train/t1_biology_2_0.txt	 34301	 34303	 O	 -1	 -1	 0
+sugar	data/source_txt/train/t1_biology_2_0.txt	 34304	 34309	 O	 -1	 -1	 0
+molecules	data/source_txt/train/t1_biology_2_0.txt	 34310	 34319	 O	 -1	 -1	 0
+from	data/source_txt/train/t1_biology_2_0.txt	 34320	 34324	 O	 -1	 -1	 0
+carbon	data/source_txt/train/t1_biology_2_0.txt	 34325	 34331	 O	 -1	 -1	 0
+dioxide	data/source_txt/train/t1_biology_2_0.txt	 34332	 34339	 O	 -1	 -1	 0
+.	data/source_txt/train/t1_biology_2_0.txt	 34339	 34340	 O	 -1	 -1	 0
+
+Therefore	data/source_txt/train/t1_biology_2_0.txt	 34347	 34356	 O	 -1	 -1	 0
+,	data/source_txt/train/t1_biology_2_0.txt	 34356	 34357	 O	 -1	 -1	 0
+although	data/source_txt/train/t1_biology_2_0.txt	 34358	 34366	 O	 -1	 -1	 0
+the	data/source_txt/train/t1_biology_2_0.txt	 34367	 34370	 O	 -1	 -1	 0
+light	data/source_txt/train/t1_biology_2_0.txt	 34371	 34376	 O	 -1	 -1	 0
+-	data/source_txt/train/t1_biology_2_0.txt	 34376	 34377	 O	 -1	 -1	 0
+independent	data/source_txt/train/t1_biology_2_0.txt	 34377	 34388	 O	 -1	 -1	 0
+reactions	data/source_txt/train/t1_biology_2_0.txt	 34389	 34398	 O	 -1	 -1	 0
+do	data/source_txt/train/t1_biology_2_0.txt	 34399	 34401	 O	 -1	 -1	 0
+not	data/source_txt/train/t1_biology_2_0.txt	 34402	 34405	 O	 -1	 -1	 0
+use	data/source_txt/train/t1_biology_2_0.txt	 34406	 34409	 O	 -1	 -1	 0
+light	data/source_txt/train/t1_biology_2_0.txt	 34410	 34415	 O	 -1	 -1	 0
+as	data/source_txt/train/t1_biology_2_0.txt	 34416	 34418	 O	 -1	 -1	 0
+a	data/source_txt/train/t1_biology_2_0.txt	 34419	 34420	 O	 -1	 -1	 0
+reactant	data/source_txt/train/t1_biology_2_0.txt	 34421	 34429	 O	 -1	 -1	 0
+,	data/source_txt/train/t1_biology_2_0.txt	 34429	 34430	 O	 -1	 -1	 0
+they	data/source_txt/train/t1_biology_2_0.txt	 34431	 34435	 O	 -1	 -1	 0
+require	data/source_txt/train/t1_biology_2_0.txt	 34436	 34443	 O	 -1	 -1	 0
+the	data/source_txt/train/t1_biology_2_0.txt	 34444	 34447	 O	 -1	 -1	 0
+products	data/source_txt/train/t1_biology_2_0.txt	 34448	 34456	 O	 -1	 -1	 0
+of	data/source_txt/train/t1_biology_2_0.txt	 34457	 34459	 O	 -1	 -1	 0
+the	data/source_txt/train/t1_biology_2_0.txt	 34460	 34463	 O	 -1	 -1	 0
+light	data/source_txt/train/t1_biology_2_0.txt	 34464	 34469	 O	 -1	 -1	 0
+-	data/source_txt/train/t1_biology_2_0.txt	 34469	 34470	 O	 -1	 -1	 0
+dependent	data/source_txt/train/t1_biology_2_0.txt	 34470	 34479	 O	 -1	 -1	 0
+reactions	data/source_txt/train/t1_biology_2_0.txt	 34480	 34489	 O	 -1	 -1	 0
+to	data/source_txt/train/t1_biology_2_0.txt	 34490	 34492	 O	 -1	 -1	 0

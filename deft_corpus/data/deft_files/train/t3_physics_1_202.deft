@@ -1321,3 +1321,64 @@ link	data/source_txt/train/t3_physics_1_202.txt	 9064	 9068	 O	 -1	 -1	 0
 .	data/source_txt/train/t3_physics_1_202.txt	 9069	 9070	 O	 -1	 -1	 0
 
 
+3309	data/source_txt/train/t3_physics_1_202.txt	 9074	 9078	 O	 -1	 -1	 0
+.	data/source_txt/train/t3_physics_1_202.txt	 9078	 9079	 O	 -1	 -1	 0
+
+One	data/source_txt/train/t3_physics_1_202.txt	 9080	 9083	 O	 -1	 -1	 0
+solution	data/source_txt/train/t3_physics_1_202.txt	 9084	 9092	 O	 -1	 -1	 0
+to	data/source_txt/train/t3_physics_1_202.txt	 9093	 9095	 O	 -1	 -1	 0
+this	data/source_txt/train/t3_physics_1_202.txt	 9096	 9100	 O	 -1	 -1	 0
+problem	data/source_txt/train/t3_physics_1_202.txt	 9101	 9108	 O	 -1	 -1	 0
+is	data/source_txt/train/t3_physics_1_202.txt	 9109	 9111	 O	 -1	 -1	 0
+to	data/source_txt/train/t3_physics_1_202.txt	 9112	 9114	 O	 -1	 -1	 0
+have	data/source_txt/train/t3_physics_1_202.txt	 9115	 9119	 O	 -1	 -1	 0
+head	data/source_txt/train/t3_physics_1_202.txt	 9120	 9124	 O	 -1	 -1	 0
+-	data/source_txt/train/t3_physics_1_202.txt	 9124	 9125	 O	 -1	 -1	 0
+on	data/source_txt/train/t3_physics_1_202.txt	 9125	 9127	 O	 -1	 -1	 0
+collisions	data/source_txt/train/t3_physics_1_202.txt	 9128	 9138	 O	 -1	 -1	 0
+between	data/source_txt/train/t3_physics_1_202.txt	 9139	 9146	 O	 -1	 -1	 0
+particles	data/source_txt/train/t3_physics_1_202.txt	 9147	 9156	 O	 -1	 -1	 0
+moving	data/source_txt/train/t3_physics_1_202.txt	 9157	 9163	 O	 -1	 -1	 0
+in	data/source_txt/train/t3_physics_1_202.txt	 9164	 9166	 O	 -1	 -1	 0
+opposite	data/source_txt/train/t3_physics_1_202.txt	 9167	 9175	 O	 -1	 -1	 0
+directions	data/source_txt/train/t3_physics_1_202.txt	 9176	 9186	 O	 -1	 -1	 0
+.	data/source_txt/train/t3_physics_1_202.txt	 9186	 9187	 O	 -1	 -1	 0
+
+Colliding	data/source_txt/train/t3_physics_1_202.txt	 9196	 9205	 O	 -1	 -1	 0
+beams	data/source_txt/train/t3_physics_1_202.txt	 9206	 9211	 O	 -1	 -1	 0
+are	data/source_txt/train/t3_physics_1_202.txt	 9212	 9215	 O	 -1	 -1	 0
+made	data/source_txt/train/t3_physics_1_202.txt	 9216	 9220	 O	 -1	 -1	 0
+to	data/source_txt/train/t3_physics_1_202.txt	 9221	 9223	 O	 -1	 -1	 0
+meet	data/source_txt/train/t3_physics_1_202.txt	 9224	 9228	 O	 -1	 -1	 0
+head	data/source_txt/train/t3_physics_1_202.txt	 9229	 9233	 O	 -1	 -1	 0
+-	data/source_txt/train/t3_physics_1_202.txt	 9233	 9234	 O	 -1	 -1	 0
+on	data/source_txt/train/t3_physics_1_202.txt	 9234	 9236	 O	 -1	 -1	 0
+at	data/source_txt/train/t3_physics_1_202.txt	 9237	 9239	 O	 -1	 -1	 0
+points	data/source_txt/train/t3_physics_1_202.txt	 9240	 9246	 O	 -1	 -1	 0
+where	data/source_txt/train/t3_physics_1_202.txt	 9247	 9252	 O	 -1	 -1	 0
+massive	data/source_txt/train/t3_physics_1_202.txt	 9253	 9260	 O	 -1	 -1	 0
+detectors	data/source_txt/train/t3_physics_1_202.txt	 9261	 9270	 O	 -1	 -1	 0
+are	data/source_txt/train/t3_physics_1_202.txt	 9271	 9274	 O	 -1	 -1	 0
+located	data/source_txt/train/t3_physics_1_202.txt	 9275	 9282	 O	 -1	 -1	 0
+.	data/source_txt/train/t3_physics_1_202.txt	 9282	 9283	 O	 -1	 -1	 0
+
+Since	data/source_txt/train/t3_physics_1_202.txt	 9290	 9295	 O	 -1	 -1	 0
+the	data/source_txt/train/t3_physics_1_202.txt	 9296	 9299	 O	 -1	 -1	 0
+total	data/source_txt/train/t3_physics_1_202.txt	 9300	 9305	 O	 -1	 -1	 0
+incoming	data/source_txt/train/t3_physics_1_202.txt	 9306	 9314	 O	 -1	 -1	 0
+momentum	data/source_txt/train/t3_physics_1_202.txt	 9315	 9323	 O	 -1	 -1	 0
+is	data/source_txt/train/t3_physics_1_202.txt	 9324	 9326	 O	 -1	 -1	 0
+zero	data/source_txt/train/t3_physics_1_202.txt	 9327	 9331	 O	 -1	 -1	 0
+,	data/source_txt/train/t3_physics_1_202.txt	 9331	 9332	 O	 -1	 -1	 0
+it	data/source_txt/train/t3_physics_1_202.txt	 9333	 9335	 O	 -1	 -1	 0
+is	data/source_txt/train/t3_physics_1_202.txt	 9336	 9338	 O	 -1	 -1	 0
+possible	data/source_txt/train/t3_physics_1_202.txt	 9339	 9347	 O	 -1	 -1	 0
+to	data/source_txt/train/t3_physics_1_202.txt	 9348	 9350	 O	 -1	 -1	 0
+create	data/source_txt/train/t3_physics_1_202.txt	 9351	 9357	 O	 -1	 -1	 0
+particles	data/source_txt/train/t3_physics_1_202.txt	 9358	 9367	 O	 -1	 -1	 0
+with	data/source_txt/train/t3_physics_1_202.txt	 9368	 9372	 O	 -1	 -1	 0
+momenta	data/source_txt/train/t3_physics_1_202.txt	 9373	 9380	 O	 -1	 -1	 0
+and	data/source_txt/train/t3_physics_1_202.txt	 9381	 9384	 O	 -1	 -1	 0
+kinetic	data/source_txt/train/t3_physics_1_202.txt	 9385	 9392	 O	 -1	 -1	 0
+energies	data/source_txt/train/t3_physics_1_202.txt	 9393	 9401	 O	 -1	 -1	 0
+near	data/source_txt/train/t3_physics_1_202.txt	 9402	 9406	 O	 -1	 -1	 0

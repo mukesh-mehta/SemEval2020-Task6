@@ -1784,3 +1784,40 @@ http://www.nytimes.com/2011/12/10/us/redress-weighed-for-forced-sterilizations-i
 .	data/source_txt/train/t7_government_0_404.txt	 12837	 12838	 O	 -1	 -1	 0
 
 
+7098	data/source_txt/train/t7_government_0_404.txt	 12848	 12852	 O	 -1	 -1	 0
+.	data/source_txt/train/t7_government_0_404.txt	 12852	 12853	 O	 -1	 -1	 0
+
+In	data/source_txt/train/t7_government_0_404.txt	 12862	 12864	 O	 -1	 -1	 0
+1990	data/source_txt/train/t7_government_0_404.txt	 12865	 12869	 O	 -1	 -1	 0
+,	data/source_txt/train/t7_government_0_404.txt	 12869	 12870	 O	 -1	 -1	 0
+the	data/source_txt/train/t7_government_0_404.txt	 12871	 12874	 O	 -1	 -1	 0
+Americans	data/source_txt/train/t7_government_0_404.txt	 12875	 12884	 O	 -1	 -1	 0
+with	data/source_txt/train/t7_government_0_404.txt	 12885	 12889	 O	 -1	 -1	 0
+Disabilities	data/source_txt/train/t7_government_0_404.txt	 12890	 12902	 O	 -1	 -1	 0
+Act	data/source_txt/train/t7_government_0_404.txt	 12903	 12906	 O	 -1	 -1	 0
+(	data/source_txt/train/t7_government_0_404.txt	 12907	 12908	 O	 -1	 -1	 0
+ADA	data/source_txt/train/t7_government_0_404.txt	 12908	 12911	 O	 -1	 -1	 0
+)	data/source_txt/train/t7_government_0_404.txt	 12911	 12912	 O	 -1	 -1	 0
+greatly	data/source_txt/train/t7_government_0_404.txt	 12913	 12920	 O	 -1	 -1	 0
+expanded	data/source_txt/train/t7_government_0_404.txt	 12921	 12929	 O	 -1	 -1	 0
+opportunities	data/source_txt/train/t7_government_0_404.txt	 12930	 12943	 O	 -1	 -1	 0
+and	data/source_txt/train/t7_government_0_404.txt	 12944	 12947	 O	 -1	 -1	 0
+protections	data/source_txt/train/t7_government_0_404.txt	 12948	 12959	 O	 -1	 -1	 0
+for	data/source_txt/train/t7_government_0_404.txt	 12960	 12963	 O	 -1	 -1	 0
+people	data/source_txt/train/t7_government_0_404.txt	 12964	 12970	 O	 -1	 -1	 0
+of	data/source_txt/train/t7_government_0_404.txt	 12971	 12973	 O	 -1	 -1	 0
+all	data/source_txt/train/t7_government_0_404.txt	 12974	 12977	 O	 -1	 -1	 0
+ages	data/source_txt/train/t7_government_0_404.txt	 12978	 12982	 O	 -1	 -1	 0
+with	data/source_txt/train/t7_government_0_404.txt	 12983	 12987	 O	 -1	 -1	 0
+disabilities	data/source_txt/train/t7_government_0_404.txt	 12988	 13000	 O	 -1	 -1	 0
+.	data/source_txt/train/t7_government_0_404.txt	 13000	 13001	 O	 -1	 -1	 0
+
+It	data/source_txt/train/t7_government_0_404.txt	 13008	 13010	 O	 -1	 -1	 0
+also	data/source_txt/train/t7_government_0_404.txt	 13011	 13015	 O	 -1	 -1	 0
+significantly	data/source_txt/train/t7_government_0_404.txt	 13016	 13029	 O	 -1	 -1	 0
+expanded	data/source_txt/train/t7_government_0_404.txt	 13030	 13038	 O	 -1	 -1	 0
+the	data/source_txt/train/t7_government_0_404.txt	 13039	 13042	 O	 -1	 -1	 0
+categories	data/source_txt/train/t7_government_0_404.txt	 13043	 13053	 O	 -1	 -1	 0
+and	data/source_txt/train/t7_government_0_404.txt	 13054	 13057	 O	 -1	 -1	 0
+definition	data/source_txt/train/t7_government_0_404.txt	 13058	 13068	 O	 -1	 -1	 0
+of	data/source_txt/train/t7_government_0_404.txt	 13069	 13071	 O	 -1	 -1	 0

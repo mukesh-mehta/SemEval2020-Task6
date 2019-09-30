@@ -449,7 +449,10 @@ do	data/source_txt/train/t7_government_2_0.txt	 3680	 3682	 O	 -1	 -1	 0
 things	data/source_txt/train/t7_government_2_0.txt	 3683	 3689	 O	 -1	 -1	 0
 for	data/source_txt/train/t7_government_2_0.txt	 3690	 3693	 O	 -1	 -1	 0
 each	data/source_txt/train/t7_government_2_0.txt	 3694	 3698	 O	 -1	 -1	 0
-other”—accompanies	data/source_txt/train/t7_government_2_0.txt	 3699	 3717	 O	 -1	 -1	 0
+other	data/source_txt/train/t7_government_2_0.txt	 3699	 3704	 O	 -1	 -1	 0
+”	data/source_txt/train/t7_government_2_0.txt	 3704	 3705	 O	 -1	 -1	 0
+—	data/source_txt/train/t7_government_2_0.txt	 3705	 3706	 O	 -1	 -1	 0
+accompanies	data/source_txt/train/t7_government_2_0.txt	 3706	 3717	 O	 -1	 -1	 0
 this	data/source_txt/train/t7_government_2_0.txt	 3718	 3722	 O	 -1	 -1	 0
 decline	data/source_txt/train/t7_government_2_0.txt	 3723	 3730	 O	 -1	 -1	 0
 in	data/source_txt/train/t7_government_2_0.txt	 3731	 3733	 O	 -1	 -1	 0
@@ -458,9 +461,10 @@ in	data/source_txt/train/t7_government_2_0.txt	 3745	 3747	 O	 -1	 -1	 0
 small	data/source_txt/train/t7_government_2_0.txt	 3748	 3753	 O	 -1	 -1	 0
 ,	data/source_txt/train/t7_government_2_0.txt	 3753	 3754	 O	 -1	 -1	 0
 interactive	data/source_txt/train/t7_government_2_0.txt	 3755	 3766	 O	 -1	 -1	 0
-groups.———	data/source_txt/train/t7_government_2_0.txt	 3767	 3777	 O	 -1	 -1	 0
+groups	data/source_txt/train/t7_government_2_0.txt	 3767	 3773	 O	 -1	 -1	 0
+.	data/source_txt/train/t7_government_2_0.txt	 3773	 3774	 O	 -1	 -1	 0
+———	data/source_txt/train/t7_government_2_0.txt	 3774	 3777	 O	 -1	 -1	 0
 .	data/source_txt/train/t7_government_2_0.txt	 3777	 3778	 O	 -1	 -1	 0
-
 1995	data/source_txt/train/t7_government_2_0.txt	 3785	 3789	 O	 -1	 -1	 0
 .	data/source_txt/train/t7_government_2_0.txt	 3789	 3790	 O	 -1	 -1	 0
 
@@ -2084,10 +2088,6 @@ great.”Isaac	data/source_txt/train/t7_government_2_0.txt	 12388	 12400	 O	 -1	
 Krannick	data/source_txt/train/t7_government_2_0.txt	 12401	 12409	 O	 -1	 -1	 0
 .	data/source_txt/train/t7_government_2_0.txt	 12409	 12410	 O	 -1	 -1	 0
 
-1999	data/source_txt/train/t7_government_2_0.txt	 12417	 12421	 O	 -1	 -1	 0
-.	data/source_txt/train/t7_government_2_0.txt	 12421	 12422	 O	 -1	 -1	 0
-
-
 5908	data/source_txt/train/t7_government_2_0.txt	 12426	 12430	 O	 -1	 -1	 0
 .	data/source_txt/train/t7_government_2_0.txt	 12430	 12431	 O	 -1	 -1	 0
 
@@ -2217,7 +2217,6 @@ in	data/source_txt/train/t7_government_2_0.txt	 13066	 13068	 O	 -1	 -1	 0
 Federalist	data/source_txt/train/t7_government_2_0.txt	 13069	 13079	 O	 -1	 -1	 0
 No	data/source_txt/train/t7_government_2_0.txt	 13080	 13082	 O	 -1	 -1	 0
 .	data/source_txt/train/t7_government_2_0.txt	 13082	 13083	 O	 -1	 -1	 0
-
 2	data/source_txt/train/t7_government_2_0.txt	 13090	 13091	 O	 -1	 -1	 0
 that	data/source_txt/train/t7_government_2_0.txt	 13092	 13096	 O	 -1	 -1	 0
 union	data/source_txt/train/t7_government_2_0.txt	 13097	 13102	 O	 -1	 -1	 0
@@ -2301,7 +2300,6 @@ in	data/source_txt/train/t7_government_2_0.txt	 13486	 13488	 O	 -1	 -1	 0
 Federalist	data/source_txt/train/t7_government_2_0.txt	 13489	 13499	 O	 -1	 -1	 0
 No	data/source_txt/train/t7_government_2_0.txt	 13500	 13502	 O	 -1	 -1	 0
 .	data/source_txt/train/t7_government_2_0.txt	 13502	 13503	 O	 -1	 -1	 0
-
 70	data/source_txt/train/t7_government_2_0.txt	 13510	 13512	 O	 -1	 -1	 0
 ,	data/source_txt/train/t7_government_2_0.txt	 13512	 13513	 O	 -1	 -1	 0
 instead	data/source_txt/train/t7_government_2_0.txt	 13514	 13521	 O	 -1	 -1	 0
@@ -8894,3 +8892,74 @@ to	data/source_txt/train/t7_government_2_0.txt	 48994	 48996	 O	 -1	 -1	 0
 .	data/source_txt/train/t7_government_2_0.txt	 49001	 49002	 O	 -1	 -1	 0
 
 
+6106	data/source_txt/train/t7_government_2_0.txt	 49006	 49010	 O	 -1	 -1	 0
+.	data/source_txt/train/t7_government_2_0.txt	 49010	 49011	 O	 -1	 -1	 0
+
+Although	data/source_txt/train/t7_government_2_0.txt	 49012	 49020	 O	 -1	 -1	 0
+people	data/source_txt/train/t7_government_2_0.txt	 49021	 49027	 O	 -1	 -1	 0
+who	data/source_txt/train/t7_government_2_0.txt	 49028	 49031	 O	 -1	 -1	 0
+leak	data/source_txt/train/t7_government_2_0.txt	 49032	 49036	 O	 -1	 -1	 0
+secret	data/source_txt/train/t7_government_2_0.txt	 49037	 49043	 O	 -1	 -1	 0
+information	data/source_txt/train/t7_government_2_0.txt	 49044	 49055	 O	 -1	 -1	 0
+to	data/source_txt/train/t7_government_2_0.txt	 49056	 49058	 O	 -1	 -1	 0
+the	data/source_txt/train/t7_government_2_0.txt	 49059	 49062	 O	 -1	 -1	 0
+media	data/source_txt/train/t7_government_2_0.txt	 49063	 49068	 O	 -1	 -1	 0
+can	data/source_txt/train/t7_government_2_0.txt	 49069	 49072	 O	 -1	 -1	 0
+still	data/source_txt/train/t7_government_2_0.txt	 49073	 49078	 O	 -1	 -1	 0
+be	data/source_txt/train/t7_government_2_0.txt	 49079	 49081	 O	 -1	 -1	 0
+prosecuted	data/source_txt/train/t7_government_2_0.txt	 49082	 49092	 O	 -1	 -1	 0
+and	data/source_txt/train/t7_government_2_0.txt	 49093	 49096	 O	 -1	 -1	 0
+punished	data/source_txt/train/t7_government_2_0.txt	 49097	 49105	 O	 -1	 -1	 0
+,	data/source_txt/train/t7_government_2_0.txt	 49105	 49106	 O	 -1	 -1	 0
+this	data/source_txt/train/t7_government_2_0.txt	 49107	 49111	 O	 -1	 -1	 0
+does	data/source_txt/train/t7_government_2_0.txt	 49112	 49116	 O	 -1	 -1	 0
+not	data/source_txt/train/t7_government_2_0.txt	 49117	 49120	 O	 -1	 -1	 0
+generally	data/source_txt/train/t7_government_2_0.txt	 49121	 49130	 O	 -1	 -1	 0
+extend	data/source_txt/train/t7_government_2_0.txt	 49131	 49137	 O	 -1	 -1	 0
+to	data/source_txt/train/t7_government_2_0.txt	 49138	 49140	 O	 -1	 -1	 0
+reporters	data/source_txt/train/t7_government_2_0.txt	 49141	 49150	 O	 -1	 -1	 0
+and	data/source_txt/train/t7_government_2_0.txt	 49151	 49154	 O	 -1	 -1	 0
+news	data/source_txt/train/t7_government_2_0.txt	 49155	 49159	 O	 -1	 -1	 0
+outlets	data/source_txt/train/t7_government_2_0.txt	 49160	 49167	 O	 -1	 -1	 0
+that	data/source_txt/train/t7_government_2_0.txt	 49168	 49172	 O	 -1	 -1	 0
+pass	data/source_txt/train/t7_government_2_0.txt	 49173	 49177	 O	 -1	 -1	 0
+that	data/source_txt/train/t7_government_2_0.txt	 49178	 49182	 O	 -1	 -1	 0
+information	data/source_txt/train/t7_government_2_0.txt	 49183	 49194	 O	 -1	 -1	 0
+on	data/source_txt/train/t7_government_2_0.txt	 49195	 49197	 O	 -1	 -1	 0
+to	data/source_txt/train/t7_government_2_0.txt	 49198	 49200	 O	 -1	 -1	 0
+the	data/source_txt/train/t7_government_2_0.txt	 49201	 49204	 O	 -1	 -1	 0
+public	data/source_txt/train/t7_government_2_0.txt	 49205	 49211	 O	 -1	 -1	 0
+.	data/source_txt/train/t7_government_2_0.txt	 49211	 49212	 O	 -1	 -1	 0
+
+The	data/source_txt/train/t7_government_2_0.txt	 49221	 49224	 O	 -1	 -1	 0
+Edward	data/source_txt/train/t7_government_2_0.txt	 49225	 49231	 O	 -1	 -1	 0
+Snowden	data/source_txt/train/t7_government_2_0.txt	 49232	 49239	 O	 -1	 -1	 0
+case	data/source_txt/train/t7_government_2_0.txt	 49240	 49244	 O	 -1	 -1	 0
+is	data/source_txt/train/t7_government_2_0.txt	 49245	 49247	 O	 -1	 -1	 0
+another	data/source_txt/train/t7_government_2_0.txt	 49248	 49255	 O	 -1	 -1	 0
+good	data/source_txt/train/t7_government_2_0.txt	 49256	 49260	 O	 -1	 -1	 0
+case	data/source_txt/train/t7_government_2_0.txt	 49261	 49265	 O	 -1	 -1	 0
+in	data/source_txt/train/t7_government_2_0.txt	 49266	 49268	 O	 -1	 -1	 0
+point	data/source_txt/train/t7_government_2_0.txt	 49269	 49274	 O	 -1	 -1	 0
+.	data/source_txt/train/t7_government_2_0.txt	 49274	 49275	 O	 -1	 -1	 0
+
+Snowden	data/source_txt/train/t7_government_2_0.txt	 49282	 49289	 O	 -1	 -1	 0
+himself	data/source_txt/train/t7_government_2_0.txt	 49290	 49297	 O	 -1	 -1	 0
+,	data/source_txt/train/t7_government_2_0.txt	 49297	 49298	 O	 -1	 -1	 0
+rather	data/source_txt/train/t7_government_2_0.txt	 49299	 49305	 O	 -1	 -1	 0
+than	data/source_txt/train/t7_government_2_0.txt	 49306	 49310	 O	 -1	 -1	 0
+those	data/source_txt/train/t7_government_2_0.txt	 49311	 49316	 O	 -1	 -1	 0
+involved	data/source_txt/train/t7_government_2_0.txt	 49317	 49325	 O	 -1	 -1	 0
+in	data/source_txt/train/t7_government_2_0.txt	 49326	 49328	 O	 -1	 -1	 0
+promoting	data/source_txt/train/t7_government_2_0.txt	 49329	 49338	 O	 -1	 -1	 0
+the	data/source_txt/train/t7_government_2_0.txt	 49339	 49342	 O	 -1	 -1	 0
+information	data/source_txt/train/t7_government_2_0.txt	 49343	 49354	 O	 -1	 -1	 0
+that	data/source_txt/train/t7_government_2_0.txt	 49355	 49359	 O	 -1	 -1	 0
+he	data/source_txt/train/t7_government_2_0.txt	 49360	 49362	 O	 -1	 -1	 0
+shared	data/source_txt/train/t7_government_2_0.txt	 49363	 49369	 O	 -1	 -1	 0
+,	data/source_txt/train/t7_government_2_0.txt	 49369	 49370	 O	 -1	 -1	 0
+is	data/source_txt/train/t7_government_2_0.txt	 49371	 49373	 O	 -1	 -1	 0
+the	data/source_txt/train/t7_government_2_0.txt	 49374	 49377	 O	 -1	 -1	 0
+object	data/source_txt/train/t7_government_2_0.txt	 49378	 49384	 O	 -1	 -1	 0
+of	data/source_txt/train/t7_government_2_0.txt	 49385	 49387	 O	 -1	 -1	 0
+criminal	data/source_txt/train/t7_government_2_0.txt	 49388	 49396	 O	 -1	 -1	 0

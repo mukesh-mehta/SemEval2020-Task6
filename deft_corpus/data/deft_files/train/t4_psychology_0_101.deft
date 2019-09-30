@@ -5678,3 +5678,67 @@ selves	data/source_txt/train/t4_psychology_0_101.txt	 37619	 37625	 O	 -1	 -1	 0
 .	data/source_txt/train/t4_psychology_0_101.txt	 37625	 37626	 O	 -1	 -1	 0
 
 
+3916	data/source_txt/train/t4_psychology_0_101.txt	 37630	 37634	 O	 -1	 -1	 0
+.	data/source_txt/train/t4_psychology_0_101.txt	 37634	 37635	 O	 -1	 -1	 0
+
+What	data/source_txt/train/t4_psychology_0_101.txt	 37636	 37640	 O	 -1	 -1	 0
+are	data/source_txt/train/t4_psychology_0_101.txt	 37641	 37644	 O	 -1	 -1	 0
+some	data/source_txt/train/t4_psychology_0_101.txt	 37645	 37649	 O	 -1	 -1	 0
+everyday	data/source_txt/train/t4_psychology_0_101.txt	 37650	 37658	 O	 -1	 -1	 0
+ways	data/source_txt/train/t4_psychology_0_101.txt	 37659	 37663	 O	 -1	 -1	 0
+we	data/source_txt/train/t4_psychology_0_101.txt	 37664	 37666	 O	 -1	 -1	 0
+can	data/source_txt/train/t4_psychology_0_101.txt	 37667	 37670	 O	 -1	 -1	 0
+improve	data/source_txt/train/t4_psychology_0_101.txt	 37671	 37678	 O	 -1	 -1	 0
+our	data/source_txt/train/t4_psychology_0_101.txt	 37679	 37682	 O	 -1	 -1	 0
+memory	data/source_txt/train/t4_psychology_0_101.txt	 37683	 37689	 O	 -1	 -1	 0
+,	data/source_txt/train/t4_psychology_0_101.txt	 37689	 37690	 O	 -1	 -1	 0
+including	data/source_txt/train/t4_psychology_0_101.txt	 37691	 37700	 O	 -1	 -1	 0
+recall	data/source_txt/train/t4_psychology_0_101.txt	 37701	 37707	 O	 -1	 -1	 0
+?	data/source_txt/train/t4_psychology_0_101.txt	 37707	 37708	 O	 -1	 -1	 0
+
+To	data/source_txt/train/t4_psychology_0_101.txt	 37717	 37719	 B-Definition	 T139	 0	 Supplements
+help	data/source_txt/train/t4_psychology_0_101.txt	 37720	 37724	 I-Definition	 T139	 0	 Supplements
+make	data/source_txt/train/t4_psychology_0_101.txt	 37725	 37729	 I-Definition	 T139	 0	 Supplements
+sure	data/source_txt/train/t4_psychology_0_101.txt	 37730	 37734	 I-Definition	 T139	 0	 Supplements
+information	data/source_txt/train/t4_psychology_0_101.txt	 37735	 37746	 I-Definition	 T139	 0	 Supplements
+goes	data/source_txt/train/t4_psychology_0_101.txt	 37747	 37751	 I-Definition	 T139	 0	 Supplements
+from	data/source_txt/train/t4_psychology_0_101.txt	 37752	 37756	 I-Definition	 T139	 0	 Supplements
+short	data/source_txt/train/t4_psychology_0_101.txt	 37757	 37762	 I-Definition	 T139	 0	 Supplements
+-	data/source_txt/train/t4_psychology_0_101.txt	 37762	 37763	 I-Definition	 T139	 0	 Supplements
+term	data/source_txt/train/t4_psychology_0_101.txt	 37763	 37767	 I-Definition	 T139	 0	 Supplements
+memory	data/source_txt/train/t4_psychology_0_101.txt	 37768	 37774	 I-Definition	 T139	 0	 Supplements
+to	data/source_txt/train/t4_psychology_0_101.txt	 37775	 37777	 I-Definition	 T139	 0	 Supplements
+long	data/source_txt/train/t4_psychology_0_101.txt	 37778	 37782	 I-Definition	 T139	 0	 Supplements
+-	data/source_txt/train/t4_psychology_0_101.txt	 37782	 37783	 I-Definition	 T139	 0	 Supplements
+term	data/source_txt/train/t4_psychology_0_101.txt	 37783	 37787	 I-Definition	 T139	 0	 Supplements
+memory	data/source_txt/train/t4_psychology_0_101.txt	 37788	 37794	 I-Definition	 T139	 0	 Supplements
+,	data/source_txt/train/t4_psychology_0_101.txt	 37794	 37795	 O	 -1	 -1	 0
+you	data/source_txt/train/t4_psychology_0_101.txt	 37796	 37799	 O	 -1	 -1	 0
+can	data/source_txt/train/t4_psychology_0_101.txt	 37800	 37803	 O	 -1	 -1	 0
+use	data/source_txt/train/t4_psychology_0_101.txt	 37804	 37807	 O	 -1	 -1	 0
+memory	data/source_txt/train/t4_psychology_0_101.txt	 37808	 37814	 B-Term	 T138	 0	 Direct-Defines
+-	data/source_txt/train/t4_psychology_0_101.txt	 37814	 37815	 I-Term	 T138	 0	 Direct-Defines
+enhancing	data/source_txt/train/t4_psychology_0_101.txt	 37815	 37824	 I-Term	 T138	 0	 Direct-Defines
+strategies	data/source_txt/train/t4_psychology_0_101.txt	 37825	 37835	 I-Term	 T138	 0	 Direct-Defines
+.	data/source_txt/train/t4_psychology_0_101.txt	 37835	 37836	 O	 -1	 -1	 0
+
+One	data/source_txt/train/t4_psychology_0_101.txt	 37843	 37846	 B-Secondary-Definition	 T146	 T139	 Supplements
+strategy	data/source_txt/train/t4_psychology_0_101.txt	 37847	 37855	 I-Secondary-Definition	 T146	 T139	 Supplements
+is	data/source_txt/train/t4_psychology_0_101.txt	 37856	 37858	 I-Secondary-Definition	 T146	 T139	 Supplements
+rehearsal	data/source_txt/train/t4_psychology_0_101.txt	 37859	 37868	 I-Secondary-Definition	 T146	 T139	 Supplements
+,	data/source_txt/train/t4_psychology_0_101.txt	 37868	 37869	 I-Secondary-Definition	 T146	 T139	 Supplements
+or	data/source_txt/train/t4_psychology_0_101.txt	 37870	 37872	 I-Secondary-Definition	 T146	 T139	 Supplements
+the	data/source_txt/train/t4_psychology_0_101.txt	 37873	 37876	 I-Secondary-Definition	 T146	 T139	 Supplements
+conscious	data/source_txt/train/t4_psychology_0_101.txt	 37877	 37886	 I-Secondary-Definition	 T146	 T139	 Supplements
+repetition	data/source_txt/train/t4_psychology_0_101.txt	 37887	 37897	 I-Secondary-Definition	 T146	 T139	 Supplements
+of	data/source_txt/train/t4_psychology_0_101.txt	 37898	 37900	 I-Secondary-Definition	 T146	 T139	 Supplements
+information	data/source_txt/train/t4_psychology_0_101.txt	 37901	 37912	 I-Secondary-Definition	 T146	 T139	 Supplements
+to	data/source_txt/train/t4_psychology_0_101.txt	 37913	 37915	 I-Secondary-Definition	 T146	 T139	 Supplements
+be	data/source_txt/train/t4_psychology_0_101.txt	 37916	 37918	 I-Secondary-Definition	 T146	 T139	 Supplements
+remembered	data/source_txt/train/t4_psychology_0_101.txt	 37919	 37929	 I-Secondary-Definition	 T146	 T139	 Supplements
+(	data/source_txt/train/t4_psychology_0_101.txt	 37930	 37931	 O	 -1	 -1	 0
+Craik	data/source_txt/train/t4_psychology_0_101.txt	 37931	 37936	 O	 -1	 -1	 0
+&	data/source_txt/train/t4_psychology_0_101.txt	 37937	 37938	 O	 -1	 -1	 0
+Watkins	data/source_txt/train/t4_psychology_0_101.txt	 37939	 37946	 O	 -1	 -1	 0
+,	data/source_txt/train/t4_psychology_0_101.txt	 37946	 37947	 O	 -1	 -1	 0
+1973	data/source_txt/train/t4_psychology_0_101.txt	 37948	 37952	 O	 -1	 -1	 0

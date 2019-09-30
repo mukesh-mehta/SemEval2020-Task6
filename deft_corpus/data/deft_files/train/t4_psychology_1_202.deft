@@ -7252,3 +7252,65 @@ adults	data/source_txt/train/t4_psychology_1_202.txt	 38058	 38064	 O	 -1	 -1	 0
 .	data/source_txt/train/t4_psychology_1_202.txt	 38064	 38065	 O	 -1	 -1	 0
 
 
+4218	data/source_txt/train/t4_psychology_1_202.txt	 38069	 38073	 O	 -1	 -1	 0
+.	data/source_txt/train/t4_psychology_1_202.txt	 38073	 38074	 O	 -1	 -1	 0
+
+Amnesia	data/source_txt/train/t4_psychology_1_202.txt	 38075	 38082	 B-Term	 T203	 0	 Direct-Defines
+refers	data/source_txt/train/t4_psychology_1_202.txt	 38083	 38089	 O	 -1	 -1	 0
+to	data/source_txt/train/t4_psychology_1_202.txt	 38090	 38092	 O	 -1	 -1	 0
+the	data/source_txt/train/t4_psychology_1_202.txt	 38093	 38096	 B-Definition	 T204	 T203	 Direct-Defines
+partial	data/source_txt/train/t4_psychology_1_202.txt	 38097	 38104	 I-Definition	 T204	 T203	 Direct-Defines
+or	data/source_txt/train/t4_psychology_1_202.txt	 38105	 38107	 I-Definition	 T204	 T203	 Direct-Defines
+total	data/source_txt/train/t4_psychology_1_202.txt	 38108	 38113	 I-Definition	 T204	 T203	 Direct-Defines
+forgetting	data/source_txt/train/t4_psychology_1_202.txt	 38114	 38124	 I-Definition	 T204	 T203	 Direct-Defines
+of	data/source_txt/train/t4_psychology_1_202.txt	 38125	 38127	 I-Definition	 T204	 T203	 Direct-Defines
+some	data/source_txt/train/t4_psychology_1_202.txt	 38128	 38132	 I-Definition	 T204	 T203	 Direct-Defines
+experience	data/source_txt/train/t4_psychology_1_202.txt	 38133	 38143	 I-Definition	 T204	 T203	 Direct-Defines
+or	data/source_txt/train/t4_psychology_1_202.txt	 38144	 38146	 I-Definition	 T204	 T203	 Direct-Defines
+event	data/source_txt/train/t4_psychology_1_202.txt	 38147	 38152	 I-Definition	 T204	 T203	 Direct-Defines
+.	data/source_txt/train/t4_psychology_1_202.txt	 38152	 38153	 O	 -1	 -1	 0
+
+An	data/source_txt/train/t4_psychology_1_202.txt	 38162	 38164	 B-Term	 T205	 0	 Direct-Defines
+individual	data/source_txt/train/t4_psychology_1_202.txt	 38165	 38175	 I-Term	 T205	 0	 Direct-Defines
+with	data/source_txt/train/t4_psychology_1_202.txt	 38176	 38180	 I-Term	 T205	 0	 Direct-Defines
+dissociative	data/source_txt/train/t4_psychology_1_202.txt	 38181	 38193	 I-Term	 T205	 0	 Direct-Defines
+amnesia	data/source_txt/train/t4_psychology_1_202.txt	 38194	 38201	 I-Term	 T205	 0	 Direct-Defines
+is	data/source_txt/train/t4_psychology_1_202.txt	 38202	 38204	 O	 -1	 -1	 0
+unable	data/source_txt/train/t4_psychology_1_202.txt	 38205	 38211	 B-Definition	 T206	 T205	 Direct-Defines
+to	data/source_txt/train/t4_psychology_1_202.txt	 38212	 38214	 I-Definition	 T206	 T205	 Direct-Defines
+recall	data/source_txt/train/t4_psychology_1_202.txt	 38215	 38221	 I-Definition	 T206	 T205	 Direct-Defines
+important	data/source_txt/train/t4_psychology_1_202.txt	 38222	 38231	 I-Definition	 T206	 T205	 Direct-Defines
+personal	data/source_txt/train/t4_psychology_1_202.txt	 38232	 38240	 I-Definition	 T206	 T205	 Direct-Defines
+information	data/source_txt/train/t4_psychology_1_202.txt	 38241	 38252	 I-Definition	 T206	 T205	 Direct-Defines
+,	data/source_txt/train/t4_psychology_1_202.txt	 38252	 38253	 I-Definition	 T206	 T205	 Direct-Defines
+usually	data/source_txt/train/t4_psychology_1_202.txt	 38254	 38261	 I-Definition	 T206	 T205	 Direct-Defines
+following	data/source_txt/train/t4_psychology_1_202.txt	 38262	 38271	 I-Definition	 T206	 T205	 Direct-Defines
+an	data/source_txt/train/t4_psychology_1_202.txt	 38272	 38274	 I-Definition	 T206	 T205	 Direct-Defines
+extremely	data/source_txt/train/t4_psychology_1_202.txt	 38275	 38284	 I-Definition	 T206	 T205	 Direct-Defines
+stressful	data/source_txt/train/t4_psychology_1_202.txt	 38285	 38294	 I-Definition	 T206	 T205	 Direct-Defines
+or	data/source_txt/train/t4_psychology_1_202.txt	 38295	 38297	 I-Definition	 T206	 T205	 Direct-Defines
+traumatic	data/source_txt/train/t4_psychology_1_202.txt	 38298	 38307	 I-Definition	 T206	 T205	 Direct-Defines
+experience	data/source_txt/train/t4_psychology_1_202.txt	 38308	 38318	 I-Definition	 T206	 T205	 Direct-Defines
+such	data/source_txt/train/t4_psychology_1_202.txt	 38319	 38323	 I-Definition	 T206	 T205	 Direct-Defines
+as	data/source_txt/train/t4_psychology_1_202.txt	 38324	 38326	 I-Definition	 T206	 T205	 Direct-Defines
+combat	data/source_txt/train/t4_psychology_1_202.txt	 38327	 38333	 I-Definition	 T206	 T205	 Direct-Defines
+,	data/source_txt/train/t4_psychology_1_202.txt	 38333	 38334	 I-Definition	 T206	 T205	 Direct-Defines
+natural	data/source_txt/train/t4_psychology_1_202.txt	 38335	 38342	 I-Definition	 T206	 T205	 Direct-Defines
+disasters	data/source_txt/train/t4_psychology_1_202.txt	 38343	 38352	 I-Definition	 T206	 T205	 Direct-Defines
+,	data/source_txt/train/t4_psychology_1_202.txt	 38352	 38353	 I-Definition	 T206	 T205	 Direct-Defines
+or	data/source_txt/train/t4_psychology_1_202.txt	 38354	 38356	 I-Definition	 T206	 T205	 Direct-Defines
+being	data/source_txt/train/t4_psychology_1_202.txt	 38357	 38362	 I-Definition	 T206	 T205	 Direct-Defines
+the	data/source_txt/train/t4_psychology_1_202.txt	 38363	 38366	 I-Definition	 T206	 T205	 Direct-Defines
+victim	data/source_txt/train/t4_psychology_1_202.txt	 38367	 38373	 I-Definition	 T206	 T205	 Direct-Defines
+of	data/source_txt/train/t4_psychology_1_202.txt	 38374	 38376	 I-Definition	 T206	 T205	 Direct-Defines
+violence	data/source_txt/train/t4_psychology_1_202.txt	 38377	 38385	 I-Definition	 T206	 T205	 Direct-Defines
+.	data/source_txt/train/t4_psychology_1_202.txt	 38385	 38386	 O	 -1	 -1	 0
+
+The	data/source_txt/train/t4_psychology_1_202.txt	 38393	 38396	 O	 -1	 -1	 0
+memory	data/source_txt/train/t4_psychology_1_202.txt	 38397	 38403	 O	 -1	 -1	 0
+impairments	data/source_txt/train/t4_psychology_1_202.txt	 38404	 38415	 O	 -1	 -1	 0
+are	data/source_txt/train/t4_psychology_1_202.txt	 38416	 38419	 O	 -1	 -1	 0
+not	data/source_txt/train/t4_psychology_1_202.txt	 38420	 38423	 O	 -1	 -1	 0
+caused	data/source_txt/train/t4_psychology_1_202.txt	 38424	 38430	 O	 -1	 -1	 0
+by	data/source_txt/train/t4_psychology_1_202.txt	 38431	 38433	 O	 -1	 -1	 0
+ordinary	data/source_txt/train/t4_psychology_1_202.txt	 38434	 38442	 O	 -1	 -1	 0

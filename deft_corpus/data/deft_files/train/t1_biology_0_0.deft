@@ -5923,3 +5923,54 @@ dioxide	data/source_txt/train/t1_biology_0_0.txt	 34952	 34959	 I-Definition	 T2
 .	data/source_txt/train/t1_biology_0_0.txt	 34959	 34960	 O	 -1	 -1	 0
 
 
+302	data/source_txt/train/t1_biology_0_0.txt	 34964	 34967	 O	 -1	 -1	 0
+.	data/source_txt/train/t1_biology_0_0.txt	 34967	 34968	 O	 -1	 -1	 0
+
+Scientists	data/source_txt/train/t1_biology_0_0.txt	 34969	 34979	 O	 -1	 -1	 0
+differentiate	data/source_txt/train/t1_biology_0_0.txt	 34980	 34993	 O	 -1	 -1	 0
+the	data/source_txt/train/t1_biology_0_0.txt	 34994	 34997	 O	 -1	 -1	 0
+various	data/source_txt/train/t1_biology_0_0.txt	 34998	 35005	 O	 -1	 -1	 0
+types	data/source_txt/train/t1_biology_0_0.txt	 35006	 35011	 O	 -1	 -1	 0
+of	data/source_txt/train/t1_biology_0_0.txt	 35012	 35014	 O	 -1	 -1	 0
+radiant	data/source_txt/train/t1_biology_0_0.txt	 35015	 35022	 O	 -1	 -1	 0
+energy	data/source_txt/train/t1_biology_0_0.txt	 35023	 35029	 O	 -1	 -1	 0
+from	data/source_txt/train/t1_biology_0_0.txt	 35030	 35034	 O	 -1	 -1	 0
+the	data/source_txt/train/t1_biology_0_0.txt	 35035	 35038	 O	 -1	 -1	 0
+sun	data/source_txt/train/t1_biology_0_0.txt	 35039	 35042	 O	 -1	 -1	 0
+within	data/source_txt/train/t1_biology_0_0.txt	 35043	 35049	 O	 -1	 -1	 0
+the	data/source_txt/train/t1_biology_0_0.txt	 35050	 35053	 O	 -1	 -1	 0
+electromagnetic	data/source_txt/train/t1_biology_0_0.txt	 35054	 35069	 O	 -1	 -1	 0
+spectrum	data/source_txt/train/t1_biology_0_0.txt	 35070	 35078	 O	 -1	 -1	 0
+.	data/source_txt/train/t1_biology_0_0.txt	 35078	 35079	 O	 -1	 -1	 0
+
+The	data/source_txt/train/t1_biology_0_0.txt	 35088	 35091	 B-Term	 T94	 0	 Direct-Defines
+electromagnetic	data/source_txt/train/t1_biology_0_0.txt	 35092	 35107	 I-Term	 T94	 0	 Direct-Defines
+spectrum	data/source_txt/train/t1_biology_0_0.txt	 35108	 35116	 I-Term	 T94	 0	 Direct-Defines
+is	data/source_txt/train/t1_biology_0_0.txt	 35117	 35119	 O	 -1	 -1	 0
+the	data/source_txt/train/t1_biology_0_0.txt	 35120	 35123	 B-Definition	 T95	 T94	 Direct-Defines
+range	data/source_txt/train/t1_biology_0_0.txt	 35124	 35129	 I-Definition	 T95	 T94	 Direct-Defines
+of	data/source_txt/train/t1_biology_0_0.txt	 35130	 35132	 I-Definition	 T95	 T94	 Direct-Defines
+all	data/source_txt/train/t1_biology_0_0.txt	 35133	 35136	 I-Definition	 T95	 T94	 Direct-Defines
+possible	data/source_txt/train/t1_biology_0_0.txt	 35137	 35145	 I-Definition	 T95	 T94	 Direct-Defines
+frequencies	data/source_txt/train/t1_biology_0_0.txt	 35146	 35157	 I-Definition	 T95	 T94	 Direct-Defines
+of	data/source_txt/train/t1_biology_0_0.txt	 35158	 35160	 I-Definition	 T95	 T94	 Direct-Defines
+radiation	data/source_txt/train/t1_biology_0_0.txt	 35161	 35170	 I-Definition	 T95	 T94	 Direct-Defines
+(	data/source_txt/train/t1_biology_0_0.txt	 35171	 35172	 O	 -1	 -1	 0
+[	data/source_txt/train/t1_biology_0_0.txt	 35172	 35173	 O	 -1	 -1	 0
+link	data/source_txt/train/t1_biology_0_0.txt	 35173	 35177	 O	 -1	 -1	 0
+]	data/source_txt/train/t1_biology_0_0.txt	 35177	 35178	 O	 -1	 -1	 0
+)	data/source_txt/train/t1_biology_0_0.txt	 35178	 35179	 O	 -1	 -1	 0
+.	data/source_txt/train/t1_biology_0_0.txt	 35179	 35180	 O	 -1	 -1	 0
+
+The	data/source_txt/train/t1_biology_0_0.txt	 35187	 35190	 O	 -1	 -1	 0
+difference	data/source_txt/train/t1_biology_0_0.txt	 35191	 35201	 O	 -1	 -1	 0
+between	data/source_txt/train/t1_biology_0_0.txt	 35202	 35209	 O	 -1	 -1	 0
+wavelengths	data/source_txt/train/t1_biology_0_0.txt	 35210	 35221	 O	 -1	 -1	 0
+relates	data/source_txt/train/t1_biology_0_0.txt	 35222	 35229	 O	 -1	 -1	 0
+to	data/source_txt/train/t1_biology_0_0.txt	 35230	 35232	 O	 -1	 -1	 0
+the	data/source_txt/train/t1_biology_0_0.txt	 35233	 35236	 O	 -1	 -1	 0
+amount	data/source_txt/train/t1_biology_0_0.txt	 35237	 35243	 O	 -1	 -1	 0
+of	data/source_txt/train/t1_biology_0_0.txt	 35244	 35246	 O	 -1	 -1	 0
+energy	data/source_txt/train/t1_biology_0_0.txt	 35247	 35253	 O	 -1	 -1	 0
+carried	data/source_txt/train/t1_biology_0_0.txt	 35254	 35261	 O	 -1	 -1	 0
+by	data/source_txt/train/t1_biology_0_0.txt	 35262	 35264	 O	 -1	 -1	 0

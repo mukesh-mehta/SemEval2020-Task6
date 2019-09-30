@@ -5188,3 +5188,54 @@ nutrition	data/source_txt/train/t1_biology_2_303.txt	 34103	 34112	 O	 -1	 -1	 0
 .	data/source_txt/train/t1_biology_2_303.txt	 34112	 34113	 O	 -1	 -1	 0
 
 
+1209	data/source_txt/train/t1_biology_2_303.txt	 34123	 34127	 O	 -1	 -1	 0
+.	data/source_txt/train/t1_biology_2_303.txt	 34127	 34128	 O	 -1	 -1	 0
+
+Plants	data/source_txt/train/t1_biology_2_303.txt	 34129	 34135	 O	 -1	 -1	 0
+obtain	data/source_txt/train/t1_biology_2_303.txt	 34136	 34142	 O	 -1	 -1	 0
+inorganic	data/source_txt/train/t1_biology_2_303.txt	 34143	 34152	 O	 -1	 -1	 0
+elements	data/source_txt/train/t1_biology_2_303.txt	 34153	 34161	 O	 -1	 -1	 0
+from	data/source_txt/train/t1_biology_2_303.txt	 34162	 34166	 O	 -1	 -1	 0
+the	data/source_txt/train/t1_biology_2_303.txt	 34167	 34170	 O	 -1	 -1	 0
+soil	data/source_txt/train/t1_biology_2_303.txt	 34171	 34175	 O	 -1	 -1	 0
+,	data/source_txt/train/t1_biology_2_303.txt	 34175	 34176	 O	 -1	 -1	 0
+which	data/source_txt/train/t1_biology_2_303.txt	 34177	 34182	 O	 -1	 -1	 0
+serves	data/source_txt/train/t1_biology_2_303.txt	 34183	 34189	 O	 -1	 -1	 0
+as	data/source_txt/train/t1_biology_2_303.txt	 34190	 34192	 O	 -1	 -1	 0
+a	data/source_txt/train/t1_biology_2_303.txt	 34193	 34194	 O	 -1	 -1	 0
+natural	data/source_txt/train/t1_biology_2_303.txt	 34195	 34202	 O	 -1	 -1	 0
+medium	data/source_txt/train/t1_biology_2_303.txt	 34203	 34209	 O	 -1	 -1	 0
+for	data/source_txt/train/t1_biology_2_303.txt	 34210	 34213	 O	 -1	 -1	 0
+land	data/source_txt/train/t1_biology_2_303.txt	 34214	 34218	 O	 -1	 -1	 0
+plants	data/source_txt/train/t1_biology_2_303.txt	 34219	 34225	 O	 -1	 -1	 0
+.	data/source_txt/train/t1_biology_2_303.txt	 34225	 34226	 O	 -1	 -1	 0
+
+Soil	data/source_txt/train/t1_biology_2_303.txt	 34235	 34239	 B-Term	 T237	 0	 Direct-Defines
+is	data/source_txt/train/t1_biology_2_303.txt	 34240	 34242	 O	 -1	 -1	 0
+the	data/source_txt/train/t1_biology_2_303.txt	 34243	 34246	 B-Definition	 T238	 T237	 Direct-Defines
+outer	data/source_txt/train/t1_biology_2_303.txt	 34247	 34252	 I-Definition	 T238	 T237	 Direct-Defines
+loose	data/source_txt/train/t1_biology_2_303.txt	 34253	 34258	 I-Definition	 T238	 T237	 Direct-Defines
+layer	data/source_txt/train/t1_biology_2_303.txt	 34259	 34264	 I-Definition	 T238	 T237	 Direct-Defines
+that	data/source_txt/train/t1_biology_2_303.txt	 34265	 34269	 I-Definition	 T238	 T237	 Direct-Defines
+covers	data/source_txt/train/t1_biology_2_303.txt	 34270	 34276	 I-Definition	 T238	 T237	 Direct-Defines
+the	data/source_txt/train/t1_biology_2_303.txt	 34277	 34280	 I-Definition	 T238	 T237	 Direct-Defines
+surface	data/source_txt/train/t1_biology_2_303.txt	 34281	 34288	 I-Definition	 T238	 T237	 Direct-Defines
+of	data/source_txt/train/t1_biology_2_303.txt	 34289	 34291	 I-Definition	 T238	 T237	 Direct-Defines
+Earth	data/source_txt/train/t1_biology_2_303.txt	 34292	 34297	 I-Definition	 T238	 T237	 Direct-Defines
+.	data/source_txt/train/t1_biology_2_303.txt	 34297	 34298	 O	 -1	 -1	 0
+
+Soil	data/source_txt/train/t1_biology_2_303.txt	 34305	 34309	 O	 -1	 -1	 0
+quality	data/source_txt/train/t1_biology_2_303.txt	 34310	 34317	 O	 -1	 -1	 0
+is	data/source_txt/train/t1_biology_2_303.txt	 34318	 34320	 O	 -1	 -1	 0
+a	data/source_txt/train/t1_biology_2_303.txt	 34321	 34322	 O	 -1	 -1	 0
+major	data/source_txt/train/t1_biology_2_303.txt	 34323	 34328	 O	 -1	 -1	 0
+determinant	data/source_txt/train/t1_biology_2_303.txt	 34329	 34340	 O	 -1	 -1	 0
+,	data/source_txt/train/t1_biology_2_303.txt	 34340	 34341	 O	 -1	 -1	 0
+along	data/source_txt/train/t1_biology_2_303.txt	 34342	 34347	 O	 -1	 -1	 0
+with	data/source_txt/train/t1_biology_2_303.txt	 34348	 34352	 O	 -1	 -1	 0
+climate	data/source_txt/train/t1_biology_2_303.txt	 34353	 34360	 O	 -1	 -1	 0
+,	data/source_txt/train/t1_biology_2_303.txt	 34360	 34361	 O	 -1	 -1	 0
+of	data/source_txt/train/t1_biology_2_303.txt	 34362	 34364	 O	 -1	 -1	 0
+plant	data/source_txt/train/t1_biology_2_303.txt	 34365	 34370	 O	 -1	 -1	 0
+distribution	data/source_txt/train/t1_biology_2_303.txt	 34371	 34383	 O	 -1	 -1	 0
+and	data/source_txt/train/t1_biology_2_303.txt	 34384	 34387	 O	 -1	 -1	 0

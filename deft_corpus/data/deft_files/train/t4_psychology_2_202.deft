@@ -6561,3 +6561,42 @@ work	data/source_txt/train/t4_psychology_2_202.txt	 37556	 37560	 O	 -1	 -1	 0
 .	data/source_txt/train/t4_psychology_2_202.txt	 37560	 37561	 O	 -1	 -1	 0
 
 
+4217	data/source_txt/train/t4_psychology_2_202.txt	 37571	 37575	 O	 -1	 -1	 0
+.	data/source_txt/train/t4_psychology_2_202.txt	 37575	 37576	 O	 -1	 -1	 0
+
+Dissociative	data/source_txt/train/t4_psychology_2_202.txt	 37586	 37598	 B-Term	 T183	 0	 Direct-Defines
+disorders	data/source_txt/train/t4_psychology_2_202.txt	 37599	 37608	 I-Term	 T183	 0	 Direct-Defines
+are	data/source_txt/train/t4_psychology_2_202.txt	 37609	 37612	 O	 -1	 -1	 0
+characterized	data/source_txt/train/t4_psychology_2_202.txt	 37613	 37626	 B-Definition	 T184	 T183	 Direct-Defines
+by	data/source_txt/train/t4_psychology_2_202.txt	 37627	 37629	 I-Definition	 T184	 T183	 Direct-Defines
+an	data/source_txt/train/t4_psychology_2_202.txt	 37630	 37632	 I-Definition	 T184	 T183	 Direct-Defines
+individual	data/source_txt/train/t4_psychology_2_202.txt	 37633	 37643	 I-Definition	 T184	 T183	 Direct-Defines
+becoming	data/source_txt/train/t4_psychology_2_202.txt	 37644	 37652	 I-Definition	 T184	 T183	 Direct-Defines
+split	data/source_txt/train/t4_psychology_2_202.txt	 37653	 37658	 I-Definition	 T184	 T183	 Direct-Defines
+off	data/source_txt/train/t4_psychology_2_202.txt	 37659	 37662	 I-Definition	 T184	 T183	 Direct-Defines
+,	data/source_txt/train/t4_psychology_2_202.txt	 37662	 37663	 I-Definition	 T184	 T183	 Direct-Defines
+or	data/source_txt/train/t4_psychology_2_202.txt	 37664	 37666	 I-Definition	 T184	 T183	 Direct-Defines
+dissociated	data/source_txt/train/t4_psychology_2_202.txt	 37667	 37678	 I-Definition	 T184	 T183	 Direct-Defines
+,	data/source_txt/train/t4_psychology_2_202.txt	 37678	 37679	 I-Definition	 T184	 T183	 Direct-Defines
+from	data/source_txt/train/t4_psychology_2_202.txt	 37680	 37684	 I-Definition	 T184	 T183	 Direct-Defines
+her	data/source_txt/train/t4_psychology_2_202.txt	 37685	 37688	 I-Definition	 T184	 T183	 Direct-Defines
+core	data/source_txt/train/t4_psychology_2_202.txt	 37689	 37693	 I-Definition	 T184	 T183	 Direct-Defines
+sense	data/source_txt/train/t4_psychology_2_202.txt	 37694	 37699	 I-Definition	 T184	 T183	 Direct-Defines
+of	data/source_txt/train/t4_psychology_2_202.txt	 37700	 37702	 I-Definition	 T184	 T183	 Direct-Defines
+self	data/source_txt/train/t4_psychology_2_202.txt	 37703	 37707	 I-Definition	 T184	 T183	 Direct-Defines
+.	data/source_txt/train/t4_psychology_2_202.txt	 37707	 37708	 O	 -1	 -1	 0
+
+Memory	data/source_txt/train/t4_psychology_2_202.txt	 37715	 37721	 O	 -1	 -1	 0
+and	data/source_txt/train/t4_psychology_2_202.txt	 37722	 37725	 O	 -1	 -1	 0
+identity	data/source_txt/train/t4_psychology_2_202.txt	 37726	 37734	 O	 -1	 -1	 0
+become	data/source_txt/train/t4_psychology_2_202.txt	 37735	 37741	 O	 -1	 -1	 0
+disturbed	data/source_txt/train/t4_psychology_2_202.txt	 37742	 37751	 O	 -1	 -1	 0
+;	data/source_txt/train/t4_psychology_2_202.txt	 37751	 37752	 O	 -1	 -1	 0
+these	data/source_txt/train/t4_psychology_2_202.txt	 37753	 37758	 O	 -1	 -1	 0
+disturbances	data/source_txt/train/t4_psychology_2_202.txt	 37759	 37771	 O	 -1	 -1	 0
+have	data/source_txt/train/t4_psychology_2_202.txt	 37772	 37776	 O	 -1	 -1	 0
+a	data/source_txt/train/t4_psychology_2_202.txt	 37777	 37778	 O	 -1	 -1	 0
+psychological	data/source_txt/train/t4_psychology_2_202.txt	 37779	 37792	 O	 -1	 -1	 0
+rather	data/source_txt/train/t4_psychology_2_202.txt	 37793	 37799	 O	 -1	 -1	 0
+than	data/source_txt/train/t4_psychology_2_202.txt	 37800	 37804	 O	 -1	 -1	 0
+physical	data/source_txt/train/t4_psychology_2_202.txt	 37805	 37813	 O	 -1	 -1	 0

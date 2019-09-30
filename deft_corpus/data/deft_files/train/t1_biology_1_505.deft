@@ -6316,3 +6316,57 @@ papillae	data/source_txt/train/t1_biology_1_505.txt	 33649	 33657	 O	 -1	 -1	 0
 .	data/source_txt/train/t1_biology_1_505.txt	 33657	 33658	 O	 -1	 -1	 0
 
 
+1816	data/source_txt/train/t1_biology_1_505.txt	 33662	 33666	 O	 -1	 -1	 0
+.	data/source_txt/train/t1_biology_1_505.txt	 33666	 33667	 O	 -1	 -1	 0
+
+The	data/source_txt/train/t1_biology_1_505.txt	 33668	 33671	 O	 -1	 -1	 0
+osmotic	data/source_txt/train/t1_biology_1_505.txt	 33672	 33679	 O	 -1	 -1	 0
+gradient	data/source_txt/train/t1_biology_1_505.txt	 33680	 33688	 O	 -1	 -1	 0
+increases	data/source_txt/train/t1_biology_1_505.txt	 33689	 33698	 O	 -1	 -1	 0
+as	data/source_txt/train/t1_biology_1_505.txt	 33699	 33701	 O	 -1	 -1	 0
+it	data/source_txt/train/t1_biology_1_505.txt	 33702	 33704	 O	 -1	 -1	 0
+moves	data/source_txt/train/t1_biology_1_505.txt	 33705	 33710	 O	 -1	 -1	 0
+deeper	data/source_txt/train/t1_biology_1_505.txt	 33711	 33717	 O	 -1	 -1	 0
+into	data/source_txt/train/t1_biology_1_505.txt	 33718	 33722	 O	 -1	 -1	 0
+the	data/source_txt/train/t1_biology_1_505.txt	 33723	 33726	 O	 -1	 -1	 0
+medulla	data/source_txt/train/t1_biology_1_505.txt	 33727	 33734	 O	 -1	 -1	 0
+.	data/source_txt/train/t1_biology_1_505.txt	 33734	 33735	 O	 -1	 -1	 0
+
+Because	data/source_txt/train/t1_biology_1_505.txt	 33744	 33751	 O	 -1	 -1	 0
+two	data/source_txt/train/t1_biology_1_505.txt	 33752	 33755	 O	 -1	 -1	 0
+sides	data/source_txt/train/t1_biology_1_505.txt	 33756	 33761	 O	 -1	 -1	 0
+of	data/source_txt/train/t1_biology_1_505.txt	 33762	 33764	 O	 -1	 -1	 0
+the	data/source_txt/train/t1_biology_1_505.txt	 33765	 33768	 O	 -1	 -1	 0
+loop	data/source_txt/train/t1_biology_1_505.txt	 33769	 33773	 O	 -1	 -1	 0
+of	data/source_txt/train/t1_biology_1_505.txt	 33774	 33776	 O	 -1	 -1	 0
+Henle	data/source_txt/train/t1_biology_1_505.txt	 33777	 33782	 O	 -1	 -1	 0
+perform	data/source_txt/train/t1_biology_1_505.txt	 33783	 33790	 O	 -1	 -1	 0
+opposing	data/source_txt/train/t1_biology_1_505.txt	 33791	 33799	 O	 -1	 -1	 0
+functions	data/source_txt/train/t1_biology_1_505.txt	 33800	 33809	 O	 -1	 -1	 0
+,	data/source_txt/train/t1_biology_1_505.txt	 33809	 33810	 O	 -1	 -1	 0
+as	data/source_txt/train/t1_biology_1_505.txt	 33811	 33813	 O	 -1	 -1	 0
+illustrated	data/source_txt/train/t1_biology_1_505.txt	 33814	 33825	 O	 -1	 -1	 0
+in	data/source_txt/train/t1_biology_1_505.txt	 33826	 33828	 O	 -1	 -1	 0
+[	data/source_txt/train/t1_biology_1_505.txt	 33829	 33830	 O	 -1	 -1	 0
+link	data/source_txt/train/t1_biology_1_505.txt	 33830	 33834	 O	 -1	 -1	 0
+]	data/source_txt/train/t1_biology_1_505.txt	 33834	 33835	 O	 -1	 -1	 0
+,	data/source_txt/train/t1_biology_1_505.txt	 33835	 33836	 O	 -1	 -1	 0
+it	data/source_txt/train/t1_biology_1_505.txt	 33837	 33839	 O	 -1	 -1	 0
+acts	data/source_txt/train/t1_biology_1_505.txt	 33840	 33844	 O	 -1	 -1	 0
+as	data/source_txt/train/t1_biology_1_505.txt	 33845	 33847	 O	 -1	 -1	 0
+a	data/source_txt/train/t1_biology_1_505.txt	 33848	 33849	 O	 -1	 -1	 0
+countercurrent	data/source_txt/train/t1_biology_1_505.txt	 33850	 33864	 O	 -1	 -1	 0
+multiplier	data/source_txt/train/t1_biology_1_505.txt	 33865	 33875	 O	 -1	 -1	 0
+.	data/source_txt/train/t1_biology_1_505.txt	 33875	 33876	 O	 -1	 -1	 0
+
+The	data/source_txt/train/t1_biology_1_505.txt	 33883	 33886	 O	 -1	 -1	 0
+vasa	data/source_txt/train/t1_biology_1_505.txt	 33887	 33891	 O	 -1	 -1	 0
+recta	data/source_txt/train/t1_biology_1_505.txt	 33892	 33897	 O	 -1	 -1	 0
+around	data/source_txt/train/t1_biology_1_505.txt	 33898	 33904	 O	 -1	 -1	 0
+it	data/source_txt/train/t1_biology_1_505.txt	 33905	 33907	 O	 -1	 -1	 0
+acts	data/source_txt/train/t1_biology_1_505.txt	 33908	 33912	 O	 -1	 -1	 0
+as	data/source_txt/train/t1_biology_1_505.txt	 33913	 33915	 O	 -1	 -1	 0
+the	data/source_txt/train/t1_biology_1_505.txt	 33916	 33919	 O	 -1	 -1	 0
+countercurrent	data/source_txt/train/t1_biology_1_505.txt	 33920	 33934	 O	 -1	 -1	 0
+exchanger	data/source_txt/train/t1_biology_1_505.txt	 33935	 33944	 O	 -1	 -1	 0
+.	data/source_txt/train/t1_biology_1_505.txt	 33944	 33945	 O	 -1	 -1	 0

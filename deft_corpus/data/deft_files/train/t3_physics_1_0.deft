@@ -1620,6 +1620,7 @@ of	data/source_txt/train/t3_physics_1_0.txt	 8616	 8618	 O	 -1	 -1	 0
 the	data/source_txt/train/t3_physics_1_0.txt	 8619	 8622	 O	 -1	 -1	 0
 arrow	data/source_txt/train/t3_physics_1_0.txt	 8623	 8628	 O	 -1	 -1	 0
 .	data/source_txt/train/t3_physics_1_0.txt	 8628	 8629	 O	 -1	 -1	 0
+
 Head	data/source_txt/train/t3_physics_1_0.txt	 8629	 8633	 O	 -1	 -1	 0
 -	data/source_txt/train/t3_physics_1_0.txt	 8633	 8634	 O	 -1	 -1	 0
 to	data/source_txt/train/t3_physics_1_0.txt	 8634	 8636	 O	 -1	 -1	 0
@@ -1665,7 +1666,6 @@ link	data/source_txt/train/t3_physics_1_0.txt	 8792	 8796	 O	 -1	 -1	 0
 Step	data/source_txt/train/t3_physics_1_0.txt	 8817	 8821	 O	 -1	 -1	 0
 5	data/source_txt/train/t3_physics_1_0.txt	 8822	 8823	 O	 -1	 -1	 0
 .	data/source_txt/train/t3_physics_1_0.txt	 8823	 8824	 O	 -1	 -1	 0
-
 To	data/source_txt/train/t3_physics_1_0.txt	 8825	 8827	 O	 -1	 -1	 0
 get	data/source_txt/train/t3_physics_1_0.txt	 8828	 8831	 O	 -1	 -1	 0
 the	data/source_txt/train/t3_physics_1_0.txt	 8832	 8835	 O	 -1	 -1	 0
@@ -5918,3 +5918,45 @@ conductor	data/source_txt/train/t3_physics_1_0.txt	 31855	 31864	 O	 -1	 -1	 0
 .	data/source_txt/train/t3_physics_1_0.txt	 31864	 31865	 O	 -1	 -1	 0
 
 
+2940	data/source_txt/train/t3_physics_1_0.txt	 31869	 31873	 O	 -1	 -1	 0
+.	data/source_txt/train/t3_physics_1_0.txt	 31873	 31874	 O	 -1	 -1	 0
+
+Electrostatic	data/source_txt/train/t3_physics_1_0.txt	 31884	 31897	 O	 -1	 -1	 0
+repulsion	data/source_txt/train/t3_physics_1_0.txt	 31898	 31907	 O	 -1	 -1	 0
+in	data/source_txt/train/t3_physics_1_0.txt	 31908	 31910	 O	 -1	 -1	 0
+the	data/source_txt/train/t3_physics_1_0.txt	 31911	 31914	 O	 -1	 -1	 0
+leaves	data/source_txt/train/t3_physics_1_0.txt	 31915	 31921	 O	 -1	 -1	 0
+of	data/source_txt/train/t3_physics_1_0.txt	 31922	 31924	 O	 -1	 -1	 0
+the	data/source_txt/train/t3_physics_1_0.txt	 31925	 31928	 O	 -1	 -1	 0
+charged	data/source_txt/train/t3_physics_1_0.txt	 31929	 31936	 O	 -1	 -1	 0
+electroscope	data/source_txt/train/t3_physics_1_0.txt	 31937	 31949	 O	 -1	 -1	 0
+separates	data/source_txt/train/t3_physics_1_0.txt	 31950	 31959	 O	 -1	 -1	 0
+them	data/source_txt/train/t3_physics_1_0.txt	 31960	 31964	 O	 -1	 -1	 0
+.	data/source_txt/train/t3_physics_1_0.txt	 31964	 31965	 O	 -1	 -1	 0
+
+The	data/source_txt/train/t3_physics_1_0.txt	 31972	 31975	 O	 -1	 -1	 0
+electrostatic	data/source_txt/train/t3_physics_1_0.txt	 31976	 31989	 O	 -1	 -1	 0
+force	data/source_txt/train/t3_physics_1_0.txt	 31990	 31995	 O	 -1	 -1	 0
+has	data/source_txt/train/t3_physics_1_0.txt	 31996	 31999	 O	 -1	 -1	 0
+a	data/source_txt/train/t3_physics_1_0.txt	 32000	 32001	 O	 -1	 -1	 0
+horizontal	data/source_txt/train/t3_physics_1_0.txt	 32002	 32012	 O	 -1	 -1	 0
+component	data/source_txt/train/t3_physics_1_0.txt	 32013	 32022	 O	 -1	 -1	 0
+that	data/source_txt/train/t3_physics_1_0.txt	 32023	 32027	 O	 -1	 -1	 0
+results	data/source_txt/train/t3_physics_1_0.txt	 32028	 32035	 O	 -1	 -1	 0
+in	data/source_txt/train/t3_physics_1_0.txt	 32036	 32038	 O	 -1	 -1	 0
+the	data/source_txt/train/t3_physics_1_0.txt	 32039	 32042	 O	 -1	 -1	 0
+leaves	data/source_txt/train/t3_physics_1_0.txt	 32043	 32049	 O	 -1	 -1	 0
+moving	data/source_txt/train/t3_physics_1_0.txt	 32050	 32056	 O	 -1	 -1	 0
+apart	data/source_txt/train/t3_physics_1_0.txt	 32057	 32062	 O	 -1	 -1	 0
+as	data/source_txt/train/t3_physics_1_0.txt	 32063	 32065	 O	 -1	 -1	 0
+well	data/source_txt/train/t3_physics_1_0.txt	 32066	 32070	 O	 -1	 -1	 0
+as	data/source_txt/train/t3_physics_1_0.txt	 32071	 32073	 O	 -1	 -1	 0
+a	data/source_txt/train/t3_physics_1_0.txt	 32074	 32075	 O	 -1	 -1	 0
+vertical	data/source_txt/train/t3_physics_1_0.txt	 32076	 32084	 O	 -1	 -1	 0
+component	data/source_txt/train/t3_physics_1_0.txt	 32085	 32094	 O	 -1	 -1	 0
+that	data/source_txt/train/t3_physics_1_0.txt	 32095	 32099	 O	 -1	 -1	 0
+is	data/source_txt/train/t3_physics_1_0.txt	 32100	 32102	 O	 -1	 -1	 0
+balanced	data/source_txt/train/t3_physics_1_0.txt	 32103	 32111	 O	 -1	 -1	 0
+by	data/source_txt/train/t3_physics_1_0.txt	 32112	 32114	 O	 -1	 -1	 0
+the	data/source_txt/train/t3_physics_1_0.txt	 32115	 32118	 O	 -1	 -1	 0
+gravitational	data/source_txt/train/t3_physics_1_0.txt	 32119	 32132	 O	 -1	 -1	 0

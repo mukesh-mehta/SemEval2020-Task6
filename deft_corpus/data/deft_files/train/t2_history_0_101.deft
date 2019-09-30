@@ -5814,3 +5814,53 @@ it	data/source_txt/train/t2_history_0_101.txt	 34107	 34109	 O	 -1	 -1	 0
 .	data/source_txt/train/t2_history_0_101.txt	 34109	 34110	 O	 -1	 -1	 0
 
 
+2636	data/source_txt/train/t2_history_0_101.txt	 34114	 34118	 O	 -1	 -1	 0
+.	data/source_txt/train/t2_history_0_101.txt	 34118	 34119	 O	 -1	 -1	 0
+
+Discontent	data/source_txt/train/t2_history_0_101.txt	 34120	 34130	 O	 -1	 -1	 0
+over	data/source_txt/train/t2_history_0_101.txt	 34131	 34135	 O	 -1	 -1	 0
+the	data/source_txt/train/t2_history_0_101.txt	 34136	 34139	 O	 -1	 -1	 0
+Affordable	data/source_txt/train/t2_history_0_101.txt	 34140	 34150	 O	 -1	 -1	 0
+Care	data/source_txt/train/t2_history_0_101.txt	 34151	 34155	 O	 -1	 -1	 0
+Act	data/source_txt/train/t2_history_0_101.txt	 34156	 34159	 O	 -1	 -1	 0
+helped	data/source_txt/train/t2_history_0_101.txt	 34160	 34166	 O	 -1	 -1	 0
+the	data/source_txt/train/t2_history_0_101.txt	 34167	 34170	 O	 -1	 -1	 0
+Republicans	data/source_txt/train/t2_history_0_101.txt	 34171	 34182	 O	 -1	 -1	 0
+capture	data/source_txt/train/t2_history_0_101.txt	 34183	 34190	 O	 -1	 -1	 0
+the	data/source_txt/train/t2_history_0_101.txt	 34191	 34194	 O	 -1	 -1	 0
+majority	data/source_txt/train/t2_history_0_101.txt	 34195	 34203	 O	 -1	 -1	 0
+in	data/source_txt/train/t2_history_0_101.txt	 34204	 34206	 O	 -1	 -1	 0
+the	data/source_txt/train/t2_history_0_101.txt	 34207	 34210	 O	 -1	 -1	 0
+House	data/source_txt/train/t2_history_0_101.txt	 34211	 34216	 O	 -1	 -1	 0
+of	data/source_txt/train/t2_history_0_101.txt	 34217	 34219	 O	 -1	 -1	 0
+Representatives	data/source_txt/train/t2_history_0_101.txt	 34220	 34235	 O	 -1	 -1	 0
+in	data/source_txt/train/t2_history_0_101.txt	 34236	 34238	 O	 -1	 -1	 0
+the	data/source_txt/train/t2_history_0_101.txt	 34239	 34242	 O	 -1	 -1	 0
+2010	data/source_txt/train/t2_history_0_101.txt	 34243	 34247	 O	 -1	 -1	 0
+midterm	data/source_txt/train/t2_history_0_101.txt	 34248	 34255	 O	 -1	 -1	 0
+elections	data/source_txt/train/t2_history_0_101.txt	 34256	 34265	 O	 -1	 -1	 0
+.	data/source_txt/train/t2_history_0_101.txt	 34265	 34266	 O	 -1	 -1	 0
+
+It	data/source_txt/train/t2_history_0_101.txt	 34275	 34277	 O	 -1	 -1	 0
+also	data/source_txt/train/t2_history_0_101.txt	 34278	 34282	 O	 -1	 -1	 0
+helped	data/source_txt/train/t2_history_0_101.txt	 34283	 34289	 O	 -1	 -1	 0
+spawn	data/source_txt/train/t2_history_0_101.txt	 34290	 34295	 O	 -1	 -1	 0
+the	data/source_txt/train/t2_history_0_101.txt	 34296	 34299	 B-Term	 T137	 0	 Direct-Defines
+Tea	data/source_txt/train/t2_history_0_101.txt	 34300	 34303	 I-Term	 T137	 0	 Direct-Defines
+Party	data/source_txt/train/t2_history_0_101.txt	 34304	 34309	 I-Term	 T137	 0	 Direct-Defines
+,	data/source_txt/train/t2_history_0_101.txt	 34309	 34310	 O	 -1	 -1	 0
+a	data/source_txt/train/t2_history_0_101.txt	 34311	 34312	 B-Definition	 T138	 T137	 Direct-Defines
+conservative	data/source_txt/train/t2_history_0_101.txt	 34313	 34325	 I-Definition	 T138	 T137	 Direct-Defines
+movement	data/source_txt/train/t2_history_0_101.txt	 34326	 34334	 I-Definition	 T138	 T137	 Direct-Defines
+focused	data/source_txt/train/t2_history_0_101.txt	 34335	 34342	 I-Definition	 T138	 T137	 Direct-Defines
+primarily	data/source_txt/train/t2_history_0_101.txt	 34343	 34352	 I-Definition	 T138	 T137	 Direct-Defines
+on	data/source_txt/train/t2_history_0_101.txt	 34353	 34355	 I-Definition	 T138	 T137	 Direct-Defines
+limiting	data/source_txt/train/t2_history_0_101.txt	 34356	 34364	 I-Definition	 T138	 T137	 Direct-Defines
+government	data/source_txt/train/t2_history_0_101.txt	 34365	 34375	 I-Definition	 T138	 T137	 Direct-Defines
+spending	data/source_txt/train/t2_history_0_101.txt	 34376	 34384	 I-Definition	 T138	 T137	 Direct-Defines
+and	data/source_txt/train/t2_history_0_101.txt	 34385	 34388	 I-Definition	 T138	 T137	 Direct-Defines
+the	data/source_txt/train/t2_history_0_101.txt	 34389	 34392	 I-Definition	 T138	 T137	 Direct-Defines
+size	data/source_txt/train/t2_history_0_101.txt	 34393	 34397	 I-Definition	 T138	 T137	 Direct-Defines
+of	data/source_txt/train/t2_history_0_101.txt	 34398	 34400	 I-Definition	 T138	 T137	 Direct-Defines
+the	data/source_txt/train/t2_history_0_101.txt	 34401	 34404	 I-Definition	 T138	 T137	 Direct-Defines
+federal	data/source_txt/train/t2_history_0_101.txt	 34405	 34412	 I-Definition	 T138	 T137	 Direct-Defines

@@ -6423,3 +6423,48 @@ Na	data/source_txt/train/t1_biology_0_303.txt	 33906	 33908	 O	 -1	 -1	 0
 .	data/source_txt/train/t1_biology_0_303.txt	 33909	 33910	 O	 -1	 -1	 0
 
 
+1211	data/source_txt/train/t1_biology_0_303.txt	 33914	 33918	 O	 -1	 -1	 0
+.	data/source_txt/train/t1_biology_0_303.txt	 33918	 33919	 O	 -1	 -1	 0
+
+The	data/source_txt/train/t1_biology_0_303.txt	 33928	 33931	 B-Definition	 T401	 0	 Supplements
+organic	data/source_txt/train/t1_biology_0_303.txt	 33932	 33939	 I-Definition	 T401	 0	 Supplements
+material	data/source_txt/train/t1_biology_0_303.txt	 33940	 33948	 I-Definition	 T401	 0	 Supplements
+of	data/source_txt/train/t1_biology_0_303.txt	 33949	 33951	 I-Definition	 T401	 0	 Supplements
+soil	data/source_txt/train/t1_biology_0_303.txt	 33952	 33956	 I-Definition	 T401	 0	 Supplements
+,	data/source_txt/train/t1_biology_0_303.txt	 33956	 33957	 O	 -1	 -1	 0
+called	data/source_txt/train/t1_biology_0_303.txt	 33958	 33964	 O	 -1	 -1	 0
+humus	data/source_txt/train/t1_biology_0_303.txt	 33965	 33970	 B-Term	 T400	 0	 Direct-Defines
+,	data/source_txt/train/t1_biology_0_303.txt	 33970	 33971	 O	 -1	 -1	 0
+is	data/source_txt/train/t1_biology_0_303.txt	 33972	 33974	 O	 -1	 -1	 0
+made	data/source_txt/train/t1_biology_0_303.txt	 33975	 33979	 B-Secondary-Definition	 T402	 T401	 Supplements
+up	data/source_txt/train/t1_biology_0_303.txt	 33980	 33982	 I-Secondary-Definition	 T402	 T401	 Supplements
+of	data/source_txt/train/t1_biology_0_303.txt	 33983	 33985	 I-Secondary-Definition	 T402	 T401	 Supplements
+microorganisms	data/source_txt/train/t1_biology_0_303.txt	 33986	 34000	 I-Secondary-Definition	 T402	 T401	 Supplements
+(	data/source_txt/train/t1_biology_0_303.txt	 34001	 34002	 I-Secondary-Definition	 T402	 T401	 Supplements
+dead	data/source_txt/train/t1_biology_0_303.txt	 34002	 34006	 I-Secondary-Definition	 T402	 T401	 Supplements
+and	data/source_txt/train/t1_biology_0_303.txt	 34007	 34010	 I-Secondary-Definition	 T402	 T401	 Supplements
+alive	data/source_txt/train/t1_biology_0_303.txt	 34011	 34016	 I-Secondary-Definition	 T402	 T401	 Supplements
+)	data/source_txt/train/t1_biology_0_303.txt	 34016	 34017	 I-Secondary-Definition	 T402	 T401	 Supplements
+,	data/source_txt/train/t1_biology_0_303.txt	 34017	 34018	 I-Secondary-Definition	 T402	 T401	 Supplements
+and	data/source_txt/train/t1_biology_0_303.txt	 34019	 34022	 I-Secondary-Definition	 T402	 T401	 Supplements
+dead	data/source_txt/train/t1_biology_0_303.txt	 34023	 34027	 I-Secondary-Definition	 T402	 T401	 Supplements
+animals	data/source_txt/train/t1_biology_0_303.txt	 34028	 34035	 I-Secondary-Definition	 T402	 T401	 Supplements
+and	data/source_txt/train/t1_biology_0_303.txt	 34036	 34039	 I-Secondary-Definition	 T402	 T401	 Supplements
+plants	data/source_txt/train/t1_biology_0_303.txt	 34040	 34046	 I-Secondary-Definition	 T402	 T401	 Supplements
+in	data/source_txt/train/t1_biology_0_303.txt	 34047	 34049	 I-Secondary-Definition	 T402	 T401	 Supplements
+varying	data/source_txt/train/t1_biology_0_303.txt	 34050	 34057	 I-Secondary-Definition	 T402	 T401	 Supplements
+stages	data/source_txt/train/t1_biology_0_303.txt	 34058	 34064	 I-Secondary-Definition	 T402	 T401	 Supplements
+of	data/source_txt/train/t1_biology_0_303.txt	 34065	 34067	 I-Secondary-Definition	 T402	 T401	 Supplements
+decay	data/source_txt/train/t1_biology_0_303.txt	 34068	 34073	 I-Secondary-Definition	 T402	 T401	 Supplements
+.	data/source_txt/train/t1_biology_0_303.txt	 34073	 34074	 O	 -1	 -1	 0
+
+Humus	data/source_txt/train/t1_biology_0_303.txt	 34081	 34086	 O	 -1	 -1	 0
+improves	data/source_txt/train/t1_biology_0_303.txt	 34087	 34095	 O	 -1	 -1	 0
+soil	data/source_txt/train/t1_biology_0_303.txt	 34096	 34100	 O	 -1	 -1	 0
+structure	data/source_txt/train/t1_biology_0_303.txt	 34101	 34110	 O	 -1	 -1	 0
+and	data/source_txt/train/t1_biology_0_303.txt	 34111	 34114	 O	 -1	 -1	 0
+provides	data/source_txt/train/t1_biology_0_303.txt	 34115	 34123	 O	 -1	 -1	 0
+plants	data/source_txt/train/t1_biology_0_303.txt	 34124	 34130	 O	 -1	 -1	 0
+with	data/source_txt/train/t1_biology_0_303.txt	 34131	 34135	 O	 -1	 -1	 0
+water	data/source_txt/train/t1_biology_0_303.txt	 34136	 34141	 O	 -1	 -1	 0
+and	data/source_txt/train/t1_biology_0_303.txt	 34142	 34145	 O	 -1	 -1	 0

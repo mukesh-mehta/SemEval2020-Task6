@@ -409,10 +409,14 @@ Communication	data/source_txt/train/t7_government_0_202.txt	 2175	 2188	 O	 -1	 
 ,	data/source_txt/train/t7_government_0_202.txt	 2191	 2192	 O	 -1	 -1	 0
 No	data/source_txt/train/t7_government_0_202.txt	 2193	 2195	 O	 -1	 -1	 0
 .	data/source_txt/train/t7_government_0_202.txt	 2195	 2196	 O	 -1	 -1	 0
-
 2	data/source_txt/train/t7_government_0_202.txt	 2205	 2206	 O	 -1	 -1	 0
 :	data/source_txt/train/t7_government_0_202.txt	 2206	 2207	 O	 -1	 -1	 0
-109–130.In	data/source_txt/train/t7_government_0_202.txt	 2208	 2218	 O	 -1	 -1	 0
+109	data/source_txt/train/t7_government_0_202.txt	 2208	 2211	 O	 -1	 -1	 0
+–	data/source_txt/train/t7_government_0_202.txt	 2211	 2212	 O	 -1	 -1	 0
+130	data/source_txt/train/t7_government_0_202.txt	 2212	 2215	 O	 -1	 -1	 0
+.	data/source_txt/train/t7_government_0_202.txt	 2215	 2216	 O	 -1	 -1	 0
+
+In	data/source_txt/train/t7_government_0_202.txt	 2216	 2218	 O	 -1	 -1	 0
 June	data/source_txt/train/t7_government_0_202.txt	 2219	 2223	 O	 -1	 -1	 0
 2009	data/source_txt/train/t7_government_0_202.txt	 2224	 2228	 O	 -1	 -1	 0
 ,	data/source_txt/train/t7_government_0_202.txt	 2228	 2229	 O	 -1	 -1	 0
@@ -3444,10 +3448,6 @@ Beth	data/source_txt/train/t7_government_0_202.txt	 23627	 23631	 O	 -1	 -1	 0
 L.	data/source_txt/train/t7_government_0_202.txt	 23632	 23634	 O	 -1	 -1	 0
 Leech	data/source_txt/train/t7_government_0_202.txt	 23635	 23640	 O	 -1	 -1	 0
 .	data/source_txt/train/t7_government_0_202.txt	 23640	 23641	 O	 -1	 -1	 0
-
-1998	data/source_txt/train/t7_government_0_202.txt	 23648	 23652	 O	 -1	 -1	 0
-.	data/source_txt/train/t7_government_0_202.txt	 23652	 23653	 O	 -1	 -1	 0
-
 
 6567	data/source_txt/train/t7_government_0_202.txt	 23657	 23661	 O	 -1	 -1	 0
 .	data/source_txt/train/t7_government_0_202.txt	 23661	 23662	 O	 -1	 -1	 0
@@ -7906,3 +7906,86 @@ do	data/source_txt/train/t7_government_0_202.txt	 48059	 48061	 I-Definition	 T1
 .	data/source_txt/train/t7_government_0_202.txt	 48061	 48062	 O	 -1	 -1	 0
 
 
+6714	data/source_txt/train/t7_government_0_202.txt	 48066	 48070	 O	 -1	 -1	 0
+.	data/source_txt/train/t7_government_0_202.txt	 48070	 48071	 O	 -1	 -1	 0
+
+The	data/source_txt/train/t7_government_0_202.txt	 48080	 48083	 O	 -1	 -1	 0
+concept	data/source_txt/train/t7_government_0_202.txt	 48084	 48091	 O	 -1	 -1	 0
+of	data/source_txt/train/t7_government_0_202.txt	 48092	 48094	 O	 -1	 -1	 0
+going	data/source_txt/train/t7_government_0_202.txt	 48095	 48100	 B-Term	 T127	 0	 Direct-Defines
+public	data/source_txt/train/t7_government_0_202.txt	 48101	 48107	 I-Term	 T127	 0	 Direct-Defines
+involves	data/source_txt/train/t7_government_0_202.txt	 48108	 48116	 O	 -1	 -1	 0
+the	data/source_txt/train/t7_government_0_202.txt	 48117	 48120	 O	 -1	 -1	 0
+president	data/source_txt/train/t7_government_0_202.txt	 48121	 48130	 O	 -1	 -1	 0
+delivering	data/source_txt/train/t7_government_0_202.txt	 48131	 48141	 B-Definition	 T128	 T127	 Direct-Defines
+a	data/source_txt/train/t7_government_0_202.txt	 48142	 48143	 I-Definition	 T128	 T127	 Direct-Defines
+major	data/source_txt/train/t7_government_0_202.txt	 48144	 48149	 I-Definition	 T128	 T127	 Direct-Defines
+television	data/source_txt/train/t7_government_0_202.txt	 48150	 48160	 I-Definition	 T128	 T127	 Direct-Defines
+address	data/source_txt/train/t7_government_0_202.txt	 48161	 48168	 I-Definition	 T128	 T127	 Direct-Defines
+in	data/source_txt/train/t7_government_0_202.txt	 48169	 48171	 I-Definition	 T128	 T127	 Direct-Defines
+the	data/source_txt/train/t7_government_0_202.txt	 48172	 48175	 I-Definition	 T128	 T127	 Direct-Defines
+hope	data/source_txt/train/t7_government_0_202.txt	 48176	 48180	 I-Definition	 T128	 T127	 Direct-Defines
+that	data/source_txt/train/t7_government_0_202.txt	 48181	 48185	 I-Definition	 T128	 T127	 Direct-Defines
+Americans	data/source_txt/train/t7_government_0_202.txt	 48186	 48195	 I-Definition	 T128	 T127	 Direct-Defines
+watching	data/source_txt/train/t7_government_0_202.txt	 48196	 48204	 I-Definition	 T128	 T127	 Direct-Defines
+the	data/source_txt/train/t7_government_0_202.txt	 48205	 48208	 I-Definition	 T128	 T127	 Direct-Defines
+address	data/source_txt/train/t7_government_0_202.txt	 48209	 48216	 I-Definition	 T128	 T127	 Direct-Defines
+will	data/source_txt/train/t7_government_0_202.txt	 48217	 48221	 I-Definition	 T128	 T127	 Direct-Defines
+be	data/source_txt/train/t7_government_0_202.txt	 48222	 48224	 I-Definition	 T128	 T127	 Direct-Defines
+compelled	data/source_txt/train/t7_government_0_202.txt	 48225	 48234	 I-Definition	 T128	 T127	 Direct-Defines
+to	data/source_txt/train/t7_government_0_202.txt	 48235	 48237	 I-Definition	 T128	 T127	 Direct-Defines
+contact	data/source_txt/train/t7_government_0_202.txt	 48238	 48245	 I-Definition	 T128	 T127	 Direct-Defines
+their	data/source_txt/train/t7_government_0_202.txt	 48246	 48251	 I-Definition	 T128	 T127	 Direct-Defines
+House	data/source_txt/train/t7_government_0_202.txt	 48252	 48257	 I-Definition	 T128	 T127	 Direct-Defines
+and	data/source_txt/train/t7_government_0_202.txt	 48258	 48261	 I-Definition	 T128	 T127	 Direct-Defines
+Senate	data/source_txt/train/t7_government_0_202.txt	 48262	 48268	 I-Definition	 T128	 T127	 Direct-Defines
+member	data/source_txt/train/t7_government_0_202.txt	 48269	 48275	 I-Definition	 T128	 T127	 Direct-Defines
+and	data/source_txt/train/t7_government_0_202.txt	 48276	 48279	 I-Definition	 T128	 T127	 Direct-Defines
+that	data/source_txt/train/t7_government_0_202.txt	 48280	 48284	 I-Definition	 T128	 T127	 Direct-Defines
+such	data/source_txt/train/t7_government_0_202.txt	 48285	 48289	 I-Definition	 T128	 T127	 Direct-Defines
+public	data/source_txt/train/t7_government_0_202.txt	 48290	 48296	 I-Definition	 T128	 T127	 Direct-Defines
+pressure	data/source_txt/train/t7_government_0_202.txt	 48297	 48305	 I-Definition	 T128	 T127	 Direct-Defines
+will	data/source_txt/train/t7_government_0_202.txt	 48306	 48310	 I-Definition	 T128	 T127	 Direct-Defines
+result	data/source_txt/train/t7_government_0_202.txt	 48311	 48317	 I-Definition	 T128	 T127	 Direct-Defines
+in	data/source_txt/train/t7_government_0_202.txt	 48318	 48320	 I-Definition	 T128	 T127	 Direct-Defines
+the	data/source_txt/train/t7_government_0_202.txt	 48321	 48324	 I-Definition	 T128	 T127	 Direct-Defines
+legislators	data/source_txt/train/t7_government_0_202.txt	 48325	 48336	 I-Definition	 T128	 T127	 Direct-Defines
+supporting	data/source_txt/train/t7_government_0_202.txt	 48337	 48347	 I-Definition	 T128	 T127	 Direct-Defines
+the	data/source_txt/train/t7_government_0_202.txt	 48348	 48351	 I-Definition	 T128	 T127	 Direct-Defines
+president	data/source_txt/train/t7_government_0_202.txt	 48352	 48361	 I-Definition	 T128	 T127	 Direct-Defines
+on	data/source_txt/train/t7_government_0_202.txt	 48362	 48364	 I-Definition	 T128	 T127	 Direct-Defines
+a	data/source_txt/train/t7_government_0_202.txt	 48365	 48366	 I-Definition	 T128	 T127	 Direct-Defines
+major	data/source_txt/train/t7_government_0_202.txt	 48367	 48372	 I-Definition	 T128	 T127	 Direct-Defines
+piece	data/source_txt/train/t7_government_0_202.txt	 48373	 48378	 I-Definition	 T128	 T127	 Direct-Defines
+of	data/source_txt/train/t7_government_0_202.txt	 48379	 48381	 I-Definition	 T128	 T127	 Direct-Defines
+legislation	data/source_txt/train/t7_government_0_202.txt	 48382	 48393	 I-Definition	 T128	 T127	 Direct-Defines
+.	data/source_txt/train/t7_government_0_202.txt	 48393	 48394	 O	 -1	 -1	 0
+
+Technological	data/source_txt/train/t7_government_0_202.txt	 48401	 48414	 O	 -1	 -1	 0
+advances	data/source_txt/train/t7_government_0_202.txt	 48415	 48423	 O	 -1	 -1	 0
+have	data/source_txt/train/t7_government_0_202.txt	 48424	 48428	 O	 -1	 -1	 0
+made	data/source_txt/train/t7_government_0_202.txt	 48429	 48433	 O	 -1	 -1	 0
+it	data/source_txt/train/t7_government_0_202.txt	 48434	 48436	 O	 -1	 -1	 0
+more	data/source_txt/train/t7_government_0_202.txt	 48437	 48441	 O	 -1	 -1	 0
+efficient	data/source_txt/train/t7_government_0_202.txt	 48442	 48451	 O	 -1	 -1	 0
+for	data/source_txt/train/t7_government_0_202.txt	 48452	 48455	 O	 -1	 -1	 0
+presidents	data/source_txt/train/t7_government_0_202.txt	 48456	 48466	 O	 -1	 -1	 0
+to	data/source_txt/train/t7_government_0_202.txt	 48467	 48469	 O	 -1	 -1	 0
+take	data/source_txt/train/t7_government_0_202.txt	 48470	 48474	 O	 -1	 -1	 0
+their	data/source_txt/train/t7_government_0_202.txt	 48475	 48480	 O	 -1	 -1	 0
+messages	data/source_txt/train/t7_government_0_202.txt	 48481	 48489	 O	 -1	 -1	 0
+directly	data/source_txt/train/t7_government_0_202.txt	 48490	 48498	 O	 -1	 -1	 0
+to	data/source_txt/train/t7_government_0_202.txt	 48499	 48501	 O	 -1	 -1	 0
+the	data/source_txt/train/t7_government_0_202.txt	 48502	 48505	 O	 -1	 -1	 0
+people	data/source_txt/train/t7_government_0_202.txt	 48506	 48512	 O	 -1	 -1	 0
+than	data/source_txt/train/t7_government_0_202.txt	 48513	 48517	 O	 -1	 -1	 0
+was	data/source_txt/train/t7_government_0_202.txt	 48518	 48521	 O	 -1	 -1	 0
+the	data/source_txt/train/t7_government_0_202.txt	 48522	 48525	 O	 -1	 -1	 0
+case	data/source_txt/train/t7_government_0_202.txt	 48526	 48530	 O	 -1	 -1	 0
+before	data/source_txt/train/t7_government_0_202.txt	 48531	 48537	 O	 -1	 -1	 0
+mass	data/source_txt/train/t7_government_0_202.txt	 48538	 48542	 O	 -1	 -1	 0
+media	data/source_txt/train/t7_government_0_202.txt	 48543	 48548	 O	 -1	 -1	 0
+(	data/source_txt/train/t7_government_0_202.txt	 48549	 48550	 O	 -1	 -1	 0
+[	data/source_txt/train/t7_government_0_202.txt	 48550	 48551	 O	 -1	 -1	 0
+link	data/source_txt/train/t7_government_0_202.txt	 48551	 48555	 O	 -1	 -1	 0
+]	data/source_txt/train/t7_government_0_202.txt	 48555	 48556	 O	 -1	 -1	 0
