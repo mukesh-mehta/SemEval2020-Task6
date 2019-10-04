@@ -136,7 +136,7 @@ def train_kfold(num_folds, epochs, vectors = "glove.6B.300d", model_out_path=con
     for fold in range(num_folds):
         print("-"*10, "Fold number: {}".format(fold),  "-"*30)
         train("train_{}.csv".format(fold),
-            "val_0.csv".format(fold),
+            "val_{}.csv".format(fold),
             "task1_dev.csv", 
             model_out_path+"model_{}.pth".format(fold),
             device,
