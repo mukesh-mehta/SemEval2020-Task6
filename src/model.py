@@ -26,7 +26,7 @@ class SimpleLSTMBaseline(nn.Module):
 
 # DeepMoji Model
 class DeepMoji(nn.Module):
-    def __init__(self, vocab_size, embedding_dim, hidden_state_size, num_layers,
+    def __init__(self, embedding_vector, vocab_size, embedding_dim, hidden_state_size, num_layers,
                  output_dim, pad_idx, dropout=0.5, bidirectional=True):
 
         super(DeepMoji, self).__init__()
@@ -39,7 +39,8 @@ class DeepMoji(nn.Module):
         self.bidirectional = bidirectional
         self.pad_idx = pad_idx
         
-        self.embedding = nn.Embedding(self.vocab_size, self.embedding_dim)
+        # self.embedding = nn.Embedding(self.vocab_size, self.embedding_dim)
+        self.embedding = nn.Embedding.from_pretrained(torch.FloatTensor(embedding_vector))
         
         self.bilstm_one = nn.LSTM(
             input_size=self.embedding_dim, hidden_size=self.hidden_state_size,

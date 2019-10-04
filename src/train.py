@@ -25,7 +25,7 @@ from model import SimpleLSTMBaseline, DeepMoji
 from loader import BatchWrapper, get_iterators
 from loss import f1_loss
 
-def train(train, val, test, model_out_path, device, epochs = 10, vectors="glove.6B.100d"):
+def train(train, val, test, model_out_path, device, epochs = 10, vectors="glove.6B.300d"):
     print("Training on : {}, Validating on :{}".format(train, val))
     # Compute class weight
     train_df = pd.read_csv(config.TASK1["Folds"]+"/"+train, sep="\t")
@@ -40,7 +40,10 @@ def train(train, val, test, model_out_path, device, epochs = 10, vectors="glove.
     test_dl = BatchWrapper(test_iter, 'text', ['has_def'])
     
     # model = SimpleLSTMBaseline(100, TEXT.vocab.vectors, emb_dim=100).to(device)
-    model = DeepMoji(vocab_size=len(TEXT.vocab), embedding_dim=100, hidden_state_size=512,
+    model = DeepMoji(embedding_vector=TEXT.vocab.vectors,
+                    vocab_size=len(TEXT.vocab),
+                    embedding_dim=300,
+                    hidden_state_size=512,
                     num_layers=2,
                     output_dim=1,
                     dropout=0.5,
@@ -118,7 +121,7 @@ def evaluate(loader, model, loss_func, device, checkpoint=None):
     return val_loss, val_preds, val_truth
 
 
-def train_kfold(num_folds, epochs, vectors = "glove.6B.100d", model_out_path=config.TASK1["Model_outpath"], device = "cpu"):
+def train_kfold(num_folds, epochs, vectors = "glove.6B.300d", model_out_path=config.TASK1["Model_outpath"], device = "cpu"):
     #create log file
     timestr = time.strftime("%Y%m%d-%H%M%S")
     log_file = open("log_{}.log".format(timestr),"w")
@@ -144,4 +147,4 @@ def train_kfold(num_folds, epochs, vectors = "glove.6B.100d", model_out_path=con
 
 if __name__ == '__main__':
     Fire(train_kfold)
-    # python train.py --num_folds=10 --epochs=20 --vectors="glove.6B.100d" --device="cuda"
+    # python train.py --num_folds=10 --epochs=20 --vectors="glove.6B.300d" --device="cuda"
