@@ -57,6 +57,8 @@ classification report Validation (20% of total training data)
 |   macro avg  |     0.70    |  0.73  |    0.69   |   3350|
 |weighted avg  |     0.76    |  0.69  |    0.70   |   3350|
 
-FOllowing is the behavior of loss function with different optimizer and learning rate.
+FOllowing is the behavior of loss function with number of epochs.
 
-images
+![png] (F-Score_avg.png)
+
+![png] (Loss_avg.png)

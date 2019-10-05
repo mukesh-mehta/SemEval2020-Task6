@@ -25,7 +25,7 @@ from model import SimpleLSTMBaseline, DeepMoji
 from loader import BatchWrapper, get_iterators
 from loss import f1_loss
 
-def train(train, val, test, model_out_path, device, epochs = 10, vectors="glove.6B.300d"):
+def train(train, val, test, model_out_path, device, epochs = 10, clip=1, vectors="glove.6B.300d"):
     print("Training on : {}, Validating on :{}".format(train, val))
     # Compute class weight
     train_df = pd.read_csv(config.TASK1["Folds"]+"/"+train, sep="\t")
@@ -51,9 +51,10 @@ def train(train, val, test, model_out_path, device, epochs = 10, vectors="glove.
                     pad_idx=TEXT.vocab.stoi["<PAD>"]
                 ).to(device)
 
-    opt = optim.Adam(model.parameters(), lr=1e-2)
+    opt = optim.Adam(model.parameters(), lr=1e-3)
     # loss_func = nn.BCEWithLogitsLoss()
 
+    print("Epoch, Training Loss, Training f-score, Validation Loss, Validation f-score")
     # Best score
     best_score = 0.0
     for epoch in range(1, epochs + 1):
@@ -69,6 +70,9 @@ def train(train, val, test, model_out_path, device, epochs = 10, vectors="glove.
             # loss = loss_func(preds, y)
             loss = f1_loss(preds, y)
             loss.backward()
+
+            torch.nn.utils.clip_grad_norm_(model.parameters(), clip)
+
             opt.step()
             train_preds.extend(nn.Sigmoid()(preds).detach().cpu().numpy())
             train_truth.extend(y.cpu().numpy())
@@ -82,22 +86,21 @@ def train(train, val, test, model_out_path, device, epochs = 10, vectors="glove.
         train_preds = np.where(np.array(train_preds)<0.5, 0, 1).flatten()
         train_fscore = f1_score(train_truth, train_preds)
         val_fscore = f1_score(val_truth, val_preds)
-        print('Epoch: {}, Training Loss: {:.4f}, Training f-score {:.4f}, Validation Loss: {:.4f}, Validation f-score {:.4f}'.format(
-            epoch, epoch_loss, train_fscore, val_loss, val_fscore))
-        print("classification report Train")
-        print(classification_report(train_truth, train_preds))
-        print("classification report Validation")
-        print(classification_report(val_truth, val_preds))
+        print('{}, {:.4f}, {:.4f}, {:.4f}, {:.4f}'.format(epoch, epoch_loss, train_fscore, val_loss, val_fscore))
+        # print("classification report Train")
+        # print(classification_report(train_truth, train_preds))
+        # print("classification report Validation")
+        # print(classification_report(val_truth, val_preds))
         if val_fscore > best_score:
             best_score = val_fscore
             torch.save(model.state_dict(), model_out_path)
-            print("Saving model with best_score {}".format(best_score))
+            # print("Saving model with best_score {}".format(best_score))
 
     test_loss, test_preds, test_truth = evaluate(test_dl, model, f1_loss, device, checkpoint = model_out_path)#change loss here
     test_fscore = f1_score(test_truth, test_preds)
-    print("Test Loss: {:.4f}, Test F1-score {:.4f}".format(test_loss, test_fscore))
-    print("classification report Test")
-    print(classification_report(test_truth, test_preds))
+    # print("Test Loss: {:.4f}, Test F1-score {:.4f}".format(test_loss, test_fscore))
+    # print("classification report Test")
+    # print(classification_report(test_truth, test_preds))
     return
 
 
@@ -128,13 +131,13 @@ def train_kfold(num_folds, epochs, vectors = "glove.6B.300d", model_out_path=con
     old_stdout = sys.stdout
     sys.stdout = log_file
 
-    print("Num folds {}, Epochs {}, Embeddings {}".format(num_folds, epochs, vectors))
+    # print("Num folds {}, Epochs {}, Embeddings {}".format(num_folds, epochs, vectors))
     # create train and val data for torchtext format
     create_data(config.TASK1["Train"], config.TASK1["Folds"], num_fold = num_folds)
     create_data(config.TASK1["Dev"], config.TASK1["Folds"]+"task1_dev.csv", test=True)
 
     for fold in range(num_folds):
-        print("-"*10, "Fold number: {}".format(fold),  "-"*30)
+        # print("-"*10, "Fold number: {}".format(fold),  "-"*30)
         train("train_{}.csv".format(fold),
             "val_{}.csv".format(fold),
             "task1_dev.csv", 
