@@ -59,6 +59,6 @@ classification report Validation (20% of total training data)
 
 FOllowing is the behavior of loss function with number of epochs.
 
-![png] (F-Score_avg.png)
+![png] (https://github.com/mukesh-mehta/SemEval2020-Task6/blob/master/Loss_avg.png)
 
-![png] (Loss_avg.png)
+![png] (https://github.com/mukesh-mehta/SemEval2020-Task6/blob/master/F-Score_avg.png)
