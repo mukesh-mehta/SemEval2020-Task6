@@ -38,7 +38,7 @@ def get_iterators(train, val, test, device, vectors="glove.6B.100d"):
                skip_header=True, 
                fields=tv_datafields)
 
-    TEXT.build_vocab(trn, vld, vectors=vectors, max_size=20000, min_freq=10)
+    TEXT.build_vocab(trn, vld, vectors=vectors, max_size=20000, min_freq=2)
 
     train_iter, val_iter, test_iter = BucketIterator.splits(
                      (trn, vld, tst), # we pass in the datasets we want the iterator to draw data from

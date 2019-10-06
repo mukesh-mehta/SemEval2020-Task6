@@ -39,11 +39,11 @@ def train(train, val, test, model_out_path, device, epochs = 10, clip=1, vectors
     valid_dl = BatchWrapper(val_iter, 'text', ['has_def'])
     test_dl = BatchWrapper(test_iter, 'text', ['has_def'])
     
-    # model = SimpleLSTMBaseline(100, TEXT.vocab.vectors, emb_dim=100).to(device)
+    # model = SimpleLSTMBaseline(300, TEXT.vocab.vectors, emb_dim=300).to(device)
     model = DeepMoji(embedding_vector=TEXT.vocab.vectors,
                     vocab_size=len(TEXT.vocab),
                     embedding_dim=300,
-                    hidden_state_size=512,
+                    hidden_state_size=256,
                     num_layers=2,
                     output_dim=1,
                     dropout=0.5,
