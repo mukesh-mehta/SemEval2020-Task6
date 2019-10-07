@@ -68,7 +68,7 @@ def train(train, val, test, model_out_path, device, epochs = 10, clip=1, vectors
 
             preds = model(x[0], x[1]) # x[0] is text sequence, x[1] is len of sequence
             # loss = loss_func(preds, y)
-            loss = f1_loss(preds, y)
+            loss = f1_loss(preds, y, weights=class_weights)
             loss.backward()
 
             torch.nn.utils.clip_grad_norm_(model.parameters(), clip)
@@ -81,7 +81,7 @@ def train(train, val, test, model_out_path, device, epochs = 10, clip=1, vectors
         epoch_loss = running_loss / len(train_dl)
         
         # evaluate on validation set
-        val_loss, val_preds, val_truth = evaluate(valid_dl, model, f1_loss, device) #change loss here
+        val_loss, val_preds, val_truth = evaluate(valid_dl, model, f1_loss, device, weights = class_weights) #change loss here
 
         train_preds = np.where(np.array(train_preds)<0.5, 0, 1).flatten()
         train_fscore = f1_score(train_truth, train_preds)
@@ -105,7 +105,7 @@ def train(train, val, test, model_out_path, device, epochs = 10, clip=1, vectors
     return
 
 
-def evaluate(loader, model, loss_func, device, checkpoint=None):
+def evaluate(loader, model, loss_func, device, checkpoint=None, weights=None):
     if checkpoint:
         model.load_state_dict(torch.load(checkpoint))
         model.to(device)
@@ -115,7 +115,7 @@ def evaluate(loader, model, loss_func, device, checkpoint=None):
     model.eval() # turn on evaluation mode
     for x, y in loader:
         preds = model(x[0], x[1])
-        loss = loss_func(preds, y)
+        loss = loss_func(preds, y, weights=weights)
         val_loss += loss.item()
         val_preds.extend(nn.Sigmoid()(preds).detach().cpu().numpy())
         val_truth.extend(y.cpu().numpy())

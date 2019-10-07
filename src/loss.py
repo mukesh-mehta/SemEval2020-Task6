@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-def f1_loss(predict, target):
+def f1_loss(predict, target, weights=None):
     predict = torch.sigmoid(predict)
     predict = torch.clamp(predict * (1-target), min=0.01) + predict * target
     tp = predict * target
@@ -11,4 +11,4 @@ def f1_loss(predict, target):
     precision = tp / (predict.sum(dim=0) + 1e-8)
     recall = tp / (target.sum(dim=0) + 1e-8)
     f1 = 2 * (precision * recall / (precision + recall + 1e-8))
-    return 1 - f1.mean() + nn.BCEWithLogitsLoss()(predict, target)
+    return 1 - f1.mean() + nn.BCEWithLogitsLoss(weight=weights)(predict, target)
