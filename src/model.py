@@ -135,3 +135,46 @@ class AttentionLayer(nn.Module):
         attn_weights = F.softmax(attention, dim=1)
         # attn_weights = [batch_size, seq_len]
         return attn_weights
+
+class BiLstm_Crf(nn.Module):
+    def __init__(self, embedding_vector, vocab_size, embedding_dim, hidden_dim, output_dim, num_layers, bidirectional):
+        super(BiLstm_Crf, self).__init__()
+        self.vocab_size = vocab_size
+        self.embedding_dim = embedding_dim
+        self.hidden_dim = hidden_dim
+        self.output_dim = output_dim
+        self.num_layers = num_layers
+        self.bidirectional = bidirectional
+        
+        self.embedding = nn.Embedding.from_pretrained(torch.FloatTensor(embedding_vector))#(self.vocab_size, self.embedding_dim)
+        self.lstm = nn.LSTM(input_size=self.embedding_dim, hidden_size=self.hidden_dim, num_layers=self.num_layers, bidirectional=self.bidirectional,
+                           dropout=0.5)
+        
+        self.dropout_layer = nn.Dropout(0.5)
+        self.linear = nn.Linear(self.hidden_dim, self.output_dim)
+        
+        self.crf_layer = CRF(self.output_dim)
+        self.inference = False
+        
+    def forward(self, inp, labels):
+        # inp = [seq_len, batch_size]
+        # labels = [seq_len, batch_size]
+             
+        embedded = self.dropout_layer(self.embedding(inp))
+        # embedded = [seq_len, batch_size, embedding_dim]
+        
+        outputs, (hidden, cell) = self.lstm(embedded)
+        # outputs = [seq_len, batch_size, 1 * hidden_size]
+        
+        out = self.linear(outputs)
+        # out = [seq_len, batch_size, output_dim]
+        
+        if self.inference is False:
+            loss = self.crf_layer(out, labels) * torch.tensor(-1, device=device)
+            return loss 
+        else:
+            loss = self.crf_layer(out, labels) * torch.tensor(-1, device=device)
+            out = self.crf_layer.decode(out)
+            out = torch.tensor(out, dtype=torch.long, device=device).permute(1, 0)
+            # out = [seq_len, batch_size]
+            return out, loss
