@@ -3,7 +3,9 @@ import config
 import os
 from sklearn.model_selection import StratifiedKFold
 
-def create_data(folder_path, out_path, num_fold = 5, test=False):
+from utils import get_text_labels, parse_deft
+
+def create_data_task1(folder_path, out_path, num_fold = 5, test=False):
     master_df = pd.DataFrame()
     for i, file in enumerate(os.listdir(folder_path)):
         temp_df = pd.read_csv(os.path.join(folder_path, file), names=['text', 'has_def'], sep="\t")
@@ -25,8 +27,16 @@ def create_data(folder_path, out_path, num_fold = 5, test=False):
         master_df.to_csv(out_path, sep="\t", index=False)
     return
 
+def create_data_task2(folder_path, output_path, test=False):
+    all_data = []
+    for files in os.listdir(folder_path):
+        all_data.extend(parse_deft(os.path.join(folder_path, files)))
+    pd.DataFrame.from_records(all_data).to_csv(output_path, index=False)
+    return
+
+
 if __name__ == '__main__':
     if not os.path.exists(config.TASK1["Folds"]):
         os.mkdir(config.TASK1["Folds"])
-    create_data(config.TASK1["Train"], config.TASK1["Folds"])
-    create_data(config.TASK1["Dev"], config.TASK1["Folds"]+"/task1_dev.csv", test=True)
+    create_data_task1(config.TASK1["Train"], config.TASK1["Folds"])
+    create_data_task1(config.TASK1["Dev"], config.TASK1["Folds"]+"/task1_dev.csv", test=True)
