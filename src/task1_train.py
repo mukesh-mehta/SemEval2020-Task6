@@ -20,7 +20,7 @@ from sklearn.metrics import classification_report, f1_score
 from sklearn.utils.class_weight import compute_class_weight
 
 import config
-from preprocess import create_data
+from preprocess import create_data_task1
 from model import SimpleLSTMBaseline, DeepMoji
 from loader import BatchWrapper, get_iterators
 from loss import f1_loss
@@ -134,8 +134,8 @@ def train_kfold(num_folds, epochs, vectors = "glove.6B.300d", model_out_path=con
 
     print("Num folds {}, Epochs {}, Embeddings {}".format(num_folds, epochs, vectors))
     # create train and val data for torchtext format
-    create_data(config.TASK1["Train"], config.TASK1["Folds"], num_fold = num_folds)
-    create_data(config.TASK1["Dev"], config.TASK1["Folds"]+"task1_dev.csv", test=True)
+    create_data_task1(config.TASK1["Train"], config.TASK1["Folds"], num_fold = num_folds)
+    create_data_task1(config.TASK1["Dev"], config.TASK1["Folds"]+"task1_dev.csv", test=True)
 
     for fold in range(num_folds):
         print("-"*10, "Fold number: {}".format(fold),  "-"*30)
