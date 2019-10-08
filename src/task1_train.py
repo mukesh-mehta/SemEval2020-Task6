@@ -151,4 +151,4 @@ def train_kfold(num_folds, epochs, vectors = "glove.6B.300d", model_out_path=con
 
 if __name__ == '__main__':
     Fire(train_kfold)
-    # python train.py --num_folds=10 --epochs=20 --vectors="glove.6B.300d" --device="cuda"
+    # python task1_train.py --num_folds=10 --epochs=20 --vectors="glove.6B.300d" --device="cuda"

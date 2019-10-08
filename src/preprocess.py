@@ -32,6 +32,7 @@ def create_data_task2(folder_path, output_path, test=False):
     for files in os.listdir(folder_path):
         all_data.extend(parse_deft(os.path.join(folder_path, files)))
     pd.DataFrame.from_records(all_data).to_csv(output_path, index=False)
+    print("output_path", len(all_data), pd.DataFrame.from_records(all_data).shape)
     return
 
 

@@ -55,14 +55,16 @@ def task2_iterators(train, val, device, vectors, batch_size=256):
     LABELS = Field(sequential=True, init_token="<sos>",eos_token="<eos>", is_target=True)
 
     tv_datafields = [("text", TEXT), ("labels", LABELS)]
+
     trn, vld = TabularDataset.splits(
-                   path=config.TASK2['data'], # the root directory where the data lies
+                   path=config.TASK2['csv_files'], # the root directory where the data lies
                    train=train,validation=val,
                    format='csv',
                    skip_header=True,
                    fields=tv_datafields)
-    TEXT.build_vocab(trn,vld, vectors="glove.6B.300d")
-    LABELS.build_vocab(trn,vld)
+    
+    TEXT.build_vocab(trn, vld, vectors=vectors)
+    LABELS.build_vocab(trn, vld)
     train_iterator, val_iterator = BucketIterator.splits(
         (trn, vld),
         batch_sizes=(batch_size, batch_size), device=device, sort_within_batch=False, sort_key=lambda x: len(x.text)

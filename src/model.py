@@ -3,6 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from torch.autograd import Variable
+from torchcrf import CRF
 
 class SimpleLSTMBaseline(nn.Module):
     def __init__(self, hidden_dim, embedding_vector, emb_dim=100,
@@ -170,11 +171,11 @@ class BiLstm_Crf(nn.Module):
         # out = [seq_len, batch_size, output_dim]
         
         if self.inference is False:
-            loss = self.crf_layer(out, labels) * torch.tensor(-1, device=device)
+            loss = self.crf_layer(out, labels) * torch.tensor(-1)
             return loss 
         else:
-            loss = self.crf_layer(out, labels) * torch.tensor(-1, device=device)
+            loss = self.crf_layer(out, labels) * torch.tensor(-1)
             out = self.crf_layer.decode(out)
-            out = torch.tensor(out, dtype=torch.long, device=device).permute(1, 0)
+            out = torch.tensor(out, dtype=torch.long).permute(1, 0)
             # out = [seq_len, batch_size]
             return out, loss
