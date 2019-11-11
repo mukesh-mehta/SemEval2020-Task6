@@ -22,6 +22,9 @@ import numpy as np
 import math
 from transformers import AdamW, WarmupLinearSchedule
 from tqdm import tqdm
+from sklearn.metrics import classification_report
+import config as CONFIG
+from preprocess import create_data_task1
 
 config = Task1_finetune_config
 MODEL_CLASSES = {
@@ -187,4 +190,51 @@ def evaluate(model, eval_dataloader):
         preds = np.squeeze(preds)
     return preds, out_label_ids
 
-	
+if __name__ == '__main__':
+    if not os.path.exists(CONFIG.TASK1["Folds"]):
+        os.mkdir(CONFIG.TASK1["Folds"])
+    create_data_task1(CONFIG.TASK1["Train"], CONFIG.TASK1["Folds"])
+    create_data_task1(CONFIG.TASK1["Dev"], CONFIG.TASK1["Folds"]+"/task1_dev.csv", test=True)
+
+    config_class, model_class, tokenizer_class = MODEL_CLASSES['roberta']
+    tokenizer = tokenizer_class.from_pretrained('roberta-base')
+    # update config
+    config['model_name'] = 'bert-base-uncased'
+    config['model_type'] = 'bert'
+
+    # train model
+    train_df = pd.read_csv("../deft_corpus/data/Task1_folds/train_0.csv", sep="\t")[['text','has_def']]
+    train_examples = [InputExample(i, text, None, label) for i, (text, label) in enumerate(zip(train_df.iloc[:, 0], train_df.iloc[:, 1]))]
+
+
+    train_dataset = load_and_cache_examples(train_examples, tokenizer, evaluate=False, no_cache=False)
+    train_sampler = RandomSampler(train_dataset)
+    train_dataloader = DataLoader(train_dataset, sampler=train_sampler, batch_size=config['train_batch_size'])
+    t_total = len(train_dataloader) // config['gradient_accumulation_steps'] * config['num_train_epochs']
+
+    model = model_class.from_pretrained('roberta-base', num_labels=2)
+    model.to('cuda')
+    no_decay = ['bias', 'LayerNorm.weight']
+    optimizer_grouped_parameters = [
+        {'params': [p for n, p in model.named_parameters() if not any(
+            nd in n for nd in no_decay)], 'weight_decay': config['weight_decay']},
+        {'params': [p for n, p in model.named_parameters() if any(
+            nd in n for nd in no_decay)], 'weight_decay': 0.0}
+    ]
+
+    warmup_steps = math.ceil(t_total * config['warmup_ratio'])
+    config['warmup_steps'] = warmup_steps if config['warmup_steps'] == 0 else config['warmup_steps']
+
+    optimizer = AdamW(optimizer_grouped_parameters, lr=config['learning_rate'], eps=config['adam_epsilon'])
+    scheduler = WarmupLinearSchedule(optimizer, warmup_steps=config['warmup_steps'], t_total=t_total)
+
+    model = train_model(model, train_dataloader)
+
+    # evaluate model
+    eval_df = pd.read_csv("../deft_corpus/data/Task1_folds/task1_dev.csv", sep="\t")[['text','has_def']]
+    eval_examples = [InputExample(i, text, None, label) for i, (text, label) in enumerate(zip(eval_df.iloc[:, 0], eval_df.iloc[:, 1]))]
+    eval_dataset = load_and_cache_examples(eval_examples, tokenizer, evaluate=False, no_cache=False)
+    eval_sampler = RandomSampler(eval_dataset)
+    eval_dataloader = DataLoader(eval_dataset, sampler=eval_sampler, batch_size=config['eval_batch_size'])
+    preds, out_label_ids = evaluate(model, eval_dataloader)
+    print(classification_report(out_label_ids, preds))
