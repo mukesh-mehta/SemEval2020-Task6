@@ -1,0 +1,3 @@
+[submodule "deft_corpus"]
+	path = deft_corpus
+	url = https://github.com/adobe-research/deft_corpus.git
