@@ -37,3 +37,31 @@ Task1_finetune_config = {
             'reprocess_input_data': False,
             'label_list':[0,1]
         }
+
+Task2_labels = [
+'O',
+'I-Definition',
+'I-Term',
+'I-Secondary-Definition',
+'B-Term',
+'B-Definition',
+'I-Definiti-frag',
+'I-Qualifier',
+'I-Alias-Term',
+'B-Alias-Term',
+'B-Secondary-Definition',
+'I-Referential-Definition',
+'B-Referential-Definition',
+'B-Qualifier',
+'B-Referential-Term',
+'I-Referential-Term',
+'B-Definiti-frag',
+'I-Ordered-Definition',
+'I-Ordered-Term',
+'B-Te-frag',
+'B-Ordered-Definition',
+'B-Ordered-Term',
+'I-Te-frag',
+'B-Alias-Te-frag',
+'I-Alias-Te-frag'
+]
