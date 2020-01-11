@@ -3,6 +3,9 @@ import pandas as pd
 
 from transformers import glue_convert_examples_to_features as convert_examples_to_features
 from transformers import (WEIGHTS_NAME, BertConfig,
+                            AlbertConfig,
+                            AlbertForSequenceClassification,
+                            AlbertTokenizer,
                                   BertForSequenceClassification, BertTokenizer,
                                   RobertaConfig,
                                   RobertaForSequenceClassification,
@@ -20,7 +23,7 @@ from torch.utils.data import (DataLoader, RandomSampler, SequentialSampler,
                               TensorDataset)
 import numpy as np
 import math
-from transformers import AdamW, WarmupLinearSchedule
+from transformers import AdamW, get_linear_schedule_with_warmup
 from tqdm import tqdm
 from sklearn.metrics import classification_report
 import config as CONFIG
@@ -28,6 +31,7 @@ from preprocess import create_data_task1
 
 config = Task1_finetune_config
 MODEL_CLASSES = {
+            "albert": (AlbertConfig, AlbertForSequenceClassification, AlbertTokenizer),
             'bert': (BertConfig, BertForSequenceClassification, BertTokenizer),
             'xlnet': (XLNetConfig, XLNetForSequenceClassification, XLNetTokenizer),
             'xlm': (XLMConfig, XLMForSequenceClassification, XLMTokenizer),
@@ -123,7 +127,7 @@ def train_model(model, train_dataloader):
                     'labels':         batch[3]}
             # XLM, DistilBERT and RoBERTa don't use segment_ids
             if config['model_type'] != 'distilbert':
-                inputs['token_type_ids'] = batch[2] if config['model_type'] in ['bert', 'xlnet'] else None  
+                inputs['token_type_ids'] = batch[2] if config['model_type'] in ["bert", "xlnet", "albert"] else None  
             outputs = model(**inputs)
             # model outputs are always tuple in pytorch-transformers (see doc)
             loss = outputs[0]
@@ -171,7 +175,7 @@ def evaluate(model, eval_dataloader):
             # XLM, DistilBERT and RoBERTa don't use segment_ids
 #             preds.extend(batch[3])
             if config['model_type'] != 'distilbert':
-                inputs['token_type_ids'] = batch[2] if config['model_type'] in ['bert', 'xlnet'] else None  
+                inputs['token_type_ids'] = batch[2] if config['model_type'] in ["bert", "xlnet", "albert"] else None  
             outputs = model(**inputs)
             tmp_eval_loss, logits = outputs[:2]
 
@@ -196,11 +200,11 @@ if __name__ == '__main__':
     create_data_task1(CONFIG.TASK1["Train"], CONFIG.TASK1["Folds"])
     create_data_task1(CONFIG.TASK1["Dev"], CONFIG.TASK1["Folds"]+"/task1_dev.csv", test=True)
 
-    config_class, model_class, tokenizer_class = MODEL_CLASSES['roberta']
-    tokenizer = tokenizer_class.from_pretrained('roberta-base')
+    config_class, model_class, tokenizer_class = MODEL_CLASSES['albert']
+    tokenizer = tokenizer_class.from_pretrained('albert-base-v2')
     # update config
-    config['model_name'] = 'bert-base-uncased'
-    config['model_type'] = 'bert'
+    config['model_name'] = 'albert'
+    config['model_type'] = 'albert'
 
     # train model
     train_df = pd.read_csv("../deft_corpus/data/Task1_folds/train_0.csv", sep="\t")[['text','has_def']]
@@ -212,7 +216,7 @@ if __name__ == '__main__':
     train_dataloader = DataLoader(train_dataset, sampler=train_sampler, batch_size=config['train_batch_size'])
     t_total = len(train_dataloader) // config['gradient_accumulation_steps'] * config['num_train_epochs']
 
-    model = model_class.from_pretrained('roberta-base', num_labels=2)
+    model = model_class.from_pretrained('albert-base-v2', num_labels=2)
     model.to('cuda')
     no_decay = ['bias', 'LayerNorm.weight']
     optimizer_grouped_parameters = [
@@ -226,7 +230,7 @@ if __name__ == '__main__':
     config['warmup_steps'] = warmup_steps if config['warmup_steps'] == 0 else config['warmup_steps']
 
     optimizer = AdamW(optimizer_grouped_parameters, lr=config['learning_rate'], eps=config['adam_epsilon'])
-    scheduler = WarmupLinearSchedule(optimizer, warmup_steps=config['warmup_steps'], t_total=t_total)
+    scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=config['warmup_steps'], num_training_steps=t_total)
 
     model = train_model(model, train_dataloader)
 
@@ -237,4 +241,7 @@ if __name__ == '__main__':
     eval_sampler = RandomSampler(eval_dataset)
     eval_dataloader = DataLoader(eval_dataset, sampler=eval_sampler, batch_size=config['eval_batch_size'])
     preds, out_label_ids = evaluate(model, eval_dataloader)
+    dev_submission = eval_df
+    dev_submission['has_def'] = preds
+    dev_submission.to_csv("dev_tsk1_sub.deft", sep='\t', index=False)
     print(classification_report(out_label_ids, preds))

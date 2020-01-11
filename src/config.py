@@ -18,11 +18,11 @@ TASK2 = {
 Task1_finetune_config = {
             'output_dir': 'outputs/',
             'cache_dir': 'cache_dir',
-            'max_seq_length': 100,
-            'train_batch_size': 8,
+            'max_seq_length': 150,
+            'train_batch_size': 12,
             'gradient_accumulation_steps': 1,
             'eval_batch_size': 8,
-            'num_train_epochs': 1,
+            'num_train_epochs': 10,
             'weight_decay': 0,
             'learning_rate': 4e-5,
             'adam_epsilon': 1e-8,
@@ -65,3 +65,15 @@ Task2_labels = [
 'B-Alias-Te-frag',
 'I-Alias-Te-frag'
 ]
+
+Task2_finetune_config ={
+    "max_seq_length": 125,
+    "model_type": "bert",
+    "num_train_epochs":4,
+    "gradient_accumulation_steps":1,
+    'learning_rate':5e-5,
+    'adam_epsilon':1e-8,
+    'warmup_steps':0,
+    'weight_decay':0.0,
+    'max_grad_norm':1.0
+}
