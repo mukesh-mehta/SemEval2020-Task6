@@ -2,7 +2,7 @@ CUDA_LAUNCH_BLOCKING=1
 from torch.nn import CrossEntropyLoss
 from config import Task2_finetune_config as config
 from config import Task2_labels as label_list
-from transformers import WEIGHTS_NAME, BertConfig, BertForTokenClassification, BertTokenizer, AdamW, WarmupLinearSchedule
+from transformers import WEIGHTS_NAME, BertConfig, BertForTokenClassification, BertTokenizer, AdamW, get_linear_schedule_with_warmup
 import pandas as pd
 import os
 import torch
@@ -163,10 +163,6 @@ def load_and_cache_examples(examples, tokenizer, labels, pad_token_label_id):
     dataset = TensorDataset(all_input_ids, all_input_mask, all_segment_ids, all_label_ids)
     return dataset
 
-
-
-
-
 def train_model(model, train_dataloader):
     global_step = 0
     tr_loss, logging_loss = 0.0, 0.0
@@ -286,7 +282,7 @@ if __name__ == '__main__':
         {"params": [p for n, p in model.named_parameters() if any(nd in n for nd in no_decay)], "weight_decay": 0.0}
     ]
     optimizer = AdamW(optimizer_grouped_parameters, lr=config['learning_rate'], eps=config['adam_epsilon'])
-    scheduler = WarmupLinearSchedule(optimizer, warmup_steps=config['warmup_steps'], t_total=t_total)
+    scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=config['warmup_steps'], num_training_steps=t_total)
     model=train_model(model, train_dataloader)
     results, preds_list, out_label_list = evaluate(model, eval_dataloader, label_list)
     print(results)
