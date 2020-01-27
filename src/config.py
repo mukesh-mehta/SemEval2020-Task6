@@ -22,7 +22,7 @@ Task1_finetune_config = {
             'train_batch_size': 12,
             'gradient_accumulation_steps': 1,
             'eval_batch_size': 8,
-            'num_train_epochs': 10,
+            'num_train_epochs': 1,
             'weight_decay': 0,
             'learning_rate': 4e-5,
             'adam_epsilon': 1e-8,

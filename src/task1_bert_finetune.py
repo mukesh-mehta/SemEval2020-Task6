@@ -241,7 +241,18 @@ if __name__ == '__main__':
     eval_sampler = RandomSampler(eval_dataset)
     eval_dataloader = DataLoader(eval_dataset, sampler=eval_sampler, batch_size=config['eval_batch_size'])
     preds, out_label_ids = evaluate(model, eval_dataloader)
-    dev_submission = eval_df
-    dev_submission['has_def'] = preds
-    dev_submission.to_csv("dev_tsk1_sub.deft", sep='\t', index=False)
+    # dev_submission = eval_df
+    # dev_submission['has_def'] = preds
+    # dev_submission.to_csv("dev_tsk1_sub.deft", sep='\t', index=False)
     print(classification_report(out_label_ids, preds))
+
+    for file in os.listdir("../deft_corpus/data/Task1/dev"):
+        eval_df = pd.read_csv("../deft_corpus/data/Task1/dev/"+file, sep="\t", names=['text', 'has_def'])
+        eval_examples = [InputExample(i, text, None, label) for i, (text, label) in enumerate(zip(eval_df.iloc[:, 0], eval_df.iloc[:, 1]))]
+        eval_dataset = load_and_cache_examples(eval_examples, tokenizer, evaluate=False, no_cache=False)
+        eval_sampler = RandomSampler(eval_dataset)
+        eval_dataloader = DataLoader(eval_dataset, sampler=eval_sampler, batch_size=config['eval_batch_size'])
+        preds, out_label_ids = evaluate(model, eval_dataloader)
+        dev_submission = eval_df
+        dev_submission['has_def'] = preds
+        dev_submission.to_csv("/home/mukesh/Desktop/SemEval_Task1_Submission/task_1_"+file, sep='\t', index=False, header=False)

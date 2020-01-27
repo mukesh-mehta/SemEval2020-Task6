@@ -12,9 +12,10 @@ def create_data_task1(folder_path, out_path, num_fold = 5, test=False):
         temp_df['filename'] = str(file)#.split(".")[0].split("_")[1]
         master_df = pd.concat([master_df, temp_df])
         del temp_df
-    master_df['length'] = master_df['text'].map(len)
-    master_df = master_df[master_df['length']>40]
     if not test:
+        master_df['length'] = master_df['text'].map(len)
+        master_df = master_df[master_df['length']>40]
+        master_df.drop(columns=['length'])
         # Initialize stratified k-fold
         print(master_df.shape)
         skf = StratifiedKFold(n_splits=num_fold, random_state=22)
