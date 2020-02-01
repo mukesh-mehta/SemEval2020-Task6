@@ -255,4 +255,4 @@ if __name__ == '__main__':
         preds, out_label_ids = evaluate(model, eval_dataloader)
         dev_submission = eval_df
         dev_submission['has_def'] = preds
-        dev_submission.to_csv("/home/mukesh/Desktop/SemEval_Task1_Submission/task_1_"+file, sep='\t', index=False, header=False)
+        dev_submission.to_csv("/home/mukesh/Desktop/SemEval_Task1_Submission/"+file, sep='\t', index=False, header=False)
