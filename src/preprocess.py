@@ -3,7 +3,7 @@ import config
 import os
 from sklearn.model_selection import StratifiedKFold
 
-from utils import get_text_labels, parse_deft
+from utils import parse_deft
 
 def create_data_task1(folder_path, out_path, num_fold = 5, test=False):
     master_df = pd.DataFrame()

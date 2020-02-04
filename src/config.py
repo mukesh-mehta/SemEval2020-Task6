@@ -69,7 +69,7 @@ Task2_labels = [
 Task2_finetune_config ={
     "max_seq_length": 125,
     "model_type": "bert",
-    "num_train_epochs":4,
+    "num_train_epochs":1,
     "gradient_accumulation_steps":1,
     'learning_rate':5e-5,
     'adam_epsilon':1e-8,

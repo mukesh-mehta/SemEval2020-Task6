@@ -11,7 +11,7 @@ from tqdm import tqdm
 import math
 import numpy as np
 from seqeval.metrics import precision_score, recall_score, f1_score
-
+from utils import parse_deft, submission_task2
 
 pad_token_label_id = CrossEntropyLoss().ignore_index
 
@@ -273,8 +273,7 @@ if __name__ == '__main__':
     eval_df.dropna(inplace=True)
     eval_examples = [InputExample(i, str(text).split(" "), str(label).split(" ")) for i, (text, label) in enumerate(zip(eval_df['text'].values, eval_df['labels'].values))]
     eval_dataset = load_and_cache_examples(eval_examples, tokenizer, label_list, pad_token_label_id)
-    eval_sampler = RandomSampler(eval_dataset)
-    eval_dataloader = DataLoader(eval_dataset, sampler=eval_sampler, batch_size=4)
+    eval_dataloader = DataLoader(eval_dataset, sampler=None, batch_size=4)
     no_decay = ["bias", "LayerNorm.weight"]
     optimizer_grouped_parameters = [
         {"params": [p for n, p in model.named_parameters() if not any(nd in n for nd in no_decay)],
@@ -286,3 +285,12 @@ if __name__ == '__main__':
     model=train_model(model, train_dataloader)
     results, preds_list, out_label_list = evaluate(model, eval_dataloader, label_list)
     print(results)
+    for file in os.listdir("../deft_corpus/data/deft_files/dev"):
+        eval_df = parse_deft("../deft_corpus/data/deft_files/dev/"+file)
+        eval_examples = [InputExample(i, str(text).split(" "), str(label).split(" ")) for i, (text, label) in enumerate(zip(eval_df['text'].values, eval_df['labels'].values))]
+        eval_dataset = load_and_cache_examples(eval_examples, tokenizer, label_list, pad_token_label_id)
+        eval_dataloader = DataLoader(eval_dataset, sampler=None, batch_size=4)
+        results, preds_list, out_label_list = evaluate(model, eval_dataloader, label_list)
+        eval_df['labels'] = preds_list
+        submission_task2(eval_df[['text', 'filename', 'start', 'end', 'labels']], "/home/mukesh/Desktop/SemEval_Task1_Submission/task_2_"+file)
+
