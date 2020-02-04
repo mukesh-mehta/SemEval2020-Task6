@@ -15,7 +15,10 @@ def get_text_labels(sequence_tags):
     # TOKEN TXT_SOURCE_FILE START_CHAR END_CHAR TAG TAG_ID ROOT_ID RELATION
     text = [data[0].strip() for data in sequence_tags]
     tags = [data[4].strip() for data in sequence_tags]
-    return {"text":" ".join(text), "labels": " ".join(tags)}
+    start = [data[2].strip() for data in sequence_tags]
+    end = [data[3].strip() for data in sequence_tags]
+    f_name = [data[1].strip() for data in sequence_tags]
+    return {"text":" ".join(text), "filename":" ".join(f_name), "labels": " ".join(tags), "start": " ".join(start), "end": " ".join(end)}
 
 def parse_deft(deft_file):
     with open(deft_file, 'r') as deft:
@@ -28,3 +31,12 @@ def parse_deft(deft_file):
                 sents.append(token_data.split("\t"))
         all_sequences.append(get_text_labels(sents))
     return all_sequences
+
+def submission_task2(df, out_file):
+    for col in df.columns:
+        df[col] = df[col].apply(lambda x: x.split())
+    with open(out_file, 'w') as f:
+        for tok, file, start, end, label in df.values:
+            for meta in zip(tok, file, start, end, label):
+                f.write("\t".join(meta)+'\n')
+            f.write("\n\n")
