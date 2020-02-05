@@ -25,11 +25,12 @@ def parse_deft(deft_file):
         all_text = deft.read()
     all_sequences = []
     for lines in all_text.split("\n\n"):
-        sents = []
-        for token_data in lines.split("\n"):
-            if len(token_data.split("\t"))==8 and (token_data.split("\t")[4].strip()[0] in ["B", "I", "O"]):
-                sents.append(token_data.split("\t"))
-        all_sequences.append(get_text_labels(sents))
+        if lines != '\n':
+            sents = []
+            for token_data in lines.split("\n"):
+                if len(token_data.split("\t"))==8 and (token_data.split("\t")[4].strip()[0] in ["B", "I", "O"]):
+                    sents.append(token_data.split("\t"))
+            all_sequences.append(get_text_labels(sents))
     return all_sequences
 
 def submission_task2(df, out_file):

@@ -286,11 +286,12 @@ if __name__ == '__main__':
     results, preds_list, out_label_list = evaluate(model, eval_dataloader, label_list)
     print(results)
     for file in os.listdir("../deft_corpus/data/deft_files/dev"):
+        print(file)
         eval_df = pd.DataFrame.from_records(parse_deft("../deft_corpus/data/deft_files/dev/"+file))
         eval_examples = [InputExample(i, str(text).split(" "), str(label).split(" ")) for i, (text, label) in enumerate(zip(eval_df['text'].values, eval_df['labels'].values))]
         eval_dataset = load_and_cache_examples(eval_examples, tokenizer, label_list, pad_token_label_id)
         eval_dataloader = DataLoader(eval_dataset, sampler=None, batch_size=4)
         results, preds_list, out_label_list = evaluate(model, eval_dataloader, label_list)
-        eval_df['labels'] = preds_list
+        eval_df['labels'] = [" ".join(preds) for preds in preds_list]
         submission_task2(eval_df[['text', 'filename', 'start', 'end', 'labels']], "/home/mukesh/Desktop/SemEval_Task1_Submission/task_2_"+file)
 
