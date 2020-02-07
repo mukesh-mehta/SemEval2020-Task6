@@ -1,5 +1,6 @@
 from config import Task1_finetune_config
 import pandas as pd
+import csv
 
 from transformers import glue_convert_examples_to_features as convert_examples_to_features
 from transformers import (WEIGHTS_NAME, BertConfig,
@@ -247,12 +248,21 @@ if __name__ == '__main__':
     print(classification_report(out_label_ids, preds))
 
     for file in os.listdir("../deft_corpus/data/Task1/dev"):
-        eval_df = pd.read_csv("../deft_corpus/data/Task1/dev/"+file, sep="\t", names=['text', 'has_def'])
-        eval_examples = [InputExample(i, text, None, label) for i, (text, label) in enumerate(zip(eval_df.iloc[:, 0], eval_df.iloc[:, 1]))]
+        eval_text = []
+        truth = []
+        with open("../deft_corpus/data/Task1/dev/"+file, 'r') as eval_file:
+            csv_reader = csv.reader(eval_file, delimiter = "\t")
+            [(eval_text.append(row[0]), truth.append(row[1])) for row in csv_reader]
+        # eval_df = pd.read_csv("../deft_corpus/data/Task1/dev/"+file, sep="\t", names=['text', 'has_def'])
+        eval_examples = [InputExample(i, text, None, label) for i, (text, label) in enumerate(zip(eval_text, truth))]
         eval_dataset = load_and_cache_examples(eval_examples, tokenizer, evaluate=False, no_cache=False)
-        eval_sampler = RandomSampler(eval_dataset)
-        eval_dataloader = DataLoader(eval_dataset, sampler=eval_sampler, batch_size=config['eval_batch_size'])
+        # eval_sampler = RandomSampler(eval_dataset)
+        eval_dataloader = DataLoader(eval_dataset, sampler=None, batch_size=config['eval_batch_size'])
         preds, out_label_ids = evaluate(model, eval_dataloader)
-        dev_submission = eval_df
-        dev_submission['has_def'] = preds
-        dev_submission.to_csv("/home/mukesh/Desktop/SemEval_Task1_Submission/"+file, sep='\t', index=False, header=False)
+        with open("/home/mukesh/Desktop/SemEval_Task1_Submission/"+file, 'w') as out_file:
+            csv_writer = csv.writer(out_file, delimiter = '\t')
+            for tx, label in zip(eval_text,preds):
+                csv_writer.writerow([tx, label])
+        # dev_submission = eval_df
+        # dev_submission['has_def'] = preds
+        # dev_submission.to_csv("/home/mukesh/Desktop/SemEval_Task1_Submission/"+file, sep='\t', index=False, header=False)
