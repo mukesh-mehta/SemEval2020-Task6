@@ -252,7 +252,7 @@ if __name__ == '__main__':
         truth = []
         with open("../deft_corpus/data/Task1/dev/"+file, 'r') as eval_file:
             csv_reader = csv.reader(eval_file, delimiter = "\t")
-            [(eval_text.append(row[0]), truth.append(row[1])) for row in csv_reader]
+            [(eval_text.append(row[0]), truth.append(int(row[1]))) for row in csv_reader]
         # eval_df = pd.read_csv("../deft_corpus/data/Task1/dev/"+file, sep="\t", names=['text', 'has_def'])
         eval_examples = [InputExample(i, text, None, label) for i, (text, label) in enumerate(zip(eval_text, truth))]
         eval_dataset = load_and_cache_examples(eval_examples, tokenizer, evaluate=False, no_cache=False)

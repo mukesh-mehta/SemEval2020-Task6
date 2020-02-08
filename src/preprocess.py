@@ -28,13 +28,13 @@ def create_data_task1(folder_path, out_path, num_fold = 5, test=False):
         master_df.to_csv(out_path, sep="\t", index=False)
     return
 
-def create_data_task2(folder_path, output_path, test=False):
+def create_data_task2(folder_path, test=False):
     all_data = []
     for files in os.listdir(folder_path):
         all_data.extend(parse_deft(os.path.join(folder_path, files)))
-    pd.DataFrame.from_records(all_data).to_csv(output_path, index=False)
-    print("output_path", len(all_data), pd.DataFrame.from_records(all_data).shape)
-    return
+    df = pd.DataFrame.from_records(all_data)#.to_csv(output_path, index=False)
+    print(len(all_data), df.shape)
+    return df
 
 
 if __name__ == '__main__':

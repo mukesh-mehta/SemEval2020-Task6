@@ -12,6 +12,7 @@ import math
 import numpy as np
 from seqeval.metrics import precision_score, recall_score, f1_score
 from utils import parse_deft, submission_task2
+from preprocess import create_data_task2
 
 pad_token_label_id = CrossEntropyLoss().ignore_index
 
@@ -260,7 +261,8 @@ if __name__ == '__main__':
     model = model_class.from_pretrained('bert-base-uncased', config=config_)
     model.to('cuda')
     
-    train_df = pd.read_csv("train.csv",sep = ",")
+    # train_df = pd.read_csv("train.csv",sep = ",")
+    train_df = create_data_task2("../deft_corpus/data/deft_files/train")
     train_df.dropna(inplace=True)
     train_examples = [InputExample(i, str(text).split(" "), str(label).split(" ")) for i, (text, label) in enumerate(zip(train_df['text'].values, train_df['labels'].values))]
     train_dataset = load_and_cache_examples(train_examples, tokenizer, label_list, pad_token_label_id)
@@ -269,7 +271,7 @@ if __name__ == '__main__':
     t_total = len(train_dataloader) // config['gradient_accumulation_steps'] * config['num_train_epochs']
 
 
-    eval_df = pd.read_csv("val.csv",sep = ",")
+    eval_df = create_data_task2("../deft_corpus/data/deft_files/dev")
     eval_df.dropna(inplace=True)
     eval_examples = [InputExample(i, str(text).split(" "), str(label).split(" ")) for i, (text, label) in enumerate(zip(eval_df['text'].values, eval_df['labels'].values))]
     eval_dataset = load_and_cache_examples(eval_examples, tokenizer, label_list, pad_token_label_id)
