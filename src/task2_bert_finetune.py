@@ -1,7 +1,8 @@
 CUDA_LAUNCH_BLOCKING=1
 from torch.nn import CrossEntropyLoss
 from config import Task2_finetune_config as config
-from config import Task2_labels as label_list
+# from config import Task2_labels as label_list
+from config import Task2_eval_labels as label_list
 from transformers import WEIGHTS_NAME, BertConfig, BertForTokenClassification, BertTokenizer, AdamW, get_linear_schedule_with_warmup
 import pandas as pd
 import os
@@ -75,6 +76,8 @@ def convert_examples_to_features(examples,
             word_tokens = tokenizer.tokenize(word)
             tokens.extend(word_tokens)
             # Use the real label id for the first token of the word, and padding ids for the remaining tokens
+            if label not in label_list:
+                label = "O"
             if label[0]=='O' or label[0]=='I':
 #                 print([label_map[label]]+[label_map[label]]*(len(word_tokens) - 1))
                 label_ids.extend([label_map[label]]+[label_map[label]]*(len(word_tokens) - 1))
@@ -287,13 +290,23 @@ if __name__ == '__main__':
     model=train_model(model, train_dataloader)
     results, preds_list, out_label_list = evaluate(model, eval_dataloader, label_list)
     print(results)
-    for file in os.listdir("../deft_corpus/data/deft_files/dev"):
+    # for file in os.listdir("../deft_corpus/data/deft_files/dev"):
+    #     print(file)
+    #     eval_df = pd.DataFrame.from_records(parse_deft("../deft_corpus/data/deft_files/dev/"+file))
+    #     eval_examples = [InputExample(i, str(text).split(" "), str(label).split(" ")) for i, (text, label) in enumerate(zip(eval_df['text'].values, eval_df['labels'].values))]
+    #     eval_dataset = load_and_cache_examples(eval_examples, tokenizer, label_list, pad_token_label_id)
+    #     eval_dataloader = DataLoader(eval_dataset, sampler=None, batch_size=4)
+    #     results, preds_list, out_label_list = evaluate(model, eval_dataloader, label_list)
+    #     eval_df['labels'] = [" ".join(preds) for preds in preds_list]
+    #     submission_task2(eval_df[['text', 'filename', 'start', 'end', 'labels']], "/home/mukesh/Desktop/SemEval_Task1_Submission/task_2_"+file)
+
+    for file in os.listdir("../deft_corpus/data/test_files/subtask_2"):
         print(file)
-        eval_df = pd.DataFrame.from_records(parse_deft("../deft_corpus/data/deft_files/dev/"+file))
+        eval_df = pd.DataFrame.from_records(parse_deft("../deft_corpus/data/test_files/subtask_2/"+file, test=True))
         eval_examples = [InputExample(i, str(text).split(" "), str(label).split(" ")) for i, (text, label) in enumerate(zip(eval_df['text'].values, eval_df['labels'].values))]
         eval_dataset = load_and_cache_examples(eval_examples, tokenizer, label_list, pad_token_label_id)
         eval_dataloader = DataLoader(eval_dataset, sampler=None, batch_size=4)
         results, preds_list, out_label_list = evaluate(model, eval_dataloader, label_list)
         eval_df['labels'] = [" ".join(preds) for preds in preds_list]
-        submission_task2(eval_df[['text', 'filename', 'start', 'end', 'labels']], "/home/mukesh/Desktop/SemEval_Task1_Submission/task_2_"+file)
+        submission_task2(eval_df[['text', 'filename', 'start', 'end', 'labels']], "/home/mukesh/Desktop/SemEval_Submission/task2/"+file)
 
