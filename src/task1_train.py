@@ -8,13 +8,7 @@ from fire import Fire
 
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
 import torch.optim as optim
-from torch.autograd import Variable
-
-from torchtext.data import Field
-from torchtext.data import TabularDataset
-from torchtext.data import Iterator, BucketIterator
 
 from sklearn.metrics import classification_report, f1_score
 from sklearn.utils.class_weight import compute_class_weight
