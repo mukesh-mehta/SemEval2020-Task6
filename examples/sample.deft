@@ -1,0 +1,5 @@
+A	synthetic.txt	0	0	O
+triangle	synthetic.txt	2	9	B-Term
+is	synthetic.txt	11	12	O
+a	synthetic.txt	14	14	B-Definition
+polygon	synthetic.txt	16	22	I-Definition

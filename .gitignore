@@ -3,3 +3,18 @@
 *.log
 *.png
 deft_corpus/
+
+# Local environments, caches, data, and generated artifacts
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.env
+.env.*
+!.env.example
+data/
+artifacts/
+onnx_model/
+*.joblib
+*.pt
